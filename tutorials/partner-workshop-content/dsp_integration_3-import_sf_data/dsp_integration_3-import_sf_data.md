@@ -1,4 +1,4 @@
-# Import SuccessFactors data into SAP Datasphere
+# Access SuccessFactors Data within SAP Datasphere
 
 ## Prerequisites
 You need to have:
