@@ -1,4 +1,4 @@
-# Maintain Associations and Create an Analytic Model to Define Custom KPIs
+# Build Data Model to Define Custom KPIs
 After importing entities from different sources, combine and extend the different datasets available so that you can report across the survey results  your defined KPIs.
  
 
