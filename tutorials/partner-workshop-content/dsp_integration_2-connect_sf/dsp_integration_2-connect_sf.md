@@ -1,5 +1,5 @@
 
-# Integrate SuccessFactors into Datasphere
+# Integrate SuccessFactors as a Data Source into Datasphere
 This tutorial is based on an [SAP Community Blog](https://blogs.sap.com/2023/04/20/connecting-sap-successfactors-and-sap-datasphere/), in which you will configure your Datasphere to allow SuccessFactors connection. In addition to this, you will be adding a SuccessFactors instance as a data source in your own space.
   
   
