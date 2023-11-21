@@ -3,7 +3,7 @@
 ## Prerequisites
 You need to have:
 
-- followed the previous [tutorial](https://github.tools.sap/HDACSM/DatasphereWorkshop/blob/main/dsp_integration_1-connect_sf/dsp_integration_1-connect_sf.md/)
+- followed the previous [tutorial](../dsp_integration_1-connect_sf/dsp_integration_1-connect_sf.md)
 - A SAP SuccessFactors instance
 
 ## You will learn

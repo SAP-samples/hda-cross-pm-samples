@@ -4,16 +4,16 @@ After importing entities from different sources, combine and extend the differen
 
 ## Prerequisites
 You followed the previous tutorials to 
-- [access and import survey results provided HANA Cloud](https://github.tools.sap/HDACSM/DatasphereWorkshop/blob/main/dsp_integration_3-connect_to_hana_cloud_access_data/dsp_integration_3-connect_to_hana_cloud_access_data.md/)
-- [access and import data on locations and offices from SuccessFactors](https://github.tools.sap/HDACSM/DatasphereWorkshop/blob/main/dsp_integration_2-import_sf_data/dsp_integration_2-import_sf_data.md/)
-- [access and import location data with geospatial information from the Data Marketplace ](https://github.tools.sap/HDACSM/DatasphereWorkshop/blob/main/dsp_integration_4-data-marketplace/dsp_integration_4-data-marketplace.md/)
+- [access and import survey results provided HANA Cloud](../dsp_integration_3-connect_to_hana_cloud_access_data/dsp_integration_3-connect_to_hana_cloud_access_data.md/)
+- [access and import data on locations and offices from SuccessFactors](../dsp_integration_2-import_sf_data/dsp_integration_2-import_sf_data.md/)
+- [access and import location data with geospatial information from the Data Marketplace ](../dsp_integration_4-data-marketplace/dsp_integration_4-data-marketplace.md/)
 
 ## You will learn
   - How to build a data model including data from various sources.
 
   
 ## Create Dependencies between Entities  
-Create associations between the different entities. You can either create the associations in an E/R Model, or access each entitiy in its own editor. As the modeling using the E/R Model has been introduced in [a previous tutorial](https://github.tools.sap/HDACSM/DatasphereWorkshop/blob/main/dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md/), this one shows how to create associations in the table and graphical view editor.
+Create associations between the different entities. You can either create the associations in an E/R Model, or access each entitiy in its own editor. As the modeling using the E/R Model has been introduced in [a previous tutorial](../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md/), this one shows how to create associations in the table and graphical view editor.
 
 1. The table `T_SURVEY_RESULTS_ETL_<USER_ID>` contains the survey results after transformation. Create an association from `T_SURVEY_RESULTS_ETL_<USER_ID>` (column `OFFICE_LOCATION`) to the view with location data `V_FOCompany_<USER_ID>` (column `Default Location`). 
 

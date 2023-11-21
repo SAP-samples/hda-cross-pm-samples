@@ -5,8 +5,9 @@
 ## Prerequisites
 You need to have:
 
-- You have a space and service account user added to that space in SAP Datasphere
-- An SAP HANA Cloud / SAP HANA Cloud Trial instance with a table with the survey results records.
+- a space and service account user added to that space in SAP Datasphere
+- an SAP HANA Cloud / SAP HANA Cloud Trial instance
+- followed the previous [tutorial](../dsp_integration_2-import_sf_data/dsp_integration_2-import_sf_data.md)
 
 ## You will learn
   - How to connect to HANA Cloud instance from SAP Datasphere
@@ -22,7 +23,8 @@ In this exercie, we want to identify these trends as quickly as possible and der
 The survey results are persisted in a table of a standalone HANA Cloud system. To gurantee the anonymity of each employee, only the office code is part of a survey record. Our goal is to map the survey results to the locations of our company to analyze the results in SAP Analytics Cloud.
 
 This exercise is divided into three main parts. They are:
-1. Create the table in HANA Cloud
+1. Add Datasphere as Trusted Source in HANA Cloud
+2. Create a table in HANA Cloud
 2. Connect to HANA Cloud
 3. Create a replication flow to access delta data from a table
 4. Create a transformation flow to categorize repititive data
