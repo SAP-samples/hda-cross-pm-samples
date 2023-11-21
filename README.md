@@ -20,11 +20,7 @@ Please edit this file as it is the primary description file for your project. Yo
 -->
 
 ## Description
-<!-- Please include SEO-friendly description -->
-
-## Requirements
-
-## Download and Installation
+Samples and Use cases by HD&A Cross PM Team for HD&A Products
 
 ## Known Issues
 <!-- You may simply state "No known issues. -->
