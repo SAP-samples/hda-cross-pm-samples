@@ -4,8 +4,8 @@ After importing entities from different sources, combine and extend the differen
 
 ## Prerequisites
 You followed the previous tutorials to 
-- [access and import survey results provided HANA Cloud](../dsp_integration_3-connect_to_hana_cloud_access_data/dsp_integration_3-connect_to_hana_cloud_access_data.md/)
-- [access and import data on locations and offices from SuccessFactors](../dsp_integration_2-import_sf_data/dsp_integration_2-import_sf_data.md/)
+- [access and import survey results provided HANA Cloud](../dsp_integration_1-connect_to_hana_cloud_access_data/dsp_integration_1-connect_to_hana_cloud_access_data.md/)
+- [access and import data on locations and offices from SuccessFactors](../dsp_integration_3-import_sf_data/dsp_integration_3-import_sf_data.md/)
 - [access and import location data with geospatial information from the Data Marketplace ](../dsp_integration_4-data-marketplace/dsp_integration_4-data-marketplace.md/)
 
 ## You will learn

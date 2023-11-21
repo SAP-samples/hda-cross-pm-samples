@@ -3,7 +3,7 @@
 ## Prerequisites
 You need to have:
 
-- followed the previous [tutorial](../dsp_integration_1-connect_sf/dsp_integration_1-connect_sf.md)
+- followed the previous [tutorial](../dsp_integration_2-connect_sf/dsp_integration_2-connect_sf.md)
 - A SAP SuccessFactors instance
 
 ## You will learn
@@ -16,15 +16,15 @@ The survey dataset contains the codes of company locations. To map the codes to 
 ### Import Remote Table from SAP SuccessFactors
 1. Access the Data Builder. Select the **Import**-Button to import remote tables. 
 
-    ![Import Remote Table](./images-dsp_integration_2-import_sf_data/DS_SF_ImportRemoteTables.png)
+    ![Import Remote Table](./images-dsp_integration_3-import_sf_data/DS_SF_ImportRemoteTables.png)
 
 2. Select your before created connection to SuccessFactors.
 
-    ![Select SAP SuccessFactors Connection](./images-dsp_integration_2-import_sf_data/DS_Select_SF.png)
+    ![Select SAP SuccessFactors Connection](./images-dsp_integration_3-import_sf_data/DS_Select_SF.png)
 
 3. Expand the Node **Tables** on the left side. Search and select the remote tables `FOCompany`.
 
-    ![Select Remote Table](./images-dsp_integration_2-import_sf_data/DS_SF_SelectRemoteTables.png)
+    ![Select Remote Table](./images-dsp_integration_3-import_sf_data/DS_SF_SelectRemoteTables.png)
 
 4. Review that `FOCompany` is listed in **Read for Import**. Please note that remote tables can only be imported once per space. Click **Import and Deploy**
 
@@ -34,9 +34,9 @@ Please note that the location records are not time dependent in our use case, ot
 
 6. As only some of the 63 columns are required for this use case, replicating the full table is not required. Instead, create a view `V_FOCompany_<YOUR_USER_ID>` based on this table and use the operator **Rename/Exclude Columns**. Only keep the following columns: `Country`, `Description (technical name: description` and `Legal Entity ID (technical name: externalCode)`. Set the semantic usage to "Dimension".
 
-    ![Select Remote Table](./images-dsp_integration_2-import_sf_data/DS_SF_CompanyView.png) 
+    ![Select Remote Table](./images-dsp_integration_3-import_sf_data/DS_SF_CompanyView.png) 
 
 
 7. Save and deploy the view. Views can be replicated in a snapshot load which could also be scheduled. Start **Load New Snapshot**.
 
-    ![Persist View](./images-dsp_integration_2-import_sf_data/DS_SF_CompanyView_Persist.png) 
+    ![Persist View](./images-dsp_integration_3-import_sf_data/DS_SF_CompanyView_Persist.png) 

@@ -27,7 +27,7 @@ You need to have:
 
 ### Preparing the Datasphere account for the SuccessFactors data source
 
-This part is already done. Please refer to this [page](./others-dsp_integration_1-connect_sf/dsp_integration_1.1-configure_certification_sf.md) for the step-by-step process.
+This part is already done. Please refer to this [page](./others-dsp_integration_2-connect_sf/dsp_integration_2.1-configure_certification_sf.md) for the step-by-step process.
 
 ---
 
@@ -41,15 +41,15 @@ Connections allow the space members to connect sources for accessing and modelli
 
 In the side navigation area, click on Connections, select a space if necessary and then click the Local Connections tab.
 
-![Create connection](./images-dsp_integration_1-connect_sf/DS_create_SF_connection_1.png)
+![Create connection](./images-dsp_integration_2-connect_sf/DS_create_SF_connection_1.png)
 
 Click Create to open the connection creation wizard.
 
-![Create connection 2](./images-dsp_integration_1-connect_sf/DS_create_SF_connection_2.png)
+![Create connection 2](./images-dsp_integration_2-connect_sf/DS_create_SF_connection_2.png)
 
 In the connection creation wizard, please enter a search string SuccessFactors in the search field to only show the connection type for SAP SuccessFactors. Click an SAP SuccessFactors connection type tile for your source.
 
-![Create connection 2](./images-dsp_integration_1-connect_sf/DS_create_SF_connection_3.png)
+![Create connection 2](./images-dsp_integration_2-connect_sf/DS_create_SF_connection_3.png)
 
 Complete the configure connection properties.
 
@@ -64,18 +64,18 @@ Password: Enter the password.
 
 Click on Next Step
 
-![Add SF Credentials](./images-dsp_integration_1-connect_sf/DS_SF_add_credentials.png)
+![Add SF Credentials](./images-dsp_integration_2-connect_sf/DS_SF_add_credentials.png)
 
 Enter a descriptive Business Name, which you can change at any time. Technical Name displays the name used in scripts and code, synchronized by default with the Business Name. Once the object is saved, the Technical Name can no longer be modified. To Provide more information to understand the object enter the Description as well.
 
 Click Create Connection to add the Connection to the overview of available connections.
 
-![Add SF Business Name](./images-dsp_integration_1-connect_sf/DS_SF_Business_name.png)
+![Add SF Business Name](./images-dsp_integration_2-connect_sf/DS_SF_Business_name.png)
 
 Select the connection and click Validate to check if the connection is valid and can be used for the enabled features.
 
-![Validate SF Connection](./images-dsp_integration_1-connect_sf/DS_Validate_SF_connection.png)
+![Validate SF Connection](./images-dsp_integration_2-connect_sf/DS_Validate_SF_connection.png)
 
-The connection is then validated. Please note that if the steps on this [page](./others-dsp_integration_1-connect_sf/dsp_integration_1.1-configure_certification_sf.md) are not followed, then there might be a warning at this point, if the connection is valid.
+The connection is then validated. Please note that if the steps on this [page](./others-dsp_integration_2-connect_sf/dsp_integration_2.1-configure_certification_sf.md) are not followed, then there might be a warning at this point, if the connection is valid.
 
 So, now you have seen how to create a valid connection with SAP SuccessFactors.
