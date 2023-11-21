@@ -1,4 +1,4 @@
-# Connect to HANA Cloud and Access the data
+# Access, Load and Transform Data from HANA Cloud
  
  HANA Cloud is a multi-model database management system that stores high volume business data. For the business need to consume this data in SAP Datasphere, SAP Datasphere allows to add HANA Cloud connection in order to consume the data meaningfully.
 
