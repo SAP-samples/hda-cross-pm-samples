@@ -5,8 +5,14 @@ This default template for SAP Samples repositories includes files for README, LI
 ## Description
 Samples and Use cases by HD&A Cross PM Team for HD&A Products
 
+## Requirements
+There are no overall requirements. Refer to each of the exercises or use cases for their individual pre-requisites.
+
+## Contributing
+This is an internal repository. You can only contribute by creating 'Issues', we will process them and add necessary changes
+
 ## Known Issues
-<!-- You may simply state "No known issues. -->
+No known issues
 
 ## How to obtain support
 [Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
