@@ -30,6 +30,7 @@ To access the Data Builder, simply click on the Data Builder icon on the left-ha
 
 
 Now it's time to import the CSV files from the Best Run Bikes scenario, so you can get active with SAP Datasphere. The CSV files can be found in Step 3 of the [Get Ready for Your SAP Datasphere tutorial](https://developers.sap.com/tutorials/data-warehouse-cloud-1-begin-trial.html) (Sales Orders, Sales Order Items, Addresses, Business Partners).
+Alternatively, all the dataset files can be found [here](../dsp_modeling_1-import-dataset/datasets-dsp_modeling_1-import-dataset)
 
 1.  Simply click on the import CSV icon as shown in the image below
 
@@ -52,6 +53,8 @@ Generate a time table and dimension views in your space to to provide standardiz
 2. In the resulting popup, don't change any values and click **Create**
 ![Time Dimensions Generation](./images-dsp_modeling_1-import-dataset/DS_CreateTimeTablesAndDimensions_2.png)
 3. Wait till the confirmation message **Time data created** appears. Users assigned to your space can now use the views as dimensions by creating associations to them from their entities containing time data
+4. The Time Dimensions that were added can be viewed from the Data Builder
+ ![Time Dimensions Preview](./images-dsp_modeling_1-import-dataset/DS_TimeData_Preview.png)
 
 ### Alternative supported connections in SAP Datasphere
 
