@@ -75,7 +75,7 @@ A data model is a way to organise the data and define the relationship between t
 
 12. Set `ADDRESSID` as key attribute 
 
-13. Save and deploy the entities of E/R Model by clicking the according buttons on the upper left corner. When saving entities in Datasphere, they are stored as design-time definition. Deploying an entity creates a run-time version
+13. Save and deploy the entities of E/R Model by clicking the according buttons on the upper left corner. Set the technical name to `ER_Sales_<USER_ID>`. When saving entities in Datasphere, they are stored as design-time definition. Deploying an entity creates a run-time version
 
 ![Deploy E/R Model](./images-dsp_modeling_2-create-relationships/DS_ER_Deploy.png)
 
