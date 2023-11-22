@@ -31,27 +31,27 @@ To access the Data Builder, simply click on the Data Builder icon on the left-ha
 
 Now it's time to import the CSV files from the Best Run Bikes scenario, so you can get active with SAP Datasphere. The CSV files can be found in Step 3 of the [Get Ready for Your SAP Datasphere tutorial](https://developers.sap.com/tutorials/data-warehouse-cloud-1-begin-trial.html) (Sales Orders, Sales Order Items, Addresses, Business Partners).
 
-1.  Simply click on the import CSV icon as shown in the image below.
+1.  Simply click on the import CSV icon as shown in the image below
 
     ![Data Builder Import Icon](./images-dsp_modeling_1-import-dataset/DS_Import_CSV.png)
 
-2.  Then, select your source file from your system.
+2.  Then, select your source file from your system
 
-3.  Quickly review your data and then click deploy once done.
+3.  Quickly review your data and then click deploy once done
 
-4.  Give the table a technical name(`T_<SalesOrders/SalesOrderItems/Addresses/BusinessPartners>_<YOUR_USER_ID>`) and a business name and then wait whilst the table is deployed.
+4.  Give the table a technical name(`T_<SalesOrders/SalesOrderItems/Addresses/BusinessPartners>_<YOUR_USER_ID>`) and a business name and then wait whilst the table is deployed
 
-5.  You can then add your remaining CSV files by repeating the process.
+5.  You can then add your remaining CSV files by repeating the process
 
     ![Deploy CSV](./images-dsp_modeling_1-import-dataset/DS_Deploy_Adresses.png)
 
 ### Generate Time Data
 Generate a time table and dimension views in your space to to provide standardized time data for your analysis. 
-1. Go to **Space Management** and click **Create Time Tables & Dimensions**.
+1. Go to **Space Management** and click **Create Time Tables & Dimensions**
   ![Time Dimensions Generation](./images-dsp_modeling_1-import-dataset/DS_CreateTimeTablesAndDimensions.png)
-2. In the resulting popup, don't change any values and click **Create**.
+2. In the resulting popup, don't change any values and click **Create**
 ![Time Dimensions Generation](./images-dsp_modeling_1-import-dataset/DS_CreateTimeTablesAndDimensions_2.png)
-3. Wait till the confirmation message **Time data created** appears. Users assigned to your space can now use the views as dimensions by creating associations to them from their entities containing time data.
+3. Wait till the confirmation message **Time data created** appears. Users assigned to your space can now use the views as dimensions by creating associations to them from their entities containing time data
 
 ### Alternative supported connections in SAP Datasphere
 
