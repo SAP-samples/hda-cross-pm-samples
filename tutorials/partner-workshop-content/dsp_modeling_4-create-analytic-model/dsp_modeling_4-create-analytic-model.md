@@ -55,7 +55,7 @@ Enter the expression `QUANTITY > 10`. This expression will return the boolean va
 
 12. Validate the two new measures in the data preview. 
 
-13. Save and deploy your Analytic Model.
+13. Save and deploy your Analytic Model using the technical name `AM_SalesReport_<USER_ID>`.
 
 
 
