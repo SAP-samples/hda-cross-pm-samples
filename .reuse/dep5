@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: hda-cross-pm-samples
-Upstream-Contact: ospo@sap.com
-Source: <https://github.com/sap-samples/YOUR-REPO-NAME>
+Upstream-Contact: <Neetha Pucknat (neetha.pucknat@sap.com)>
+Source: <https://github.com/sap-samples/hda-cross-pm-samples>
 Disclaimer: The code in this project may include calls to APIs ("API Calls") of
  SAP or third-party products or services developed outside of this project
  ("External Products").
