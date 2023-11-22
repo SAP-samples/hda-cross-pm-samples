@@ -96,7 +96,7 @@ Open the business purpose panel under attributes. Here, fill in the description 
 
     ![Associations](./images-dsp_modeling_3-create-graphical-view/DS_CopyFromSourceI.png) 
 
-6. The source association from `T_SalesOrders_<USER_ID>` to `T_BusinessPartners_<USER_ID>` is proposed. Select and create it. 
+6. Two source accociations are proposed (`T_BusinessPartners_<USER_ID>` and `Time Dimension - Day`). Select and create it. 
 
     ![Associations](./images-dsp_modeling_3-create-graphical-view/DS_CopyFromSource2.png) 
 
