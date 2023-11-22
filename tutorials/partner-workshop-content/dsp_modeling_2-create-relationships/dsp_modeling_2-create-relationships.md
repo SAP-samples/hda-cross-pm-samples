@@ -49,7 +49,7 @@ A data model is a way to organise the data and define the relationship between t
 
 ![SalesOrders_MeasuresAndAttributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items.png)
 
-3. After maintaining the semantic type of the table in the first step, specific the semantic types for the measures and attributes now. Semantic types include values, quantities, dates, and geo and textual information. Click on the **Edit columns** pencil icon for attributes and select the according `Semantic Type` for `CURRENCY` and `QUANTITYUNIT`
+3. After maintaining the semantic type of the table in the first step, specify the semantic types for the measures and attributes now. Semantic types include values, quantities, dates, and geo and textual information. Click on the **Edit columns** pencil icon for attributes and select the according `Semantic Type` for `CURRENCY` and `QUANTITYUNIT`
 
 ![SalesOrders_SemanticTypes_Attributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items_Attributes.png)
 
