@@ -54,12 +54,13 @@ Generate a time table and dimension views in your space to to provide standardiz
   
 2. In the resulting popup, don't change any values and click **Create**
    
-![Time Dimensions Generation](./images-dsp_modeling_1-import-dataset/DS_CreateTimeTablesAndDimensions_2.png)
+  ![Time Dimensions Generation](./images-dsp_modeling_1-import-dataset/DS_CreateTimeTablesAndDimensions_2.png)
 
 3. Wait till the confirmation message **Time data created** appears. Users assigned to your space can now use the views as dimensions by creating associations to them from their entities containing time data.
    
 4. The Time Dimensions that were added can be viewed from the Data Builder.
- ![Time Dimensions Preview](./images-dsp_modeling_1-import-dataset/DS_TimeData_Preview.png)
+
+   ![Time Dimensions Preview](./images-dsp_modeling_1-import-dataset/DS_TimeData_Preview.png)
 
 ### Alternative supported connections in SAP Datasphere
 
