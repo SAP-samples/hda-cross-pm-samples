@@ -38,16 +38,20 @@ SAP Analytics Cloud consumes data from SAP Datasphere via a live connection to c
 
     ![SAC Story Creation](./images-dsp_modeling_5-create-sac-story/DS_SAC_SelectModel.png)
 
- 4. The bar chart should display the grossamount of  all orders for the different regions and sorted by grossamount. Select `GROSSAMOUNT_ORDERS` as measured and `ADDRESSID` as dimension. Set the hierarchy to "Level 2" so that you see the three different regions products were sold to displayed. Configure the sorting of values for measures `GROSSAMOUNT_ORDERS` by selecting the chart.  
+ 4. The bar chart should display the grossamount of  all orders for the different regions and sorted by grossamount. Select `GROSSAMOUNT_ORDERS` as measured and `ADDRESSID` as dimension. Set the hierarchy to "Level 2" so that you see the three different regions products were sold to displayed.
+
+    ![SAC Story Creation](./images-dsp_modeling_5-create-sac-story/DS_SAC_HierarchyLevel.png)
+
+ 5. Configure the sorting of values for measures `GROSSAMOUNT_ORDERS` by selecting the chart.  
 
     ![Create Bar Chart](./images-dsp_modeling_5-create-sac-story/DS_GrossamountPerRegion.png)
  
-5. Insert a table, which will display your two in the Analytic Model created measures along time: The calculated measure counting how many product types were sold more than 10 times and the restricted measure calculating gross amount in Europe.
+6. Insert a table, which will display your two in the Analytic Model created measures along time: The calculated measure counting how many product types were sold more than 10 times and the restricted measure calculating gross amount in Europe.
 Select the dimension `CREATEDAT` to be displayed as row and the measures `Calculated Measure - Count of Products sold more than 10 times` and `Restricted Measure - Gross Amount in EMEA` as columns.
 
     ![Create table](./images-dsp_modeling_5-create-sac-story/DS_SAC_Table.png)
 
-6. You can see the different behaviour of the created measures. The restricted measure is filtering on gross amount in EMEA without the need of any filter to be set. 
+7. You can see the different behaviour of the created measures. The restricted measure is filtering on gross amount in EMEA without the need of any filter to be set. 
 The calculated measure counts how many product types were sold more than 10 times. When drilling down on **2018 -> Q1 (2018)**, we see that more types of products were sold over 10 times compared to January and February. The configured exception aggregation aggregates by product ID although this dimension is not visible in the drill-down.
 Grossamount is displayed with the according currency type as you configured the semantic types for measures and attributes in Datasphere before.
 
