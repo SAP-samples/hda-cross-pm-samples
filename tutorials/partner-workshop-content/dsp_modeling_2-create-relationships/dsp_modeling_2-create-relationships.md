@@ -47,15 +47,15 @@ A data model is a way to organise the data and define the relationship between t
 1. Each entity (tables and views) have a property called `Semantic Usage`. This property is used to indicate the type of data contained in the entity. Select the table `T_SalesOrderItems_<USER_ID>` and set the Semantic Usage to `Fact`. This indicates that your entity contains numerical measures that can be analyzed
 2. Drag the measures `GROSSAMOUNT`, `NETAMOUNT`, `TAXAMOUNT` and `QUANTITY` from the **Attributes** section into the **Measures** section
 
-![SalesOrders_MeasuresAndAttributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items.png)
+  ![SalesOrders_MeasuresAndAttributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items.png)
 
 3. After maintaining the semantic type of the table in the first step, specify the semantic types for the measures and attributes now. Semantic types include values, quantities, dates, and geo and textual information. Click on the **Edit columns** pencil icon for attributes and select the according `Semantic Type` for `CURRENCY` and `QUANTITYUNIT`
 
-![SalesOrders_SemanticTypes_Attributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items_Attributes.png)
+  ![SalesOrders_SemanticTypes_Attributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items_Attributes.png)
 
 4. Next, click on the **Edit columns** pencil icon for measures. Assign`Semantic Type` and `Unit Column` as displayed in the screenshot
 
-![SalesOrders_SemanticTypes_Attributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items_Measures.png)
+  ![SalesOrders_SemanticTypes_Attributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items_Measures.png)
 
 5. Set the `Semantic Usage` of the table `T_SalesOrders_<USER_ID>` to `Fact`
 
@@ -69,7 +69,7 @@ A data model is a way to organise the data and define the relationship between t
 
 10. After adjusting the semantic type, a yellow validation warning is displayed as Dimension entities need at least one key attribute. Define `PARTNERID` as key attribute by clicking on **More** when hovering the attribute
 
-![BusinessPartners](./images-dsp_modeling_2-create-relationships/DS_BP_Key.png)
+  ![BusinessPartners](./images-dsp_modeling_2-create-relationships/DS_BP_Key.png)
 
 11. Adjust the semantic type of `T_Addresses_<USER_ID>` to `Dimension`
 
@@ -77,7 +77,7 @@ A data model is a way to organise the data and define the relationship between t
 
 13. Save and deploy the entities of E/R Model by clicking the according buttons on the upper left corner. Set the technical name to `ER_Sales_<USER_ID>`. When saving entities in Datasphere, they are stored as design-time definition. Deploying an entity creates a run-time version
 
-![Deploy E/R Model](./images-dsp_modeling_2-create-relationships/DS_ER_Deploy.png)
+  ![Deploy E/R Model](./images-dsp_modeling_2-create-relationships/DS_ER_Deploy.png)
 
 ### Associate Data Columns
 
@@ -106,7 +106,7 @@ They are used to e.g. associate master data, text or time objects to fact data.
 1. Select the hierarchy table and click on the **Hierarchy** Icon on the right side
    ![Hierarchies](./images-dsp_modeling_2-create-relationships/DS_Hierarchy.png)
 2. Adding a hierarchy enable drill-down and drill-up in BI clients. A Level-Based hierarchy is non-recursive, has a fixed number of levels, and is defined by specifying two or more level columns within the dimension. Define a hierarchy for the location
-![Hierarchies](./images-dsp_modeling_2-create-relationships/DS_Hierarchy2.png)
+  ![Hierarchies](./images-dsp_modeling_2-create-relationships/DS_Hierarchy2.png)
 
 ### Create Time Association
 After creating associations between the imported data entities, add an association to the already existing time dimension. This allows you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.
@@ -119,7 +119,8 @@ After creating associations between the imported data entities, add an associati
     ![Time Dimension Text](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay_Text.png)
 
 3. Return to your Entity-Relationship Model. Create an association from the column `CREATEDAT` of `T_SalesOrders_<USER_ID>` to `Date` of `Time Dimension - Day`. Validate using the data preview that the date format of the two columns is the same as this is required for the mapping
-![Time Dimension Association](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay_Association.png)
+   
+ ![Time Dimension Association](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay_Association.png)
  
 
 
