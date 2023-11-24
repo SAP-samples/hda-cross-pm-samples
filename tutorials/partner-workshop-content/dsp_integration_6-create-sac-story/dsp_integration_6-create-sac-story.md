@@ -4,7 +4,7 @@ We have already used SAP Analytics Cloud in [a previous exercise](/dsp_integrati
 
 ## Prerequisites
 
-- You have [created an extended Analytic Model](/dsp_modeling_4-create-analytic-model/dsp_modeling_4-create-analytic-model.md) using the data from HANA Cloud, SuccessFactors and Datasphere Data Marketplace
+- You have [created an extended Analytic Model](https://github.com/SAP-samples/hda-cross-pm-samples/blob/main/tutorials/partner-workshop-content/dsp_integration_5-build_data_model/dsp_integration_5-build_data_model.md) using the data from HANA Cloud, SuccessFactors and Datasphere Data Marketplace
 
 ## You will learn or reiterate
   - Prerequisites to create a live connection between SAP Analytics Cloud and Datasphere
