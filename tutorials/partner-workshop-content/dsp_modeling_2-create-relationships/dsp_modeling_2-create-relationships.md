@@ -2,7 +2,7 @@
 <!-- description --> An entity-relationship model (or E/R model) describes interrelated things of interest in a specific domain of knowledge. You can use an E/R model to better understand a subset of the entities in your space, and to communicate this information to other stakeholders.
 
 ## Prerequisites
- - You have [imported your dataset into your Space.](./dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
+ - You have [imported your dataset into your Space.](https://github.com/SAP-samples/hda-cross-pm-samples/blob/main/tutorials/partner-workshop-content/dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
 
 ## You will learn
   - Overview of E/R Models
