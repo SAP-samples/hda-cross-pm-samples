@@ -24,10 +24,11 @@ SAP Datasphere has two modelling layers tailored for different user groups: the 
 
 ![Datasphere Overview](./images-dsp_modeling_1-import-dataset/DS_Component_Overview.png)
 
-To access the Data Builder, simply click on the Data Builder icon on the left-hand side menu of SAP Datasphere.
+To access the Data Builder, simply click on the Data Builder icon on the left-hand side menu of SAP Datasphere. Here you select your space. 
+
+ ![Data Builder Import Icon](./images-dsp_modeling_1-import-dataset/DS_DB_Space.png)
 
 ### Import CSV files
-
 
 Now it's time to import the CSV files from the Best Run Bikes scenario, so you can get active with SAP Datasphere. The CSV files can be found in Step 3 of the [Get Ready for Your SAP Datasphere tutorial](https://developers.sap.com/tutorials/data-warehouse-cloud-1-begin-trial.html) (Sales Orders, Sales Order Items, Addresses, Business Partners).
 Alternatively, all the dataset files can be found [here](../dsp_modeling_1-import-dataset/datasets-dsp_modeling_1-import-dataset)
