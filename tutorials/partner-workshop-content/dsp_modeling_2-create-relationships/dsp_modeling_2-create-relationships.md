@@ -61,7 +61,7 @@ A data model is a way to organise the data and define the relationship between t
 
 6. Specify `GROSSAMOUNT`, `NETAMOUNT`, `TAXAMOUNT` as measures
 
-7. Set the semantic type of the attribute `CURRENCY` to `CURRENCYCODE`
+7. Set the semantic type of the attribute `CURRENCY` to `Currency Code`
 
 8. Modify the semantic types of the measures similiar to the previous step 3
 
