@@ -17,6 +17,8 @@ SAP Analytics Cloud consumes data from SAP Datasphere via a live connection to c
 ### Access SAP Analytics Cloud & Connectivity to Datasphere
 1. If the product switch between SAP Datasphere and SAP Analytics Cloud has been configured, you can use the product switch button in the top right of the shell to easily navigate between both solutions. 
 
+  ![SAC Story Creation](./images-dsp_modeling_5-create-sac-story/DS_SAC_Switch.png)
+
 2. In SAP Datasphere, the URL of the SAC system needs to be added as a Trusted Origin. 
 
 2. In SAP Analytics Cloud, a live connection has been created so that data from SAP Datasphere can be accessed. You can validate this in the **Connections**.
