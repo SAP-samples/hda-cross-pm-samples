@@ -34,7 +34,7 @@ Analytic models are the analytical foundation for making data ready for consumpt
 
  7. Select `ADDRESSID` as dimension. When hovering over `ADDRESSID` in the section **Rows**, choose **Hierarchy** and **Select Hierarchy**. Select your before configured hierarchy. 
 
-    ![Data Preview](./images-dsp_modeling_4-create-analytic-model/DS_DataPreview.png)
+    ![Data Preview](./images-dsp_modeling_4-create-analytic-model/DS_DataPreview2.png)
 
 8. You can drill down using this hierarchy and for example validate the calulation of the measures. 
 
