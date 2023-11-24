@@ -36,10 +36,15 @@ SAP HANA Cloud, SAP HANA database instances are exposed via secure end points to
 By default, all access to SAP HANA database instances is denied. However, you can choose to allow access from any IP address or to restrict and control access using source IP allowlists. In this section, you are going to add Datasphere as trusted source.
 
 1. Access your SAP HANA Database Instance in SAP HANA Cloud Central.
+   
    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/HC_AccessHCCentral.png)
+   
 2. Select **Manage Configurations**.
+   
     ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_1.png)
+   
 3. Look up the Datasphere Outbound IP Address (**System**->**About**).
+   
     ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Out.png)
 
 4. Add the Datasphere Outbound IP Addresses in the HANA Cloud.
@@ -53,12 +58,12 @@ By default, all access to SAP HANA database instances is denied. However, you ca
 2. Right click on the database and select **Import Data**.
 3. Download [this CSV file](HC_DEMO_DATA_SURVEY.csv) and select this downloaded file in the import dialogue.
 4. Verify that the columns have the corresponding SQL Data Types as listed below:
-- KEY - BIGINT and Key
-- SURVEY_DATE - Date
-- OFFICE_LOCATION - NVARCHAR(50)
-- STATEMENT - NVARCHAR(200)
-- RATING - Integer 
-5. Run the data import and verify at the end that 5.750 records have been inserted successfully.
+    KEY - BIGINT and Key
+    SURVEY_DATE - Date
+    OFFICE_LOCATION - NVARCHAR(50)
+    STATEMENT - NVARCHAR(200)
+    RATING - Integer 
+6. Run the data import and verify at the end that 5.750 records have been inserted successfully.
 
 ### Connect to HANA Cloud
 The HANA Cloud instance has already been created on the BTP account. It needs to be added to the Datasphere space. Please note that this can be done in each space only once.
