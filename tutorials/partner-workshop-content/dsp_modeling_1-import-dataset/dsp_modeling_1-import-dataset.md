@@ -59,50 +59,8 @@ Generate a time table and dimension views in your space to to provide standardiz
 
 3. Wait till the confirmation message **Time data created** appears. Users assigned to your space can now use the views as dimensions by creating associations to them from their entities containing time data.
    
-4. The Time Dimensions that were added can be viewed from the Data Builder.
+4. The Time Dimensions that were added can be viewed from the Data Builder. Select the view `Time Dimension - Day` and open the data preview.
 
    ![Time Dimensions Preview](./images-dsp_modeling_1-import-dataset/DS_TimeData_Preview.png)
-
-### Alternative supported connections in SAP Datasphere
-
-
-There are also other ways to bring in your data into your system. SAP Datasphere supports a wide range of connections to data sources. These can be connected in the **Connections** tab of your Space properties page. These include:
-
-- `Adverity`
-- `Amazon Athena`
-- `Amazon Redshift`
-- `Amazon Simple Storage Service`
-- `Cloud Data Integration`
-- `Generic JDBC`
-- `Generic OData`
-- `Generic SFTP`
-- `Google BigQuery`
-- `Google Cloud Storage`
-- `Hadoop Distributed File System`
-- `Microsoft Azure Blob Storage Connections`
-- `Microsoft Azure Data Lake Store Gen1`
-- `Microsoft Azure Data Lake Store Gen2`
-- `Microsoft Azure SQL Database`
-- `Microsoft SQL Server`
-- `Oracle`
-- `Precog`
-- `SAP ABAP`
-- `SAP BW Bridge`
-- `SAP BW`
-- `SAP BW/4HANA Model Transfer`
-- `SAP ECC`
-- `SAP Fieldglass`
-- `SAP HANA`
-- `SAP HANA Cloud, Data Lake Relational Engine`
-- `SAP HANA Cloud, Data Lake Files Connections`
-- `SAP Marketing Cloud`
-- `SAP SuccessFactors`
-- `SAP S/4HANA Cloud`
-- `SAP S/4HANA On-Premise`
-
-More information on the capabilities of these connections can be found in the [SAP Datasphere Connections Help Portal](https://help.sap.com/viewer/9f804b8efa8043539289f42f372c4862/cloud/en-US/eb85e157ab654152bd68a8714036e463.html).
-
-
-
 
 ---
