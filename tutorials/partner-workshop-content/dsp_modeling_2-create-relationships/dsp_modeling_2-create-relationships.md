@@ -102,14 +102,19 @@ They are used to e.g. associate master data, text or time objects to fact data.
 
     ![AddressID Association](./images-dsp_modeling_2-create-relationships/DS_BP_AD_Association.png)
 
+
 ### Create Hierarchy for Addresses
 1. Select the hierarchy table and click on the **Hierarchy** Icon on the right side
+   
    ![Hierarchies](./images-dsp_modeling_2-create-relationships/DS_Hierarchy.png)
+   
 2. Adding a hierarchy enable drill-down and drill-up in BI clients. A Level-Based hierarchy is non-recursive, has a fixed number of levels, and is defined by specifying two or more level columns within the dimension. Define a hierarchy for the location
+   
   ![Hierarchies](./images-dsp_modeling_2-create-relationships/DS_Hierarchy2.png)
 
 ### Create Time Association
 After creating associations between the imported data entities, add an association to the already existing time dimension. This allows you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.
+
 1. Drag the view `SAP.TIME.VIEW_DIMENSION_DAY` onto the modelling canvas and view the properties. This generated dimension includes different predefined hierarchies
 
     ![Time Dimension](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay.png)
@@ -120,7 +125,7 @@ After creating associations between the imported data entities, add an associati
 
 3. Return to your Entity-Relationship Model. Create an association from the column `CREATEDAT` of `T_SalesOrders_<USER_ID>` to `Date` of `Time Dimension - Day`. Validate using the data preview that the date format of the two columns is the same as this is required for the mapping
    
- ![Time Dimension Association](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay_Association.png)
+  ![Time Dimension Association](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay_Association.png)
  
 
 
