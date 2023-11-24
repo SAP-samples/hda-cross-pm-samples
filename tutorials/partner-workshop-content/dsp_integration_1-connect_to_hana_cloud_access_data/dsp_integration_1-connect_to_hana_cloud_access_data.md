@@ -48,7 +48,8 @@ By default, all access to SAP HANA database instances is denied. However, you ca
     ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Out.png)
 
 4. Add the Datasphere Outbound IP Addresses in the HANA Cloud.
- ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_2.png)
+   
+   ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_2.png)
 
 
 
@@ -66,7 +67,8 @@ By default, all access to SAP HANA database instances is denied. However, you ca
 6. Run the data import and verify at the end that 5.750 records have been inserted successfully.
 
 ### Connect to HANA Cloud
-The HANA Cloud instance has already been created on the BTP account. It needs to be added to the Datasphere space. Please note that this can be done in each space only once.
+The HANA Cloud instance has already been created on the BTP account. It needs to be added to the Datasphere space. Please note that this can be done in each space only once
+
 1. Select **Connections** from the main menu.
 
 ![Select Connections Tab](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Connection_tab.png)
