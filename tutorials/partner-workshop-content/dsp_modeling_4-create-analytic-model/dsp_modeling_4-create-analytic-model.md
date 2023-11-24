@@ -3,7 +3,7 @@
 Analytic models are the analytical foundation for making data ready for consumption in SAP Analytics Cloud. They allow you to create and define multi-dimensional models to provide data for analytical purposes to answer different business questions. Pre-defined measures, hierarchies, filters, parameters, and associations provide flexible and simple navigation through the underlying data.
 
 ## Prerequisites
- - You have [imported your dataset into your Space.](/dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
+ - You have [imported your dataset into your Space.](./dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
 
 - You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](/dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
 
