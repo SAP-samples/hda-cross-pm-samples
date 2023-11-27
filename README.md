@@ -8,7 +8,8 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 ## Description
 Samples and Use cases by HD&A Cross PM Team for HD&A Products. This is an ongoing project. This is what is currently available:
-Tutorials:
+
+### Tutorials:
 1. End-to-end scenarios for SAP Datasphere: In this tutorial series, you will learn some of the very important features of SAP Datasphere including:
     - Importing a Dataset into SAP Datasphere
     - Creating an Entity Relationship Model in SAP Datasphere
