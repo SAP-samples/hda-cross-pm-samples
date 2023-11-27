@@ -61,7 +61,7 @@ If you need to enter a database user and credentials, use the user `DBADMIN` and
 ### Create a Table in HANA Cloud
 1. Access the Database Explorer for your HANA Cloud instance.
    
-    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_DatabaseExplorer.png)
+    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HANA_DatabaseExplorer.png)
    
 2. Open the SQL Console and create a new schema by running the statement ```CREATE SCHEMA DEMO_SURVEY```. 
 
