@@ -35,13 +35,13 @@ SAP HANA Cloud, SAP HANA database instances are exposed via secure end points to
 
 By default, all access to SAP HANA database instances is denied. However, you can choose to allow access from any IP address or to restrict and control access using source IP allowlists. In this section, you are going to add Datasphere as trusted source.
 
-If you need to enter a database user, use the user `DBADMIN` and the password you set when creating the HANA Cloud trial instance. 
+If you need to enter a database user and credentials, use the user `DBADMIN` and the password you set when creating the HANA Cloud trial instance. 
 
 1. Access your SAP HANA Database Instance in SAP HANA Cloud Central.
    
    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/HC_AccessHCCentral.png)
    
-2. Ensure that the status of your instance is **Started**.
+2. Ensure that the status of your instance is **Running**. If the status is **Stopped**, start your instance.
 
    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Start_HC.png)
 
@@ -58,19 +58,31 @@ If you need to enter a database user, use the user `DBADMIN` and the password yo
    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_2.png)
 
 
-
-
 ### Create a Table in HANA Cloud
 1. Access the Database Explorer for your HANA Cloud instance.
-2. Right click on the database and select **Import Data**.
-3. Download [this CSV file](HC_DEMO_DATA_SURVEY.csv) and select this downloaded file in the import dialogue.
-4. Verify that the columns have the corresponding SQL Data Types as listed below:
+   
+    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_DatabaseExplorer.png)
+   
+2. Open the SQL Console and create a new schema by running the statement ```CREATE SCHEMA DEMO_SURVEY```. 
+
+    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_CreateSchema.png)
+
+3. Right click on the database entry on the left side and select **Import Data**.
+
+    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_ImportData.png)
+ 
+4. In the **Import Data** dialogue, select **Import Data**. Download [this CSV file](HC_DEMO_DATA_SURVEY.csv) and select this downloaded file    in the import dialogue.
+
+     ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_LocalFile.png)
+   
+5. Download [this CSV file](HC_DEMO_DATA_SURVEY.csv) and select this downloaded file in the import dialogue.
+6. Verify that the columns have the corresponding SQL Data Types as listed below:
     KEY - BIGINT and Key
     SURVEY_DATE - Date
     OFFICE_LOCATION - NVARCHAR(50)
     STATEMENT - NVARCHAR(200)
     RATING - Integer 
-6. Run the data import and verify at the end that 5.750 records have been inserted successfully.
+7. Run the data import and verify at the end that 5.750 records have been inserted successfully.
 
 ### Connect to HANA Cloud
 The HANA Cloud instance has already been created on the BTP account. It needs to be added to the Datasphere space. Please note that this can be done in each space only once
