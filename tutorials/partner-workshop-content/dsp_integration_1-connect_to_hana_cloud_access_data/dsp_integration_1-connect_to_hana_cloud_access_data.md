@@ -39,7 +39,7 @@ If you need to enter a database user and credentials, use the user `DBADMIN` and
 
 1. Access your SAP HANA Database Instance in SAP HANA Cloud Central.
    
-   ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/HC_AccessHCCentral.png)
+   ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_AccessHCCentral.png)
    
 2. Ensure that the status of your instance is **Running**. If the status is **Stopped**, start your instance.
 
