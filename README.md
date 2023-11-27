@@ -26,9 +26,6 @@ Samples, Tutorials and Use cases by HD&A Cross PM Team for HD&A Products. This i
 ## Requirements
 There are no overall requirements. Refer to each of the exercises or use cases for their individual pre-requisites.
 
-## Contributing
-
-
 ## Known Issues
 No known issues
 
