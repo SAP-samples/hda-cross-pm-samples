@@ -4,10 +4,10 @@ SPDX-FileCopyrightText: 2017 Free Software Foundation Europe e.V. <https://fsfe.
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-# HDA-CROSS-PM-SAMPLES
+# SAP HANA Database & Analytics Cross PM Samples
 
 ## Description
-Samples, Tutorials and Use cases by HD&A Cross PM Team for HD&A Products. This is an ongoing project. This is what is currently available:
+Samples, tutorials, and use cases for SAP HANA database and analytics products, including  SAP Datasphere, SAP Analytics Cloud, and more. This is an ongoing project. This is what is currently available:
 
 ### Tutorials:
 1. End-to-end scenarios for SAP Datasphere: In this tutorial series, you will learn some of the very important features of SAP Datasphere including:
