@@ -75,13 +75,12 @@ If you need to enter a database user and credentials, use the user `DBADMIN` and
 
      ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_LocalFile.png)
    
-5. Download [this CSV file](HC_DEMO_DATA_SURVEY.csv) and select this downloaded file in the import dialogue.
-6. Verify that the columns have the corresponding SQL Data Types as listed below:
-    KEY - BIGINT and Key
-    SURVEY_DATE - Date
-    OFFICE_LOCATION - NVARCHAR(50)
-    STATEMENT - NVARCHAR(200)
-    RATING - Integer 
+5. In step 3, select **Create a new table** and choose the schema ``DEMO_SURVEY``. Name the table ``SURVEY_RESULTS``.
+    
+6. Adjust the proposed data types, lengh and key settings according to the screenshot. Set the error handling mode to ``Show me the error rows and let me decide``. 
+
+    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_ImportDataSettings.png)
+
 7. Run the data import and verify at the end that 5.750 records have been inserted successfully.
 
 ### Connect to HANA Cloud
