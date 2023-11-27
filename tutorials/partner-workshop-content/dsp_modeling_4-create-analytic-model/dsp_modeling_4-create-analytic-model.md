@@ -30,7 +30,7 @@ Analytic models are the analytical foundation for making data ready for consumpt
 
  5. When accessing this data model, Datasphere will automatically create the necessary database joins to let users drill-down by even the farthest of dimensions. This way, modelers can carefully design what parts of the data model to expose for a given analytics use case. Check that the attributes `CITY`, `COUNTRY` and `REGION` are selected as visisble attributes in the dimension `T_ADDRESSES_<USER_ID>`.
 
- 6. Access the **Preview** (button in the top right corner). This rich analysis environment allows you to constantly check the modelling outcome and see exactly how SAP Analytics Cloud users will see your model.
+ 6. Access the **Preview** (button in the top right corner). This rich analysis environment allows you to constantly check the modelling outcome and see exactly how SAP Analytics Cloud users will see your model. Users can also set filters and change sorting in the preview. 
 
  7. Select `ADDRESSID` as dimension. When hovering over `ADDRESSID` in the section **Rows**, choose **Hierarchy** and **Select Hierarchy**. Select your before configured hierarchy. 
 
