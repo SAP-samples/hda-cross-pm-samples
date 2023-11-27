@@ -35,19 +35,25 @@ SAP HANA Cloud, SAP HANA database instances are exposed via secure end points to
 
 By default, all access to SAP HANA database instances is denied. However, you can choose to allow access from any IP address or to restrict and control access using source IP allowlists. In this section, you are going to add Datasphere as trusted source.
 
+If you need to enter a database user, use the user `DBADMIN` and the password you set when creating the HANA Cloud trial instance. 
+
 1. Access your SAP HANA Database Instance in SAP HANA Cloud Central.
    
    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/HC_AccessHCCentral.png)
    
-2. Select **Manage Configurations**.
+2. Ensure that the status of your instance is **Started**.
+
+   ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Start_HC.png)
+
+3. Select **Manage Configurations**.
    
     ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_1.png)
    
-3. Look up the Datasphere Outbound IP Address (**System**->**About**).
+4. Look up the Datasphere Outbound IP Address (**System**->**About**).
    
     ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Out.png)
 
-4. Add the Datasphere Outbound IP Addresses in the HANA Cloud.
+5. Add the Datasphere Outbound IP Addresses in the HANA Cloud.
    
    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_2.png)
 
