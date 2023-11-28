@@ -14,7 +14,7 @@ Improving sales and employee satisfaction are of paramount importance to the com
 In the exercises, we will help Best Run Bikes to:
 1. gain an overview of the products sold so that they can plan the future inventory
 2. gain an overview of revenue in EMEA in order to improve sales
-3. gain an overview of employee morale in the post covid times
+3. gain an overview of employee morale in the post covid times using employee survey data
 
 
 ### Part 1: Focuses on Modelling
