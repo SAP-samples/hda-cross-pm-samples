@@ -3,8 +3,8 @@
 With SAP Datasphere, you can use a graphical interface to create data views. You can drag and drop sources, join them as appropriate, add other operators to transform your data, and specify measures and other aspects of your output structure in the output node.
 
 ## Prerequisites
- - You have [imported your dataset into your Space.](https://github.com/SAP-samples/hda-cross-pm-samples/blob/main/tutorials/partner-workshop-content/dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
-- You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](https://github.com/SAP-samples/hda-cross-pm-samples/blob/main/tutorials/partner-workshop-content/dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
+ - You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
+- You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model]../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
 
 
 ## You will learn

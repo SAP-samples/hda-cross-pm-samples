@@ -2,10 +2,10 @@
 
 SAP Analytics Cloud consumes data from SAP Datasphere via a live connection to create stories and analytic applications. 
 ## Prerequisites
- - You have [imported your dataset into your Space.](https://github.com/SAP-samples/hda-cross-pm-samples/blob/main/tutorials/partner-workshop-content/dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
-- You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](https://github.com/SAP-samples/hda-cross-pm-samples/blob/main/tutorials/partner-workshop-content/dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
-- You have [created a graphical view combining data about Sales Orders and Sales Order Items](https://github.com/SAP-samples/hda-cross-pm-samples/blob/main/tutorials/partner-workshop-content/dsp_modeling_3-create-graphical-view/dsp_modeling_3-create-graphical-view.md)
-- You have [created an Analytic Model](https://github.com/SAP-samples/hda-cross-pm-samples/blob/main/tutorials/partner-workshop-content/dsp_modeling_4-create-analytic-model/dsp_modeling_4-create-analytic-model.md)
+ - You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
+- You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
+- You have [created a graphical view combining data about Sales Orders and Sales Order Items](../dsp_modeling_3-create-graphical-view/dsp_modeling_3-create-graphical-view.md)
+- You have [created an Analytic Model](../dsp_modeling_4-create-analytic-model/dsp_modeling_4-create-analytic-model.md)
 
 ## You will learn
   - Prerequisites to create a live connection between SAP Analytics Cloud and Datasphere.
