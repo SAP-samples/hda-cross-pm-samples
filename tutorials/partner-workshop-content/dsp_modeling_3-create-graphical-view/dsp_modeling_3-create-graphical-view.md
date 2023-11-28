@@ -84,7 +84,9 @@ With the graphical view in place, rename some columns to help others understand 
 ### Modify View Properties
 1. Set **Semantic Usage** to **Fact**. This indicates that your entity contains numerical measures that can be analyzed.
 
-2. Drag and drop the according attributes to measures.
+2. Identify the columns which are measures and drag them from the **Attributes** section into the **Measures** section. 
+
+    ![Associations](./images-dsp_modeling_3-create-graphical-view/DS_Measures_View.png)
 
 3. Add business information.
 Open the business purpose panel under attributes. Here, fill in the description and purpose of this model, was well as the business contact person, responsible team and relevant tags.
