@@ -5,6 +5,8 @@ This tutorial series includes exercises for SAP Datasphere and SAP Analytics Clo
 You have 
 - an SAP Datasphere service instance
 - a service account user assigned to a space
+- a SuccessFactors instance with its credentials
+- a HANA cloud instance with its credentials
 
 ## Use case: Best Run Bikes
 
