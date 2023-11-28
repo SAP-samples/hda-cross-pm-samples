@@ -4,7 +4,7 @@ With SAP Datasphere, you can use a graphical interface to create data views. You
 
 ## Prerequisites
  - You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
-- You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model]../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
+- You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
 
 
 ## You will learn
