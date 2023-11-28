@@ -5,7 +5,24 @@ This tutorial series includes exercises for SAP Datasphere and SAP Analytics Clo
 You have 
 - an SAP Datasphere service instance
 - a service account user assigned to a space
-	
+
+## Use case: Best Run Bikes
+
+Best Run Bikes is an organization which sells bikes. It has offices spread across the world. The organization would like to focus on improving in a few departments. 
+Improving sales and employee satisfaction are of paramount importance to the company. Post Covid era is still a challenging time for the organization as a whole.
+
+In the exercises, we will help Best Run Bikes to:
+1. gain an overview of the products sold so that they can plan the future inventory
+2. gain an overview of revenue in EMEA in order to improve sales
+3. gain an overview of employee morale in the post covid times
+
+
+Part 1: Focuses on Modelling
+We will learn to create different artifacts in the Datasphere which utilizes heaps of business data in a meaningful way
+
+Part 2: Focuses on Data Integration
+We will learn how to enrich exisiting business data by integrating data from other sources
+
 ## Table Of Contents
 
 <!-- disco-toc-start -->
