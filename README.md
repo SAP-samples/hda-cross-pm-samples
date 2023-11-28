@@ -5,7 +5,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 [![REUSE status](https://api.reuse.software/badge/github.com/sap-samples/hda-cross-pm-samples)](https://api.reuse.software/info/github.com/sap-samples/hda-cross-pm-samples)
 
-# SAP HANA Database & Analytics Cross PM Samples
+# SAP HANA Database & Analytics Cross Product Management Samples
 
 ## Description
 Samples, tutorials, and use cases for SAP HANA database and analytics products, including  SAP Datasphere, SAP Analytics Cloud, and more. This is an ongoing project. This is what is currently available:
