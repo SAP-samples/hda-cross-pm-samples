@@ -17,10 +17,10 @@ In the exercises, we will help Best Run Bikes to:
 3. gain an overview of employee morale in the post covid times
 
 
-Part 1: Focuses on Modelling
+### Part 1: Focuses on Modelling
 We will learn to create different artifacts in the Datasphere which utilizes heaps of business data in a meaningful way
 
-Part 2: Focuses on Data Integration
+### Part 2: Focuses on Data Integration
 We will learn how to enrich exisiting business data by integrating data from other sources
 
 ## Table Of Contents
