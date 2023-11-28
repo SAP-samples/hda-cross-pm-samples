@@ -44,7 +44,7 @@ A data model is a way to organise the data and define the relationship between t
 
 ### Adjust Semantic Types
 
-1. Each entity (tables and views) have a property called `Semantic Usage`. This property is used to indicate the type of data contained in the entity. Select the table `T_SalesOrderItems_<USER_ID>` and set the Semantic Usage to `Fact`. This indicates that your entity contains numerical measures that can be analyzed
+1. Each entity (tables and views) have a property called `Semantic Usage`. This property is used to indicate the type of data contained in the entity. Select the table `T_SalesOrderItems_<USER_ID>` and set the Semantic Usage to `Fact`. This indicates that your entity contains numerical measures that can be analyzed.
 2. Drag the measures `GROSSAMOUNT`, `NETAMOUNT`, `TAXAMOUNT` and `QUANTITY` from the **Attributes** section into the **Measures** section
 
   ![SalesOrders_MeasuresAndAttributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items.png)
