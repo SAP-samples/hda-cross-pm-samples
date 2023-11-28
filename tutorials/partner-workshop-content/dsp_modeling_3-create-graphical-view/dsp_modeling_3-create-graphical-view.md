@@ -82,9 +82,9 @@ With the graphical view in place, rename some columns to help others understand 
 6. Then rename the `GrossAmount` column originating from the `T_SalesOrders_<USER_ID>` table to `GrossAmount_orders`.
 
 ### Modify View Properties
-1. Set **Semantic Usage** to **Fact**.
+1. Set **Semantic Usage** to **Fact**. This indicates that your entity contains numerical measures that can be analyzed.
 
-2. Validate that measures are set correctly.
+2. Drag and drop the according attributes to measures.
 
 3. Add business information.
 Open the business purpose panel under attributes. Here, fill in the description and purpose of this model, was well as the business contact person, responsible team and relevant tags.
