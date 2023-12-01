@@ -109,7 +109,7 @@ The HANA Cloud instance has already been created on the BTP account. It needs to
 The HANA Cloud connection is successfully created.
 
 ### Create a replication flow
-
+Please note: If you are using the same HANA Cloud Database within one space, you can't create multiple replication flows using the same table as a target.
 Now that the HANA Cloud connection has been established, we can start using the data. For this use case, we need a replication flow. A replication flow is used to copy multiple data assets from the same source to the same target in a fast and easy way. Hence, it does not require complex projections.
 We will create a replication flow to fetch the latest data from a remote table in the HANA Cloud instance. When the replication flow runs for the first time, all the data is fetched and on subsequent runs, the delta data will be fetched. To serve as the target container for the replication flow, we need a delta-capture-enabled local table. It can be created as follows:
 
