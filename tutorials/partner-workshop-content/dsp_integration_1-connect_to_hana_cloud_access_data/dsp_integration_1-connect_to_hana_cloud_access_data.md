@@ -270,11 +270,9 @@ If this is not turned on already. Then you have to turn it. Search for the table
 ![View Tranformation Flow Data](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_View_Data_TF.png)
 
 Now that the Transformation Flow has been created, it can be used for any further modelling that will be done. For our case, we have numerically values that we want to analyze in our SAC story, hence we need to change the semantic usage type to 'Fact'.
-In the Data Builder, select the table **T_SURVEY_RESULTS_ETL_<USER_ID>** and change its Semantic Usage to 'Fact'. Then Save and Deploy.
+In the Data Builder, create a new view consuming the the table **T_SURVEY_RESULTS_ETL_<USER_ID>** and change its Semantic Usage to 'Fact'. Then Save and Deploy.
 
-![Change Table Semantic Usage](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Change_To_Fact.png)
-
-In addition to this, we have to add a measure in the Fact. Measures appear in tables and views with a Semantic Usage of Fact and are columns containing numerical values that you want to analyze. Each Fact must contain at least one measure. Let us add a measure to our fact table **T_SURVEY_RESULTS_ETL_<USER_ID>**.
+In addition to this, we have to add a measure in the Fact. Measures appear in tables and views with a Semantic Usage of Fact and are columns containing numerical values that you want to analyze. Each Fact must contain at least one measure. Let us add a measure to our new created view.
 We will move the column **RATING** as a Measure since this is the KPI that we want to analyze. You can either drag and drop the column in the Measures section or simply use the downward arrow to do so.
 
 ![Add a Measure](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Rating_Measure.png)
