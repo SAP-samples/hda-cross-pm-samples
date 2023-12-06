@@ -22,66 +22,13 @@ In this exercie, we want to identify these trends as quickly as possible and der
 The survey results are persisted in a table of a standalone HANA Cloud system. To gurantee the anonymity of each employee, only the office code is part of a survey record. Our goal is to map the survey results to the locations of our company to analyze the results in SAP Analytics Cloud.
 
 This exercise is divided into three main parts. They are:
-1. Add Datasphere as Trusted Source in HANA Cloud
-2. Create a table in HANA Cloud
-2. Connect to HANA Cloud
+1. Connect to HANA Cloud
 3. Create a replication flow to access delta data from a table
 4. Create a transformation flow to categorize repititive data
 
 In the next sections, we will look at the step-by-step process for each of these parts.
 
-### Add Datasphere as Trusted Source in HANA Cloud
-SAP HANA Cloud, SAP HANA database instances are exposed via secure end points to the public Internet. Connections are protected using TLS/SSL and access can be restricted using source IP allowlists.
-
-By default, all access to SAP HANA database instances is denied. However, you can choose to allow access from any IP address or to restrict and control access using source IP allowlists. In this section, you are going to add Datasphere as trusted source.
-
-If you need to enter a database user and credentials, use the user `DBADMIN` and the password you set when creating the HANA Cloud trial instance. 
-
-1. Access your SAP HANA Database Instance in SAP HANA Cloud Central.
-   
-   ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_AccessHCCentral.png)
-   
-2. Ensure that the status of your instance is **Running**. If the status is **Stopped**, start your instance.
-
-   ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Start_HC.png)
-
-3. Select **Manage Configurations**.
-   
-    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_1.png)
-   
-4. Look up the Datasphere Outbound IP Address (**System**->**About**).
-   
-    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Out.png)
-
-5. Add the Datasphere Outbound IP Addresses in the HANA Cloud.
-   
-   ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_2.png)
-
-
-### Create a Table in HANA Cloud
-1. Access the Database Explorer for your HANA Cloud instance.
-   
-    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HANA_DatabaseExplorer.png)
-   
-2. Open the SQL Console and create a new schema by running the statement ```CREATE SCHEMA DEMO_SURVEY```. 
-
-    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_CreateSchema.png)
-
-3. Right click on the database entry on the left side and select **Import Data**.
-
-    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_ImportData.png)
- 
-4. In the **Import Data** dialogue, select **Import Data**. Download [this CSV file](HC_DEMO_DATA_SURVEY.csv) and select this downloaded file    in the import dialogue.
-
-     ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_LocalFile.png)
-   
-5. In step 3, select **Create a new table** and choose the schema ``DEMO_SURVEY``. Name the table ``SURVEY_RESULTS``.
-    
-6. Adjust the proposed data types, lengh and key settings according to the screenshot. Set the error handling mode to ``Show me the error rows and let me decide``. 
-
-    ![this CSV file](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_HC_ImportDataSettings.png)
-
-7. Run the data import and verify at the end that 5.750 records have been inserted successfully.
+If you are interested in learning how to set up a HANA cloud instance and add data in it, please refer to this [tutorial](./others-dsp_integration_1-connect_to_hana_cloud_access_data/dsp_integration_1.1-connect_to_hana_cloud.md). If you already have the details and the credentials of the HANA cloud instance, we can begin with adding it as a connection.
 
 ### Connect to HANA Cloud
 The HANA Cloud instance has already been created on the BTP account. It needs to be added to the Datasphere space. Please note that this can be done in each space only once
