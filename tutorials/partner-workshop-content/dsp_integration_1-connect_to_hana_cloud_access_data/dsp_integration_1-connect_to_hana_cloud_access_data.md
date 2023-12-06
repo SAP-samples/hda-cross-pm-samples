@@ -6,7 +6,7 @@
 You need to have:
 
 - a space and service account user added to that space in SAP Datasphere
-- an SAP HANA Cloud / SAP HANA Cloud Trial instance
+- user and password to access an SAP HANA Cloud / SAP HANA Cloud Trial instance
 
 ## You will learn
   - How to connect to HANA Cloud instance from SAP Datasphere
