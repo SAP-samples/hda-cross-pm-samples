@@ -3,9 +3,9 @@
 SAP Analytics Cloud consumes data from SAP Datasphere via a live connection to create stories and analytic applications. 
 ## Prerequisites
  - You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
-- You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
-- You have [created a graphical view combining data about Sales Orders and Sales Order Items](../dsp_modeling_3-create-graphical-view/dsp_modeling_3-create-graphical-view.md)
-- You have [created an Analytic Model](../dsp_modeling_4-create-analytic-model/dsp_modeling_4-create-analytic-model.md)
+ - You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
+ - You have [created a graphical view combining data about Sales Orders and Sales Order Items](../dsp_modeling_3-create-graphical-view/dsp_modeling_3-create-graphical-view.md)
+ - You have [created an Analytic Model](../dsp_modeling_4-create-analytic-model/dsp_modeling_4-create-analytic-model.md)
 
 ## You will learn
   - Prerequisites to create a live connection between SAP Analytics Cloud and Datasphere.
@@ -59,7 +59,7 @@ Grossamount is displayed with the according currency type as you configured the 
 ### Optional: Ideas for Model Extensions
 If you'd like to discover more modelling functionalities of Datasphere and SAP Analytics Cloud, here are some ideas to extend your current scenario:
 - In SAC, visualize the gross amount of sold product types.
-- Extend the data model by importing additional  files like texts for the products: (https://github.com/SAP-samples/datasphere-content/tree/main/Sample_Bikes_Sales_content/CSV)
+- Extend the data model by importing additional  files like adding a dimension for products and extending it with texts: (https://github.com/SAP-samples/datasphere-content/tree/main/Sample_Bikes_Sales_content/CSV)
 
 
 ---
