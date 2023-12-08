@@ -58,7 +58,7 @@ The HANA Cloud instance has already been created on the BTP account. It needs to
       ![Validate Connection](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Validate_Connection.png)
 
 ### Create a replication flow
-Now that the HANA Cloud connection has been established, we can start replicating the data. For this use case, we need a replication flow. A replication flow is used to copy multiple data assets from the same source to the same target in a fast and easy way. Hence, it does not require complex projections.
+Now that the HANA Cloud connection has been established, we can start extracting the data to Datashere. For this use case, we need a replication flow. A replication flow is used to copy multiple data assets from the same source to the same target in a fast and easy way. Hence, it does not require complex projections.
 We will create a replication flow to fetch the latest data from a HANA Cloud instance. When the replication flow runs for the first time, all the data is fetched and on subsequent runs, the delta data will be fetched. 
 
 Here are the steps to create a replication flow:
@@ -76,7 +76,7 @@ The schema of the database will be added as the Source Container. i.e. <b>APP_SU
 
     ![Add Source Object](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Add_target_container_1.png)
 
-4. Select SAP Datasphere as Target Connection since we are extracting the data to Datasphere. The section **Target Objects** is automatically being filled with the same name as the data source data set name. The replication flow can either us an already pre-created data set in the target (e.g. a pre-created target table) or you can let the Replication Flow create the target data set in case it is not yet existing. In this case, the Replication Flow will create the target table, rename it to **T_SURVEY_RESULTS_<USER_ID>**. 
+4. Select SAP Datasphere as target connection since we are extracting the data to Datasphere. The section **Target Objects** is automatically being filled with the same name as the data source data set name. The replication flow can either us an already pre-created data set in the target (e.g. a pre-created target table) or you can let the Replication Flow create the target data set in case it is not yet existing. In this case, the Replication Flow will create the target table, rename it to **T_SURVEY_RESULTS_<USER_ID>**. 
 
     ![Add Target Container](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Add_Target.png)
 
@@ -109,10 +109,10 @@ With this load type, the first time you run the transformation flow, the system 
 
 ### Create a transformation flow
  
-Now, we need a transformation flow. Tranformation flows load data from one or more source tables, apply transformations on it (such as a join), and output the result in a target table. You can load a full set of data from one or more source tables to a target table. You can also load delta changes from one source table to a target table.
+In the next step, we are creating a transformation flow. Tranformation flows load data from one or more source tables, apply transformations on it (such as a join), and output the result in a target table. You can load a full set of data from one or more source tables to a target table. You can also load delta changes from one source table to a target table.
 A transformation flow run is a one-time event that completes when the relevant data is loaded to the target table successfully. You can run a transformation flow multiple times, for example if you are loading delta changes to the target table.
 
-For this use case, we will use the transformation flow to create categories for the repititive survey questions. We will create a calculated column which will generate an umbrella category for the questions. The questions can be categorized as follows:
+For this use case, we will use the transformation flow to create categories for the repititive survey questions. We will create a calculated column which will assign an umbrella category for the questions. The questions can be categorized as follows:
 
 <table>
   <tr>
@@ -214,18 +214,17 @@ END
 
 If this is not turned on already. Then you have to turn it. Search for the table **T_SURVEY_RESULTS_ETL_<USER_ID>** in the Data Builder section. Then turn on the toggle **Delta Capture**:
 
-  ![Delta Capture On](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_TurnOnDC.png)
+   ![Delta Capture On](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_TurnOnDC.png)
 
 10. Now that the transformation flow is ready, you can run it to populate the 'CATEGORY' column in the local table **T_SURVEY_RESULTS_ETL_<USER_ID>**. You can see the status of the run and you will be notified once the run has finished.
 
-![Run Tranformation Flow](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Run_TF.png)
+    ![Run Tranformation Flow](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Run_TF.png)
 
 11. You can view the data from using the Data Viewer button in the table **T_SURVEY_RESULTS_ETL_<USER_ID>**
 
-![View Tranformation Flow Data](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_View_Data_TF.png)
+    ![View Tranformation Flow Data](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_View_Data_TF.png)
 
-12. Now that our data has been transformed using the Transformation Flow. Later, we will build a data model based on this data source. 
-As this data set contains numerical values which we want to analyze, we want to adjust the semantic type accordingly. Create a new graphical view.
+12. Now  our data has been transformed using the Transformation Flow. Our aim is to use this data on the survey results to analyze the employee satisfaction across different company locations. To use this data with the column `RATING` as numerical value for reporting, we create a new graphical view with the according semantic type.
 
   ![Add a Measure](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Create_View.png)
 

@@ -32,6 +32,8 @@ The survey dataset contains the codes of company locations. To map the codes to 
 The column `Default Location (technical name: defaultLocation)` contains the location codes (available in the survey). The standardized country codes can be found in `Country`. They are required to use external data containing latitudes and longitudes. 
 Please note that the location records are not time dependent in our use case, otherwise Datasphere provides the capability to configure time-dependent master data (values in the columns `Start Date` and `End Date` are set as generic values). 
 
+    ![Preview](./images-dsp_integration_3-import_sf_data/DS_Company_Preview.png) 
+
 6. As only some of the 63 columns are required for this use case, replicating the full table is not required. Instead, create a graphical view `V_FOCompany_<YOUR_USER_ID>` based on this table and use the operator **Rename/Exclude Columns**. Only keep the following columns: `Country`, `Description (technical name: description` and `Default Location (technical name: externalCode)`. Set the semantic usage to "Dimension" and set `Default Location` as key.
 
     ![Select Remote Table](./images-dsp_integration_3-import_sf_data/DS_SF_CompanyView_1.png) 
