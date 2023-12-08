@@ -1,5 +1,5 @@
 # Create an Entity Relationship Model in SAP Datasphere
-<!-- description --> An entity-relationship model (or E/R model) describes interrelated things of interest in a specific domain of knowledge. You can use an E/R model to better understand a subset of the entities in your space, and to communicate this information to other stakeholders.
+<!-- description --> An entity-relationship model (or E/R model) describes interrelated things of interest in a specific domain of knowledge. You can use an E/R model to better understand a subset of the entities in your space, and to communicate this information to other stakeholders. By using an E/R Model in Datasphere, you can maintain relations between your entities which will be leverage in the reporting later.
 
 ## Prerequisites
  - You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
@@ -40,7 +40,7 @@ A data model is a way to organise the data and define the relationship between t
 
     ![SalesOrder and SalesOrderItems](./images-dsp_modeling_2-create-relationships/DS_Import_Tables.png)
 
-5.	With the data tables in your modelling interface, you are now ready to create the relevant associations and deploy your E/R model
+5.	With the data tables in your modelling interface, you are now ready to create the relevant associations and deploy your E/R model.
 
 ### Adjust Semantic Types
 
@@ -53,7 +53,7 @@ A data model is a way to organise the data and define the relationship between t
 
   ![SalesOrders_SemanticTypes_Attributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items_Attributes.png)
 
-4. Next, click on the **Edit columns** pencil icon for measures. Assign`Semantic Type` and `Unit Column` as displayed in the screenshot
+4. Next, click on the **Edit columns** pencil icon for measures. Assign `Semantic Type` and `Unit Column` as displayed in the screenshot
 
   ![SalesOrders_SemanticTypes_Attributes](./images-dsp_modeling_2-create-relationships/DS_SO_Items_Measures.png)
 
@@ -131,6 +131,6 @@ After creating associations between the imported data entities, add an associati
 
 ### Save and deploy
 
-Save and deploy your Entity-Relationship Model again to activate the recent changes made using associations
+Save and deploy your Entity-Relationship Model again to activate the recent changes (e.g. associations).
 
 ---
