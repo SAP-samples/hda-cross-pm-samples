@@ -53,7 +53,7 @@ The HANA Cloud instance has already been created on the BTP account. It needs to
 
     ![Add HC Credentials](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Create_connection2.png)
 
-6. Validate the new created connection. Check that **Replication Flows** are enabled. To configure **Remote Tables**, a certifacte would need to be updated to DSP. As we focus on Replication Flows in this exercise, it's not required. 
+6. Validate the new created connection. Check that **Replication Flows** are enabled. To configure **Remote Tables**, a certifacte would need to be uploaded to DSP. As we focus on Replication Flows in this exercise, it's not required. 
 
       ![Validate Connection](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Validate_Connection.png)
 
@@ -226,14 +226,10 @@ If this is not turned on already. Then you have to turn it. Search for the table
 
 12. Now  our data has been transformed using the Transformation Flow. Our aim is to use this data on the survey results to analyze the employee satisfaction across different company locations. To use this data with the column `RATING` as numerical value for reporting, we create a new graphical view with the according semantic type.
 
-  ![Add a Measure](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Create_View.png)
+    ![Add a Measure](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Create_View.png)
 
-13. Drag the table **T_SURVEY_RESULTS_ETL_<USER_ID>** into the modelling canvas. Change the Semantic Usage of the new view to 'Fact'. 
+13. Drag the table **T_SURVEY_RESULTS_ETL_<USER_ID>** into the modelling canvas. Change the Semantic Usage of the new view to `Fact`. Each Fact model must contain at least one measure. Add the column **RATING** as a measure by moving it to the according session. Name the view **V_SURVEY_RESULTS_<USER_ID>**, save and deploy.
 
 
-Then name the view **V_SURVEY_RESULTS_<USER_ID>**, save and deploy.
+   ![Name View](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_TF_Flow.png)
 
-In addition to this, we have to add a measure in the Fact. Measures appear in tables and views with a Semantic Usage of Fact and are columns containing numerical values that you want to analyze. Each Fact must contain at least one measure. Let us add a measure to our new created view.
-We will move the column **RATING** as a Measure since this is the KPI that we want to analyze. You can either drag and drop the column in the Measures section or simply use the downward arrow to do so.
-
-![Add a Measure](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Rating_Measure.png)
