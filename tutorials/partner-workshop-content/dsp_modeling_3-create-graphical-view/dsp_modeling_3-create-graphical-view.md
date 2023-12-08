@@ -3,7 +3,7 @@
 With SAP Datasphere, you can use a graphical interface to create data views. You can drag and drop sources, join them as appropriate, add other operators to transform your data, and specify measures and other aspects of your output structure in the output node.
 
 ## Prerequisites
- - You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
+- You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
 - You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
 
 
@@ -93,11 +93,11 @@ Open the business purpose panel under attributes. Here, fill in the description 
 
 4. Business names of measures and attributes as well as the semantic type can be changed in the window which comes up when pressing the pencil icon. Check that the semantic types of measures and attributes are correct (information is derived from the source tables).
 
-5. Thare are no associations defined in this view. Select **Copy from Source..*
+5. There are no associations defined in this view. Select **Copy from Source..**
 
     ![Associations](./images-dsp_modeling_3-create-graphical-view/DS_CopyFromSourceI.png) 
 
-6. Two source accociations are proposed (`T_BusinessPartners_<USER_ID>` and `Time Dimension - Day`). Select and create it. 
+6. Two source accociations are proposed (`T_BusinessPartners_<USER_ID>` and `Time Dimension - Day`). Select both of them and and click **Create** it. 
 
     ![Associations](./images-dsp_modeling_3-create-graphical-view/DS_CopyFromSource2.png) 
 
