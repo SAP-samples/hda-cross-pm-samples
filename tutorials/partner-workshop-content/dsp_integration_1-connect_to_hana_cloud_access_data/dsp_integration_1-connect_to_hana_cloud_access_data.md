@@ -94,7 +94,7 @@ With this load type, the first time you run the transformation flow, the system 
 
     ![Save Replication Flow](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_RF_Name.png)
 
-8. You can run the Replication Flow using the Run button. The progress of the run can be viewed in the **Data Integration Monitor**.
+8. You can run the Replication Flow using the Run button. The progress of the run can be viewed in the **Data Integration Monitor**. Please note: It might be the case that you experience longer runtimes than usually because many participants start their Replication Flow at the same time as part of the workshop. The Datasphere Engineering teams is aware of this and are currently working on an improvement. 
 
     ![Run Replication Flow](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_RF_Run.png)
 
