@@ -113,7 +113,7 @@ They are used to e.g. associate master data, text or time objects to fact data.
   ![Hierarchies](./images-dsp_modeling_2-create-relationships/DS_Hierarchy2.png)
 
 ### Create Time Association
-After creating associations between the imported data entities, add an association to the already existing time dimension. This allows you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.
+After creating associations between the imported data entities, add an association to the already existing time dimension. This allows you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies. In this part of the exercise, we will have a look at the generated data. We won't create anything new.
 
 1. Drag the view `SAP.TIME.VIEW_DIMENSION_DAY` onto the modelling canvas and view the properties. This generated dimension includes different predefined hierarchies
 
