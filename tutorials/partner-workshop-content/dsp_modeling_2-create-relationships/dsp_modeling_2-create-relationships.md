@@ -113,13 +113,13 @@ They are used to e.g. associate master data, text or time objects to fact data.
   ![Hierarchies](./images-dsp_modeling_2-create-relationships/DS_Hierarchy2.png)
 
 ### Create Time Association
-After creating associations between the imported data entities, add an association to the already existing time dimension. This allows you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies. In this part of the exercise, we will have a look at the generated data. We won't create anything new.
+After creating associations between the imported data entities, add an association to the already existing time dimension. This allows you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.
 
 1. Drag the view `SAP.TIME.VIEW_DIMENSION_DAY` onto the modelling canvas and view the properties. This generated dimension includes different predefined hierarchies
 
     ![Time Dimension](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay.png)
 
-2. In the **Association** section, different associations to text entities are displayed. Have a look at the association to table  `Translation Table - Day ` and open it in a new tab. A entity with the semantic usage `Text` must to have one identifier , one language identifier and one text attribute. Open the data preview to see the data records
+2. Have a look at the properties of the table dragged into the editor. In the **Association** section, different associations to text entities are displayed. Have a look at the association to table  `Translation Table - Day ` and open it in a new tab. A entity with the semantic usage `Text` must to have one identifier , one language identifier and one text attribute. Open the data preview to see the data records. Keep the table as it is generated.
 
     ![Time Dimension Text](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay_Text.png)
 
