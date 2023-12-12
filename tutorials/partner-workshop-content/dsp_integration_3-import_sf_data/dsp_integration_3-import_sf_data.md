@@ -34,7 +34,7 @@ Please note that the location records are not time dependent in our use case, ot
 
     ![Preview](./images-dsp_integration_3-import_sf_data/DS_Company_Preview.png) 
 
-6. As only some of the 63 columns are required for this use case, replicating the full table is not required. Instead, create a graphical view `V_FOCompany_<YOUR_USER_ID>` based on this table and use the operator **Rename/Exclude Columns**. Only keep the following columns: `Country`, `Description (technical name: description` and `Default Location (technical name: externalCode)`. Set the semantic usage to "Dimension" and set `Default Location` as key.
+6. As only some of the 63 columns are required for this use case, replicating the full table is not required. Instead, create a graphical view `V_FOCompany_<YOUR_USER_ID>` based on this table and use the operator **Rename/Exclude Columns**. Only keep the following columns: `Country`, `Description (technical name: description` and `Default Location (technical name: defaultLocation)`. Set the semantic usage to "Dimension" and set `Default Location` as key.
 
     ![Select Remote Table](./images-dsp_integration_3-import_sf_data/DS_SF_CompanyView_1.png) 
 
