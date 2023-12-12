@@ -200,7 +200,7 @@ ELSE 'Not Available'
 END
 ```
 
-7. Go back to the main view of the Tranformation flow and add a new local table as the target table to persist the results. The new table is called **T_SURVEY_RESULTS_ETL_<USER_ID>**.
+7. Go back to the main view of the Tranformation flow (use the arrow on the top of the editor of the "View Transform Editor") and add a new local table as the target table to persist the results. The new table is called **T_SURVEY_RESULTS_ETL_<USER_ID>**.
 
     ![Add Target Table](./images-dsp_integration_1-connect_to_hana_cloud_access_data/DS_Add_TF_Target.png)
 
