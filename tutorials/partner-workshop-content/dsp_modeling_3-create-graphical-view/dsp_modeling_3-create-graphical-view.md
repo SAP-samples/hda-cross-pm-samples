@@ -51,7 +51,9 @@ Both tables `SalesOrders` and `SalesOrderItems` contain information about sold i
 
     ![SalesOrderID Join](./images-dsp_modeling_3-create-graphical-view/DS_Join.png)
 
-7. Validate that the Join Type is set to "Inner" and the to cardinality "One (0,1)" for `T_SalesOrders_<USER_ID>` and "Many (*)" for `T_SalesOrderItems_<USER_ID>`. Each sales order consists of one or multiple sales items.
+7. Set the Join Type to "Inner" and the cardinality to "One (0,1)" for `T_SalesOrders_<USER_ID>` and "Many (*)" for `T_SalesOrderItems_<USER_ID>`. Each sales order consists of one or multiple sales items.
+
+    ![Join Settings](./images-dsp_modeling_3-create-graphical-view/DS_Join_Settings.png)
 
 
 Now you've joined all the tables for this mission.
@@ -82,9 +84,9 @@ With the graphical view in place, rename some columns to help others understand 
 6. Then rename the `GrossAmount` column originating from the `T_SalesOrders_<USER_ID>` table to `GrossAmount_orders`.
 
 ### Modify View Properties
-1. Set **Semantic Usage** to **Fact**. This indicates that your entity contains numerical measures that can be analyzed.
+1. Validate that **Semantic Usage** is set to **Fact**. This indicates that your entity contains numerical measures that can be analyzed.
 
-2. Identify the columns which are measures and drag them from the **Attributes** section into the **Measures** section. 
+2. Verify that the columns which are measures are displayed in the **Measures** section. 
 
     ![Associations](./images-dsp_modeling_3-create-graphical-view/DS_Measures_View.png)
 
@@ -105,12 +107,4 @@ Open the business purpose panel under attributes. Here, fill in the description 
 ### Save and Deploy
 
 You have successfully created your graphical view. Save and then deploy your view (`V_SalesOrderDetails_<USER_ID>`). When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.
-
-Click on the save icon on the top left and give your graphical view an appropriate name.
-
-Once done, click on the deploy icon next to the save icon to deploy your model.
-
-
-
-
 ---

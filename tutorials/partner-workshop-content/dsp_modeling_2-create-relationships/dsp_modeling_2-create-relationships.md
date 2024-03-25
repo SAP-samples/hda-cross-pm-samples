@@ -65,17 +65,20 @@ A data model is a way to organise the data and define the relationship between t
 
 8. Modify the semantic types of the measures similiar to the previous step 3
 
+    ![SalesOrders_SemanticTypes_Attributes](./images-dsp_modeling_2-create-relationships/DS_SO_Measures.png)
+
+
 9. Adjust the semantic type of `BusinessPartners` to `Dimension`. This indicates that your entity contains attributes that can be used to analyze and categorize measures defined in other entities
 
 10. After adjusting the semantic type, a yellow validation warning is displayed as Dimension entities need at least one key attribute. Define `PARTNERID` as key attribute by clicking on **More** when hovering the attribute
 
-  ![BusinessPartners](./images-dsp_modeling_2-create-relationships/DS_BP_Key.png)
+    ![BusinessPartners](./images-dsp_modeling_2-create-relationships/DS_BP_Key.png)
 
 11. Adjust the semantic type of `T_Addresses_<USER_ID>` to `Dimension`
 
 12. Set `ADDRESSID` as key attribute 
 
-13. Save and deploy the entities of E/R Model by clicking the according buttons on the upper left corner. Set the technical name to `ER_Sales_<USER_ID>`. When saving entities in Datasphere, they are stored as design-time definition. Deploying an entity creates a run-time version
+13. Save and deploy the entities of E/R Model by clicking the according buttons in the upper left corner. Set the technical name to `ER_Sales_<USER_ID>`. When saving entities in Datasphere, they are stored as design-time definition. Deploying an entity creates a run-time version
 
   ![Deploy E/R Model](./images-dsp_modeling_2-create-relationships/DS_ER_Deploy.png)
 
@@ -88,23 +91,23 @@ They are used to e.g. associate master data, text or time objects to fact data.
 
 2.	Drag it over to the `T_SalesOrderItems_<USER_ID>` table to create an association between the two tables
 
-3.	Ensure that the created association is between the columns `T_SalesOrderID_<USER_ID>` in the **Association Properties** panel
+3.	Ensure that the created association is between the columns `SALESORDERID` in the **Association Properties** panel
 
 4.	Drag and drop to connect the sales column from one table to the other if it's not done already
 
      ![Associations](./images-dsp_modeling_2-create-relationships/DS_SO_Associations.png)
 
-5.	Next, create an association from `T_SalesOrders_<USER_ID>` to `T_BusinessPartners_<USER_ID>` using the `T_PartnerID_<USER_ID>` column. `T_BusinessPartners_<USER_ID>`  contains information on Best-Run Bikes customers, which is useful when connected to the sales data
+5.	Next, create an association from `T_SalesOrders_<USER_ID>` to `T_BusinessPartners_<USER_ID>` using the `PARTNERID` column. `T_BusinessPartners_<USER_ID>`  contains information on Best-Run Bikes customers, which is useful when connected to the sales data
 
     ![BusinessPartners Table](./images-dsp_modeling_2-create-relationships/DS_SO_BP_Association.png)
 
-6.	Now create an association between the `T_BusinessPartners_<USER_ID>` and `T_Addresses_<USER_ID>` tables using the `T_AddressID_<USER_ID>` column (drag the association from `T_BusinessPartners_<USER_ID>` to `T_Addresses_<USER_ID>`)
+6.	Now create an association between the `T_BusinessPartners_<USER_ID>` and `T_Addresses_<USER_ID>` tables using the `ADDRESSID` column (drag the association from `T_BusinessPartners_<USER_ID>` to `T_Addresses_<USER_ID>`)
 
     ![AddressID Association](./images-dsp_modeling_2-create-relationships/DS_BP_AD_Association.png)
 
 
 ### Create Hierarchy for Addresses
-1. Select the hierarchy table and click on the **Hierarchy** Icon on the right side
+1. Select the hierarchy table `T_Addresses_<User_Id>`and click on the **Hierarchy** Icon on the right side.
    
    ![Hierarchies](./images-dsp_modeling_2-create-relationships/DS_Hierarchy.png)
    
@@ -115,15 +118,15 @@ They are used to e.g. associate master data, text or time objects to fact data.
 ### Create Time Association
 After creating associations between the imported data entities, add an association to the already existing time dimension. This allows you to work with this date data at a granularity of day, week, month, quarter, and year, and to drill down and up in hierarchies.
 
-1. Drag the view `SAP.TIME.VIEW_DIMENSION_DAY` onto the modelling canvas and view the properties. This generated dimension includes different predefined hierarchies
+1. Drag the view `Time Dimension - Day`(`SAP.TIME.VIEW_DIMENSION_DAY`) onto the modelling canvas and view the properties. This generated dimension includes different predefined hierarchies
 
     ![Time Dimension](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay.png)
 
-2. Have a look at the properties of the table dragged into the editor. In the **Association** section, different associations to text entities are displayed. Have a look at the association to table  `Translation Table - Day ` and open it in a new tab. A entity with the semantic usage `Text` must to have one identifier , one language identifier and one text attribute. Open the data preview to see the data records. Keep the table as it is generated.
+2. Have a look at the properties of the table `Time Dimension - Day`(`SAP.TIME.VIEW_DIMENSION_DAY`) dragged into the editor. In the **Association** section, different associations to text entities are displayed. Have a look at the associated table `Translation Table - Day `and open it in a new tab. A entity with the semantic usage `Text` must to have one identifier , one language identifier and one text attribute. Open the data preview to see the data records. Keep the table as it is generated.
 
     ![Time Dimension Text](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay_Text.png)
 
-3. Return to your Entity-Relationship Model. Create an association from the column `CREATEDAT` of `T_SalesOrders_<USER_ID>` to `Date` of `Time Dimension - Day`. Validate using the data preview that the date format of the two columns is the same as this is required for the mapping
+3. Return to your Entity-Relationship Model. Create an association from the column `CREATEDAT` of `T_SalesOrders_<USER_ID>` to `Date` of `Time Dimension - Day`(`SAP.TIME.VIEW_DIMENSION_DAY`). Validate using the data preview that the date format of the two columns is the same as this is required for the mapping
    
   ![Time Dimension Association](./images-dsp_modeling_2-create-relationships/DS_TimeDimensionDay_Association.png)
  

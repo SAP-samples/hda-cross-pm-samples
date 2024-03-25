@@ -24,11 +24,13 @@ Analytic models are the analytical foundation for making data ready for consumpt
    
   ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_AM_CopyProperties.png)
   
-4. The fact source and the dimensions for business partners are displayed. Now, add additional reachable dimensions and their attributes. Select the dimension `T_PARTNERID_<USER_ID>` and select `ADDRESSID` in the section **Associated Dimensions**.
+4. The fact source and the dimensions for business partners are displayed. Now, add additional reachable dimensions and their attributes. Select the dimension `PARTNERID` (`T_BusinessPartners_<USER_ID>`) and select `ADDRESSID` in the section **Associated Dimensions**.
 
     ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_AM_Dimension.png)
 
- 5. When accessing this data model, Datasphere will automatically create the necessary database joins to let users drill-down by even the farthest of dimensions. This way, modelers can carefully design what parts of the data model to expose for a given analytics use case. Check that the attributes `CITY`, `COUNTRY` and `REGION` are selected as visisble attributes in the dimension `T_ADDRESSES_<USER_ID>`.
+ 5. When accessing this data model, Datasphere will automatically create the necessary database joins to let users drill-down by even the farthest of dimensions. This way, modelers can carefully design what parts of the data model to expose for a given analytics use case. Check that the attributes `CITY`, `COUNTRY` and `REGION` are selected as visible attributes by clicking on the dimension `ÀDDRESSID` (`T_ADDRESSES_<USER_ID>`).
+
+    ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_AM_Address.png)
 
  6. Access the **Preview** (button in the top right corner). This rich analysis environment allows you to constantly check the modelling outcome and see exactly how SAP Analytics Cloud users will see your model. Users can also set filters and change sorting in the preview. 
 
@@ -40,9 +42,9 @@ Analytic models are the analytical foundation for making data ready for consumpt
 
     ![Data Preview](./images-dsp_modeling_4-create-analytic-model/DS_DrillDown_new.png)
 
-9. Switch back to **Model**. In the measures section of the properties panel you can add the following types of custom measures to your model: Calculated Measures, Restricted Measure, Count Distinct Measures and Currency Conversion Measure.
+9. Switch back to **Model**. In the measures section of the properties panel you can add the following types of custom measures to your model: Calculated Measures, Restricted Measure, Count Distinct Measures and Currency Conversion Measure. In this exercise, you add one calculated and one restricted measure.
 
-10. Create a Calculated Measure which computes how many product types were sold over 10 times. Calulcated Measures are  based on other already existing measures which are calculated and aggregated at first.
+10. Create a new Calculated Measure with the business name `Calculated Measure - Count of Products sold more than 10 times` and technical name `CM_Count_of_Products_Quantity`. This measure computes how many product types were sold over 10 times. Calculated Measures are based on other already existing measures which are calculated and aggregated at first.
 Enter the expression `QUANTITY > 10`. This expression will return the boolean value 0 if the quantity is smaller/equals 10 or 1 if the quantity exceeds 10.
 
     ![Calculated Measure - Quantity](./images-dsp_modeling_4-create-analytic-model/DS_CM_Quantity.png)
@@ -51,7 +53,7 @@ Enter the expression `QUANTITY > 10`. This expression will return the boolean va
     
   ![Calculated Measure - Quantity](./images-dsp_modeling_4-create-analytic-model/DS_ExceptionAggregation.png)
 
-12. Restricted measures use existing measures and apply flexible filter expressions. They allow to for example create an aggregated measure for the quantity, but only considering specific Product IDs. Create a restricted measure which is aggregated on the source measure `GROSSAMOUNT_ORDERS` with the restriction REGION = EMEA
+12. Create a restricted measure with the business name `Restricted Measure - Gross Amount in EMEA` and the technical name `RM_GrossAmount_2018`. Restricted measures use existing measures and apply flexible filter expressions. They allow to for example create an aggregated measure for the quantity, but only considering specific Product IDs. This restricted measure aggregates the source measure `GROSSAMOUNT_ORDERS` with the restriction REGION = 'EMEA'
 
   ![Restricted Measure](./images-dsp_modeling_4-create-analytic-model/DS_RestrictedMeasure.png)
 
