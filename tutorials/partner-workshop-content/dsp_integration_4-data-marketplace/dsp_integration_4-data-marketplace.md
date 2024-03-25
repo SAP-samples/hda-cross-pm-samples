@@ -1,6 +1,6 @@
 # Acquiring Data Products from the Data Marketplace
 
-We have already learned to import data from different sources within the organizations. Now let us learn about how to acquire third-party data using the SAP Datasphere Data Marketplace.
+We have already learnt to import data from different sources within the organizations. Now let us learn about how to acquire third-party data using the SAP Datasphere Data Marketplace.
 
 SAP Datasphere Data Marketplace serves an excellent tool for organizations on their data journey. It offers a rich and diverse ecosystem of external data providers and products, providing a wide array of data assets waiting to be harnessed. Organizations can easily integrate available third-party data to their datasets.
 The data comes in form of data products that can be used in one or several spaces of your SAP Datasphere tenant. Data products are either provided for free or require the purchase of a license at a certain cost. Some data products are available as one-time shipments, other data products are regularly updated by the data provider.
@@ -10,7 +10,7 @@ You have a space and service account user added to that space in SAP Datasphere
 
 ## Steps to acquire a data product
 
-We would like to enrich our location data from SuccessFactors with the geographical coordinates. This would enable us to visualize the data on a geo-map in an SAC story.
+We would like to enrich our location data from SuccessFactors with the geographical co-ordinates. This would enable us to visualize the data on a geo-map in an SAC story.
 <b>Note that one data product can be imported into a space only once. Keep this in mind when several users are co-working in a space.</b>
 
 In order to acquire a data product from data Marketplace following steps can be followed:

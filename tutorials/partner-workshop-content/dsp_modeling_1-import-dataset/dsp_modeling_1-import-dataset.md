@@ -14,7 +14,7 @@
 
   ![Datasphere Overview](./images-dsp_modeling_1-import-dataset/DS_Component_Overview_detailed.png)
 
-  The tutorials show differents aspects and functionalities of Datasphere which are depicted in the overview, such as Analytic Models, the Data Marketplace, Flows and SAP Analytics Cloud integration.
+  The tutorials show different aspects and functionalities of Datasphere which are depicted in the overview, such as Analytic Models, the Data Marketplace, Flows and SAP Analytics Cloud integration.
   
 ---
 
@@ -48,12 +48,12 @@ Alternatively, all the dataset files can be found [here](../dsp_modeling_1-impor
     ![Deploy CSV](./images-dsp_modeling_1-import-dataset/DS_Deploy_Adresses.png)
 
 ### Generate Time Data
-Generate a time table and dimension views in your space to to provide standardized time data for your analysis. 
-1. Go to **Space Management** and click **Create Time Tables & Dimensions**
+Time table and dimensions views can be created in a space to provide standardized time data for you analysis. 
+1. Go to the section **Time Data** in **Space Management**. If you see **Create Time Tables & Dimensions** (as displayed in the screenshot), continue with step 2 and 3 as no time data has been generated fro the space yet. If time data has already been generated, select the pencil icon to see more details on the configuration. 
    
   ![Time Dimensions Generation](./images-dsp_modeling_1-import-dataset/DS_CreateTimeTablesAndDimensions.png)
   
-2. In the resulting popup, don't change any values and click **Create**
+2. If you create time tables & dimensions, you don't need to change any values. Click **Create**
    
   ![Time Dimensions Generation](./images-dsp_modeling_1-import-dataset/DS_CreateTimeTablesAndDimensions_2.png)
 
