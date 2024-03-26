@@ -1,5 +1,5 @@
 # Create an Entity Relationship Model in SAP Datasphere
-<!-- description --> An entity-relationship model (or E/R model) describes interrelated things of interest in a specific domain of knowledge. You can use an E/R model to better understand a subset of the entities in your space, and to communicate this information to other stakeholders. By using an E/R Model in Datasphere, you can maintain relations between your entities which will be leverage in the reporting later.
+<!-- description --> An entity-relationship model (or E/R model) describes interrelated things of interest in a specific domain of knowledge. You can use an E/R model to better understand a subset of the entities in your space, and to communicate this information to other stakeholders. By using an E/R Model in Datasphere, you can maintain relations between your entities which will be leveraged in the reporting later.
 
 ## Prerequisites
  - You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
@@ -35,8 +35,8 @@ A data model is a way to organise the data and define the relationship between t
 
     ![ER Model Icon](./images-dsp_modeling_2-create-relationships/DS_Create_ER_Model.png)
 
-2.	This takes you into the graphical modelling interface. Since you imported the sample data manually via CSV, your data can be found under the **Repository**
-3.	Click and drag the table `T_SalesOrders_<USER_ID>`, `T_SalesOrderItems_<USER_ID>`, `T_BusinessPartners_<USER_ID>` and `T_Addresses_<USER_ID>` onto the canvas
+2.	This takes you into the graphical modelling interface. Since you have imported the sample data manually via CSV, your data can be found under the **Repository** tab
+3.	Click and drag the tables `T_SalesOrders_<USER_ID>`, `T_SalesOrderItems_<USER_ID>`, `T_BusinessPartners_<USER_ID>` and `T_Addresses_<USER_ID>` onto the canvas
 
     ![SalesOrder and SalesOrderItems](./images-dsp_modeling_2-create-relationships/DS_Import_Tables.png)
 

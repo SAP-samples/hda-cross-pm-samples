@@ -28,7 +28,7 @@ Analytic models are the analytical foundation for making data ready for consumpt
 
     ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_AM_Dimension.png)
 
- 5. When accessing this data model, Datasphere will automatically create the necessary database joins to let users drill-down by even the farthest of dimensions. This way, modelers can carefully design what parts of the data model to expose for a given analytics use case. Check that the attributes `CITY`, `COUNTRY` and `REGION` are selected as visible attributes by clicking on the dimension `ÀDDRESSID` (`T_ADDRESSES_<USER_ID>`).
+ 5. When accessing this data model, Datasphere will automatically create the necessary database joins to let users drill-down by even the farthest of dimensions. This way, modelers can carefully design what parts of the data model to expose for a given analytics use case. Check that the attributes `CITY`, `COUNTRY` and `REGION` are selected as visible attributes by clicking on the dimension `ADDRESSID` (`T_ADDRESSES_<USER_ID>`).
 
     ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_AM_Address.png)
 

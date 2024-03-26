@@ -25,7 +25,7 @@ In the graphical view builder, you have many possibilities to model your data, l
 
 >If you are comfortable writing SQL code or want to use SQL Script to create your view, you can use the SQL View editor.
 
-Both tables `SalesOrders` and `SalesOrderItems` contain information about sold items. While `SalesOrders` contains details on the business partner, `SalesOrderItems` provides insights on the sold product. To have have references to the business partner as well as details on item level available for analysis, we create a view to combine data from both tables.
+Both tables `SalesOrders` and `SalesOrderItems` contain information about sold items. While `SalesOrders` contains details on the business partner, `SalesOrderItems` provides insights on the sold product. To have references to the business partner as well as details on item level available for analysis, we create a view to combine data from both tables.
 
 ### Create a Graphical View
 
@@ -107,4 +107,5 @@ Open the business purpose panel under attributes. Here, fill in the description 
 ### Save and Deploy
 
 You have successfully created your graphical view. Save and then deploy your view (`V_SalesOrderDetails_<USER_ID>`). When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.
+
 ---
