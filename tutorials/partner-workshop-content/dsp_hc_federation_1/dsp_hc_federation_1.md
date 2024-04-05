@@ -1,9 +1,7 @@
 # Data Federation
 This scenario provides an introduction on how to access remote data of a HANA Cloud source system.
 
-If you are thinking about using federated data, use a database connector, not an
-application connector like ABAP. 
-Some adapters will handle federation quite easily, while others struggle to push down something to the remote side, notably the ABAP adapter.
+If you are thinking about using federated data, use a SQL-based connector, not a non-SQL application connector based on e.g. OData or ABAP-ODP. You will want to make it possible for HANA’s federation layer to push as much as possible to the remote system and move as little data as possible over to Datasphere.
 
 ## Prerequisites
 - You have the connection details to a HANA Cloud with tables set up as described in [this document ](../dsp_hc_federation_1/dsp_hc_federation_1-trainer_instructions.md). For this demo, data from https://dev.azure.com/tankerkoenig/_git/tankerkoenig-data?path=/stations is used.
