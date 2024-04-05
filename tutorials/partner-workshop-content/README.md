@@ -11,12 +11,12 @@ You have
 ## Use case: Best Run Bikes
 
 Best Run Bikes is an organization which sells bikes. It has offices spread across the world. The organization would like to focus on improving in a few departments. 
-Improving sales and employee satisfaction are of paramount importance to the company. Post Covid era is still a challenging time for the organization as a whole.
+Improving sales is a primary goal for the company post the pandemic.
 
 In the exercises, we will help Best Run Bikes to:
 1. gain an overview of the products sold so that they can plan the future inventory
 2. gain an overview of revenue in EMEA in order to improve sales
-3. gain an overview of employee morale in the post covid times using employee survey data
+3. gain an overview of sales quotations in a particular subsidiary to expand the business there
 
 
 ### Part 1: Focuses on Modelling
@@ -33,10 +33,9 @@ We will learn how to enrich exisiting business data by integrating data from oth
 - [Create a Graphical View](./dsp_modeling_3-create-graphical-view/dsp_modeling_3-create-graphical-view.md)
 - [Create an Analytic Model](./dsp_modeling_4-create-analytic-model/dsp_modeling_4-create-analytic-model.md)
 - [Create an SAP Analytics Cloud Story](./dsp_modeling_5-create-sac-story/dsp_modeling_5-create-sac-story.md)
-- [Connect to HANA Cloud and access Data](./dsp_integration_1-connect_to_hana_cloud_access_data/dsp_integration_1-connect_to_hana_cloud_access_data.md)
-- [Connect to a SuccessFactors instance](./dsp_integration_2-connect_sf/dsp_integration_2-connect_sf.md)
-- [Import data from SuccessFactors instance](./dsp_integration_2-connect_sf/dsp_integration_3-import_sf_data.md)
-- [Import data from Data Marketplace](./dsp_integration_4-data-marketplace/dsp_integration_4-data-marketplace)
-- [Build and Improve the Data Model](./dsp_integration_5-build_data_model/dsp_integration_5-build_data_model.md)
-- [Create an SAP Analytics Cloud Story on Extended Model](./dsp_integration_6-create-sac-story/dsp_integration_6-create-sac-story.md)
+- [Create a Data Access Control](./dsp_modeling_6-define-data-access-control/dsp_modeling_6-define-data-access-control.md)
+- [Integrate S/4HANA Data for Sales Analysis](./dsp_sales_analysis_1-s4-integration/dsp_sales_analysis_1-s4-integration.md)
+- [Acquiring a Data Product from the Data Marketplace](./dsp_sales_analysis_2-data-marketplace/dsp_sales_analysis_2-data-marketplace.md)
+- [Create a Transormation Flow](./dsp_sales_analysis_3-transformation_flows/dsp_sales_analysis_3-transformation_flows.md)
+
 

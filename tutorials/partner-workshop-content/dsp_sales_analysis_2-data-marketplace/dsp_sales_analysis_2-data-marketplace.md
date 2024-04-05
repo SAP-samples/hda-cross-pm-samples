@@ -40,7 +40,7 @@ We would like to enrich our data for customers with the geographical coordinates
 
     ![Data Marketplace](./images-dsp_sales_analysis_2-data-marketplace/DSP_GrView_Join.png)
 
-2. Select `Left` as join type so that all rows from `SAP_LO_Customer_V2` are returned with the matched rows from `Country_Master_Data_by_DCA`. The columns that have to be joined are `Country/Region Key` to `Alpha-2 code`
+2. Select `Left` as join type so that all rows from `SAP_LO_Customer_V2` are returned with the matched rows from `Country_Master_Data_by_DCA`. The columns that have to be joined are `Country/Region Key` to `Alpha-2 code` (not `Country` from `Country_Master_Data_by_DCA`). Please maintain the cardinality as displayed in the screenshot.
 
     ![Data Marketplace](./images-dsp_sales_analysis_2-data-marketplace/DSP_Configure_Join.png)
 
@@ -73,7 +73,11 @@ We would like to enrich our data for customers with the geographical coordinates
 
     ![SAC - Switch](./images-dsp_sales_analysis_2-data-marketplace/SAC_GeoMap.png)
 
-4. Select the Datasphere connection, your space and the Analytic Model `SAP_SD_RL_SalesQuotationItm_V2`.
+4. Select a model.
+
+    ![Select Model](./images-dsp_sales_analysis_2-data-marketplace/SAC_SelectModel.png)
+
+4. Select the Datasphere connection, your space and the Analytic Model `SAP_SD_RL_SalesQuotationItm_V2`. (Input Parameters: `Quotation Expiry Period (Days)` = 50, `Sales Organization` & `Company Code` = 1710)
 
     ![SAC - Add Chart](./images-dsp_sales_analysis_2-data-marketplace/DSP_SAC_AddChart.png)
 

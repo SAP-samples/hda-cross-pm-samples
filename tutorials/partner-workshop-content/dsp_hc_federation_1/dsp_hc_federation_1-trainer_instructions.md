@@ -67,3 +67,13 @@ CREATE USER HC_PARTNER PASSWORD "SETPASSWORD" NO FORCE_FIRST_PASSWORD_CHANGE;
 GRANT SELECT ON SCHEMA DSP_WORKSHOP_GASPRICES TO HC_PARTNER;
 ALTER USER HC_PARTNER REVOKE CREATE ANY ON OWN SCHEMA;
 ```
+
+### Deactive "lock" mechanism for technical user
+
+```
+-- create user group
+CREATE USERGROUP UnlockableUser SET PARAMETER 'password_lock_time' = '0' ENABLE PARAMETER SET 'password policy';
+
+-- assign user group to user
+ALTER USER HC_PARTNER SET USERGROUP UnlockableUser;
+```

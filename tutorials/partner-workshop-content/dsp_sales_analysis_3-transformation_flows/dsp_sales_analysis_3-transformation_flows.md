@@ -1,6 +1,13 @@
 # Transformation Flows in SAP Datasphere
-Transformation Flows in SAP Datasphere enables performing SQL transformations on delta and non-delta data.
-They support various SQL-based transformations (for example, joins, aggregations, functions, calculated columns...).
+In the previous exercises, we integrated data from S/4HANA and the Data Marketplace using business content to extract more business value from our data. We have answered the question “Which regions provide the highest sales opportunities for our company?”
+
+In this exercise, we would like to convert the net value of the order item to the sales organization's company currency. This would help us represent the net value of the order item from the sales organization's perspective for all future representations and comparisons.
+i.e. Take for example that one of the sales wings in Bulgaria would like to compare the selling values of the sales orders. It would be difficult to compare it in the when the transaction currency is always different. Converting it to the selling organization's currency will increase transparency for that organization.
+This is how it will be achieved in this exercise: You will create a transformation flow which loads data from the delta enabled table `Sales Document Item (LT) (SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1)`, transforms the currency for `Net Value of the Order Item` applying a currency conversion and persists the data in a target table.
+We want to use the static value `SalesDocumentDate` as the reference date. Hence, the currency needs to be transformed only once in its lifetime. Fluctuating currency rates are irrelevant for this scenario.
+
+In the business content that you imported earlier, the fact view `Sales Document Item (HL) (SAP_SD_HL_SalesDocumentItem_V2)` uses a calculated column to transform the source amount column `Net Value of the Order Item` from the document currency to the sales Organization currency. This transformation runs each time the view is called by a user (e.g. via the Analytic Model in DSP or in a story in SAC). 
+The view could be persisted, but the persistency would always run as a full snapshot replication. Hence, transformation flows suit best for the scenario in this exercise since they perform SQL transformations on delta data, and this transformation will only run once for new records.
 
 
 ## Prerequisites
@@ -23,15 +30,15 @@ Create a transformation flow to load data from one or more source tables, apply 
 
     ![Transformation Flow - Graphical View Transform](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_GV_Transform.png)
 
-3. Now you are in the **Graphical View Editor**.  
+3. Now you are in the **Graphical View Editor**. Search for the local table `Sales Document Item (LT)` (`SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1_Delta`) and drag it into the editor.
 
    ![Transformation Flow - Source Table](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_SourceTable.png)
 
-4. You have various different possibilities to add nodes for transformations to this view. To demonstrate the functionality of the transformation flow, create a new `Currency Conversion` Column.
+4. You have various different possibilities to add nodes for transformations to this view. Create a new `Currency Conversion` Column.
 
    ![Transformation Flow - Source Table](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_CC.png)
 
-5. Name the new column `CC_CostAmount`. In **Currency Properties**, set source amount to `CostAmount`, steps to `Shift`, source currency to `TransactionCurrency`, target currency to `SalesOrganizationCurrency`and reference date to `SalesDocumentDate`. We calculate the converted source amount for new records added to the source table.
+5. Name the new column `Net Value of the Order Item in Company Code Currency` (business name) and `NETAMOUNT_CC_CUR` (technical name). In **Currency Properties**, set source amount to `NetAmount` (this is the net value of the order item in document currency), steps to `Convert`, source currency to `TransactionCurrency`, target currency to `Currency`and reference date to `SalesDocumentDate`. We calculate the converted source amount for new records added to the source table.
 
     ![Transformation Flow - Source Table](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_CC_1.png)
 

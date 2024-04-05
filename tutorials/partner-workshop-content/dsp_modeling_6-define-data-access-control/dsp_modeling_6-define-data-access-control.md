@@ -50,7 +50,7 @@ For the sake of simplicity, in this exercise, we will create a table manually in
 
     ![New Permission Table](./images-dsp_modeling_6-define-data-access-control/DS_DAC_TableConfiguration.png)
 
-6. Click on the **Save** icon on the top left and give your table an appropriate name, `T_Permissions<USER_ID>`.  Once done, click on the **Deploy** icon next to the **Save** icon to deploy your table.
+6. Click on the **Save** icon on the top left and give your table an appropriate name, `T_Permissions`.  Once done, click on the **Deploy** icon next to the **Save** icon to deploy your table.
 
 ### Populate the newly created table
 
@@ -82,7 +82,7 @@ You have successfully created a new entry on the table that will be used to filt
 
 ### Create New Data Access Control
 
-Now that the **Permission table** `T_Permissions<USER_ID>` has been defined and populated, a new Data Access Control can be defined.
+Now that the **Permission table** `T_Permissions` has been defined and populated, a new Data Access Control can be defined.
 
 1. Go to the **Data Access Controls** and click on the **New Data Access Control** button. 
 
@@ -92,7 +92,7 @@ Now that the **Permission table** `T_Permissions<USER_ID>` has been defined and 
 
     ![New Permission Table](./images-dsp_modeling_6-define-data-access-control/DS_DAC_PermissionEntitySearch.png)
 
-3. Use the **Search** bar to find the previously created table `T_Permissions_<USER_ID>`, and **select** it. Then check the boxes besides the columns that contain the criteria values. Once done, click **Select**.
+3. Use the **Search** bar to find the previously created table `T_Permissions`, and **select** it. Then check the boxes besides the columns that contain the criteria values. Once done, click **Select**.
 
     ![New Permission Table](./images-dsp_modeling_6-define-data-access-control/DS_DAC_PermissionEntitySelection.png)
 
@@ -105,13 +105,13 @@ Now that the **Permission table** `T_Permissions<USER_ID>` has been defined and 
     ![New Permission Table](./images-dsp_modeling_6-define-data-access-control/DS_DAC_PermissionEntityAddCriteria.png)
     ![New Permission Table](./images-dsp_modeling_6-define-data-access-control/DS_DAC_PermissionEntityAddCriteria2.png)
 
-6. Click on the **Save** icon on the top right and give your data access control an appropriate name, `DAC_SalesOrg_Product_<USER_ID>`.  Once done, click on the **Deploy** icon next to the **Save** icon to deploy your data access control.
+6. Click on the **Save** icon on the top right and give your data access control an appropriate name, `DAC_SalesOrg_Product`.  Once done, click on the **Deploy** icon next to the **Save** icon to deploy your data access control.
 
 ### Add Data Access Control to View
 
-Now that you have created the **Data Access Control**, you need to create a data access control restriction on top of the previously created view [V_SalesOrderDetails_<USER_ID>](../dsp_modeling_6-define-data-access-control/dsp_modeling_6-define-data-access-control.md).
+Now that you have created the **Data Access Control**, you need to create a data access control restriction on top of the previously created view [V_SalesOrderDetails](../dsp_modeling_6-define-data-access-control/dsp_modeling_6-define-data-access-control.md).
 
-1. Go to the **Data Builder** and open `V_SalesOrderDetails_<USER_ID>` view. 
+1. Go to the **Data Builder** and open `V_SalesOrderDetails` view. 
 
     ![New Permission Table](./images-dsp_modeling_6-define-data-access-control/DS_DAC_OpenView.png)
 

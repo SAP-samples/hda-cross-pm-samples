@@ -41,15 +41,17 @@ Alternatively, all the dataset files can be found [here](../dsp_modeling_1-impor
 
 3.  Quickly review your data and then click deploy once done
 
-4.  Give the table a technical name(`T_<SalesOrders/SalesOrderItems/Addresses/BusinessPartners>_<YOUR_USER_ID>`) and a business name and then wait whilst the table is deployed
+4.  Give the table a technical name (`T_SalesOrders`,`T_SalesOrderItems`,`T_Addresses`, `T_BusinessPartners`) and a business name and then wait whilst the table is deployed
 
 5.  You can then add your remaining CSV files by repeating the process
 
     ![Deploy CSV](./images-dsp_modeling_1-import-dataset/DS_Deploy_Adresses.png)
 
 ### Generate Time Data
+
 Time table and dimensions views can be created in a space to provide standardized time data for you analysis. 
-1. Go to the section **Time Data** in **Space Management**. If you see **Create Time Tables & Dimensions** (as displayed in the screenshot), continue with step 2 and 3 as no time data has been generated fro the space yet. If time data has already been generated, select the pencil icon to see more details on the configuration. 
+1. Go to the section **Time Data** in **Space Management**.
+> **_NOTE:_** As part of your workshop, you may have been provided with a space that already have the time data added. In this case, you can just select the pencil icon if you want to see more details on the configuration.  If the time data is missing in your space, please proceed with the next part to add it. i.e. If you see **Create Time Tables & Dimensions** (as displayed in the screenshot), continue with step 2 and 3 as no time data has been generated from the space yet. 
    
   ![Time Dimensions Generation](./images-dsp_modeling_1-import-dataset/DS_CreateTimeTablesAndDimensions.png)
   

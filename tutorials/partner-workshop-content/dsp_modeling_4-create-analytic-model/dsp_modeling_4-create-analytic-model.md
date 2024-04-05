@@ -20,15 +20,15 @@ Analytic models are the analytical foundation for making data ready for consumpt
 
     ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_DataBuilder_AM.png)
 
-2. In the editor, you can add any Fact Model as fact source. Select your previous created graphical view `V_SalesOrderDetails_<USER_ID>` and drag it into the edtior. Select all attributes, all measures and the proposed associated dimension to be added to the Analytic Model.
+2. In the editor, you can add any Fact Model as fact source. Select your previous created graphical view `V_SalesOrderDetails` and drag it into the editor. Select all attributes, all measures and the proposed associated dimension to be added to the Analytic Model.
    
   ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_AM_CopyProperties.png)
   
-4. The fact source and the dimensions for business partners are displayed. Now, add additional reachable dimensions and their attributes. Select the dimension `PARTNERID` (`T_BusinessPartners_<USER_ID>`) and select `ADDRESSID` in the section **Associated Dimensions**.
+4. The fact source and the dimensions for business partners are displayed. Now, add additional reachable dimensions and their attributes. Select the dimension `PARTNERID` (`T_BusinessPartners`) and select `ADDRESSID` in the section **Associated Dimensions**.
 
     ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_AM_Dimension.png)
 
- 5. When accessing this data model, Datasphere will automatically create the necessary database joins to let users drill-down by even the farthest of dimensions. This way, modelers can carefully design what parts of the data model to expose for a given analytics use case. Check that the attributes `CITY`, `COUNTRY` and `REGION` are selected as visible attributes by clicking on the dimension `ADDRESSID` (`T_ADDRESSES_<USER_ID>`).
+ 5. When accessing this data model, Datasphere will automatically create the necessary database joins to let users drill-down by even the farthest of dimensions. This way, modelers can carefully design what parts of the data model to expose for a given analytics use case. Check that the attributes `CITY`, `COUNTRY` and `REGION` are selected as visible attributes by clicking on the dimension `ADDRESSID` (`T_ADDRESSES`).
 
     ![Data Builder Analytic Model](./images-dsp_modeling_4-create-analytic-model/DS_AM_Address.png)
 
@@ -49,7 +49,7 @@ Enter the expression `QUANTITY > 10`. This expression will return the boolean va
 
     ![Calculated Measure - Quantity](./images-dsp_modeling_4-create-analytic-model/DS_CM_Quantity.png)
 
-11. As the measure should reflect the number of product types with a quantity higher than 10, a specific aggregation by PRODUCT ID is required. Configure an Exception Aggregation with type `SUM` and the Exception Aggregation Dimension `PRODUCTID`. Now, all results of the defined expression are summed up by the Product ID even if the Product ID is not selected in a report and visible in the drill-down.
+11. The measure should reflect the number of product types with a quantity higher than 10. Therefore, a specific aggregation by PRODUCT ID is required. Configure an Exception Aggregation with type `SUM` and the Exception Aggregation Dimension `PRODUCTID`. Now, all results of the defined expression are summed up by the Product ID even if the Product ID is not selected in a report and visible in the drill-down.
     
   ![Calculated Measure - Quantity](./images-dsp_modeling_4-create-analytic-model/DS_ExceptionAggregation.png)
 
@@ -59,7 +59,7 @@ Enter the expression `QUANTITY > 10`. This expression will return the boolean va
 
 13. Validate the two new measures in the data preview. 
 
-14. Save and deploy your Analytic Model using the technical name `AM_SalesReport_<USER_ID>`.
+14. Save and deploy your Analytic Model using the technical name `AM_SalesReport`.
 
 
 

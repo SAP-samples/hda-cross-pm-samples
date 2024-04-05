@@ -19,7 +19,7 @@ SAP Analytics Cloud consumes data from SAP Datasphere via a live connection to c
 
   ![SAC Story Creation](./images-dsp_modeling_5-create-sac-story/DS_SAC_Switch.png)
 
-2. In SAP Datasphere, the URL of the SAC system needs to be added as a Trusted Origin. 
+2. In SAP Datasphere, the URL of the SAC system needs to be added as a Trusted Origin. This has already been done for this tenant.
 
 2. In SAP Analytics Cloud, a live connection has been created so that data from SAP Datasphere can be accessed. You can validate this in the **Connections**.
 
@@ -33,7 +33,7 @@ SAP Analytics Cloud consumes data from SAP Datasphere via a live connection to c
 
     ![SAC Story Creation](./images-dsp_modeling_5-create-sac-story/DS_SAC_InsertChart.png)
 
-3. Select the connected Datasphere tenant. You see all spaces your Datasphere application user is allowed to access. Select your space and the Analytic Model which you created in the previous exercise.
+3. Select the connected Datasphere tenant (in the workshop, select the connection named `Datasphere`). You see all spaces your Datasphere application user is allowed to access. Select your space and the Analytic Model which you created in the previous exercise.
 
     ![SAC Story Creation](./images-dsp_modeling_5-create-sac-story/DS_SAC_SelectModel.png)
 

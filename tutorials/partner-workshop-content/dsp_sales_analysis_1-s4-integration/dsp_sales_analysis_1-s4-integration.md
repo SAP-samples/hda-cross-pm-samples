@@ -1,6 +1,8 @@
 # Integrate S/4HANA Data for Sales Analysis in SAP Datasphere
-Your company would like to analyze sales quotations on data available in SAP S/4HANA. Using SAP Datasphere allows users to easily customize and extend the data model based on the needs of the end-user.
-This exercise shows how business content helps to jump start your project and how to integrate data from S/4HANA using Replication Flows. 
+Overall Intoduction to Sales Analysis exercise: Your company would like to grow their business in a particular subsidiary. However, there have been reports that the products are being quoted lower than in other locations. For this reason, your company wants to analyze the Sales quotation data.
+This data is available in SAP S4/HANA. Using the integration capabilities of SAP Datasphere, we will bring in the data and analyze it to derive the maximum business value. We will further integrate this data with geographical data from Data marketplace to provide the location context to it. Finally, the model from the business content with our own S4/HANA data will be visualized in an SAC story. We will learn how using SAP Datasphere allows users to easily customize and extend the data model based on the needs of the end-user.  
+
+In this exercise, you will learn one example of how business content helps to jump start your project and how to integrate data from S/4HANA using Replication Flows. By merely replicating the S4/HANA data into the already existing business content, we can already lay down the foundation for thorough analysis of the data.
 
 ## Prerequisites
 - You have an application user in Datasphere which is assigned to a space. 
@@ -14,15 +16,15 @@ This exercise shows how business content helps to jump start your project and ho
 ---
 ## Import Data Model
 
-Business content for SAP Datasphere offers ready to run pre-configurations that jump start and accelerate your project.
+Business content for SAP Datasphere offers ready to run pre-configurations that accelerate the progress of your project.
 It is available as part of the application `Semantic Onboarding`. This exercise will use a part of the business content "Sales Analysis for SAP S/4HANA and SAP S/4HANA Cloud". 
 
 Some modifications applied to the content, for example we use an input parameter instead of taking the current date as we are not working with productive, up-to date data in this example.
 Instead of importing this content via the Content Network, each user imports the data model as CSN in their own space.
 
-1. Download the CSN file `CSN_SalesAnalysis_Workshop.json` from the folder data_model-dsp_sales_anysis_1 (tbd - link). 
+1. Download the CSN file [CSN_SalesAnalysis_Workshop.json](https://sap-my.sharepoint.com/:u:/p/nikola_cornelia_braukmueller/EatQ1ELi0UVLojzocnvykesBGGkNdtgef1iE-QIYKENN0Q?e=oLkFLT).
 
-2. **Before importing this file**, open the CSN file in a text editor of your choice. As the CSN document contains references to the space itself for the currency conversion, please search and replace `XXSPACEXX` with your space name. This step is very important so that the currency conversion calculation uses the correct entities.
+2. **Before importing this file**, open the CSN file in a text editor of your choice. This CSN document contains references to the space (including a specific space name) for the currency conversion, please search and replace `XXSPACEXX` with your space name. This step is very important so that the currency conversion calculation uses the correct entities.
 
 3. Import the modified file to your space in Datasphere.
     ![Download and import CSN](./images-dsp_sales_analysis_1-s4-integration/DSP_IMPORT_CSN.png)
@@ -32,6 +34,14 @@ Instead of importing this content via the Content Network, each user imports the
     ![Exclude entities (CSN)](./images-dsp_sales_analysis_1-s4-integration/DSP_ImportCSN_All.png)
 
 5. After import, the entities are not deployed automatically. Open the Analytic Model `Sales Quotation Item (RL)` (`SAP_SD_RL_SalesQuotationItm_V2`) and select `Deploy`. This will deploy the Analytic Model as well as all dependent entities you imported before.
+
+The abbreviations in the entity names have the following meanings:
+- `IL` - Inbound Layer
+- `HL` - Harmonization Layer
+- `RL` - Reporting Layer
+- `LT` - Local Table
+
+More details on the layered modeling approach and naming conventions are available [here](https://www.sap.com/documents/2021/09/8a0fc7ca-f67d-0010-bca6-c68f7e60039b.html). 
 
 ## Generate Currency Conversion Views
 To run currency conversion, specific entities need to be available in the space. Currency conversion views and the necessary supporting objects can be created based on an SAP connection, tables shared from another space, or manually.
@@ -53,7 +63,7 @@ As part of the workshop, the currency information has been imported into a centr
 ## Create Replication Flow
 The imported content includes local tables in the inbound layer, which are designed to be filled using Replication Flows. It is customer specific, how a Replication Flow will be designed, which CDS views should be replicated in one Replication Flow and which data should be replicated with a delta or which with the full upload option.
 
-In general: There are some prerequisites for the usage of Replications Flows, for example the CDS View needs to have the "dataExtraction" annotation. To replicate the CDS View in a delta mode, the annotations "dataExtraction" and "changeDataCapture" are required. More information is available in Note 3223810 and Note 2890171 (focus on ABAP Integration).
+In general: There are some prerequisites for the usage of Replications Flows, for example the CDS View needs to have the "dataExtraction" annotation. To replicate the CDS View in a delta mode, the annotations "dataExtraction" and "changeDataCapture" are required. More information is available in [Note 3223810](https://me.sap.com/notes/3223810/E) and [Note 2890171](https://me.sap.com/notes/2890171/E) (focus on ABAP Integration).
 
 In this part of the exercise, the Replication Flow extracts transactional data from the CDS view `C_SALESDOCUMENTITEMDEX_1`to the local table `SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1` and master data from the CDS view `I_CUSTOMER` to the local table `SAP_LO_IL_I_CUSTOMER`.
 
@@ -93,7 +103,7 @@ In this part of the exercise, the Replication Flow extracts transactional data f
 
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter_1.png)
 
-10. Define a filter to limit the scope of your replication flow to reduce the load for the exercise. Set the following filter for CreationDate: `CreationDate < 2021-12-08` and name the projection `Filter_CreationDate`. tbd !adjust screenshot
+10. Define a filter to limit the scope of your replication flow to reduce the load for the exercise. Set the following filter for SalesOrganization: `SalesOrganization = '1710'` and name the projection `Filter_SalesOrg`.  
 
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter.png)
 
@@ -143,3 +153,6 @@ Let's have a look at the lineage of the Analytic Model you imported as part of t
 
 1. Open the Analytic Model `Sales Quotation Item (RL) (SAP_SD_RL_SalesQuotationItm_V2)` and select the data preview.
 2. Confirm that the variable `Quotation Expiry Period (Days)` is set to 50, `Sales Organization` & `Company Code` to 1710 and 1710.
+3. Select the dimension `Sold-to Party` and the measure `No. of Open Sales Quotation Items`.
+
+    ![Analytic Model - Data Preview](./images-dsp_sales_analysis_1-s4-integration/DSP_AM_DataPreview.png)
