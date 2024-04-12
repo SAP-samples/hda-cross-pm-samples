@@ -103,7 +103,7 @@ In this part of the exercise, the Replication Flow extracts transactional data f
 
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter_1.png)
 
-10. Define a filter to limit the scope of your replication flow to reduce the load for the exercise. Set the following filter for SalesOrganization: `SalesOrganization = '1710'` and name the projection `Filter_SalesOrg`.  
+10. Define a filter to limit the scope of your replication flow to reduce the load for the exercise. Set the following filter for SalesOrganization: `SalesOrganization = 1710` and name the projection `Filter_SalesOrg`.  
 
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter.png)
 
