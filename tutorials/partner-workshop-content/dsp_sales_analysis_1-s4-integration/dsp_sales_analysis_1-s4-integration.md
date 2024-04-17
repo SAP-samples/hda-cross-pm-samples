@@ -24,7 +24,7 @@ Instead of importing this content via the Content Network, each user imports the
 
 1. Download the CSN file [CSN_SalesAnalysis_Workshop.json](https://sap-my.sharepoint.com/:u:/p/nikola_cornelia_braukmueller/EatQ1ELi0UVLojzocnvykesBGGkNdtgef1iE-QIYKENN0Q?e=oLkFLT).
 
-2. **Before importing this file**, open the CSN file in a text editor of your choice. This CSN document contains references to the space (including a specific space name) for the currency conversion, please search and replace `XXSPACEXX` with your space name. This step is very important so that the currency conversion calculation uses the correct entities.
+2. **Before importing this file**, open the CSN file in a text editor of your choice. This CSN document contains references to the space (including a specific space name) for the currency conversion, please search and replace **all 9 occurrences of `XXSPACEXX`** with your space name. This step is very important so that the currency conversion calculation uses the correct entities.
 
 3. Import the modified file to your space in Datasphere.
     ![Download and import CSN](./images-dsp_sales_analysis_1-s4-integration/DSP_IMPORT_CSN.png)
