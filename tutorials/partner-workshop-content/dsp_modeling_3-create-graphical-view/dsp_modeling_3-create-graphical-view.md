@@ -4,8 +4,7 @@ With SAP Datasphere, you can use a graphical interface to create data views. You
 
 ## Prerequisites
 - You have [imported your dataset into your Space.](../dsp_modeling_1-import-dataset/dsp_modeling_1-import-dataset.md)
-- You have [adjusted the Semantic Types and created Associations using the Entity-Relationship Model](../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
-
+- You have [adjusted the Semantic Types and created Associations](../dsp_modeling_2-create-relationships/dsp_modeling_2-create-relationships.md)
 
 ## You will learn
   - What graphical views are
@@ -30,7 +29,7 @@ Both tables `SalesOrders` and `SalesOrderItems` contain information about sold i
 ### Create a Graphical View
 
 
-1.	Go to the **Data Builder** and click on the **New Graphical View** button (`V_SalesOrderDetails_<USER_ID>`).
+1.	Go to the **Data Builder** and click on the **New Graphical View** button (`V_SalesOrderDetails`).
 
     ![New Graphical View](./images-dsp_modeling_3-create-graphical-view/DS_Create_GraphicalView.png)
 
@@ -38,7 +37,7 @@ Both tables `SalesOrders` and `SalesOrderItems` contain information about sold i
 
     ![Repository](./images-dsp_modeling_3-create-graphical-view/DS_Repository.png)
 
-3.	To start building your model, click and drag the `T_SalesOrders_<USER_ID>` table onto the canvas.
+3.	To start building your model, click and drag the `T_SalesOrders` table onto the canvas.
 
     ![Graphical Interface](./images-dsp_modeling_3-create-graphical-view/DS_GV_SalesOrders.png)
 
@@ -47,11 +46,11 @@ Both tables `SalesOrders` and `SalesOrderItems` contain information about sold i
 
     ![Data Preview](./images-dsp_modeling_3-create-graphical-view/DS_DataPreview.png)
 
-6.	Next, drag the table `T_SalesOrderItems_<USER_ID>` on top of the `T_SalesOrders_<USER_ID>` table to join the two tables. The icon that has appeared is our join node called Join One. The column `T_SalesOrderID_<USER_ID>` from both tables is automatically joined.
+6.	Next, drag the table `T_SalesOrderItems` on top of the `T_SalesOrders` table to join the two tables. The icon that has appeared is our join node called Join One. The column `T_SalesOrderID` from both tables is automatically joined.
 
     ![SalesOrderID Join](./images-dsp_modeling_3-create-graphical-view/DS_Join.png)
 
-7. Set the Join Type to "Inner" and the cardinality to "One (0,1)" for `T_SalesOrders_<USER_ID>` and "Many (*)" for `T_SalesOrderItems_<USER_ID>`. Each sales order consists of one or multiple sales items.
+7. Set the Join Type to "Inner" and the cardinality to "One (0,1)" for `T_SalesOrders` and "Many (*)" for `T_SalesOrderItems`. Each sales order consists of one or multiple sales items.
 
     ![Join Settings](./images-dsp_modeling_3-create-graphical-view/DS_Join_Settings.png)
 
@@ -61,7 +60,7 @@ Now you've joined all the tables for this mission.
 
 ### Rename and Restore Columns
 
-With the graphical view in place, rename some columns to help others understand better what the data is about. Rename the `Grossamount` column from the `T_SalesOrders__<USER_ID>` table and from the `T_SalesOrderItems__<USER_ID>` table so you can tell them apart.
+With the graphical view in place, rename some columns to help others understand better what the data is about. Rename the `Grossamount` column from the `T_SalesOrders_` table and from the `T_SalesOrderItems_` table so you can tell them apart.
 
 1.	To do this, click on the projection one node immediately on the right-side of the output node.
 
@@ -77,11 +76,11 @@ With the graphical view in place, rename some columns to help others understand 
 
      ![Rename Column](./images-dsp_modeling_3-create-graphical-view/DS_Lineage_SOI.png)
 
-5.	Rename the `GrossAmount` column originating from the `T_SalesOrderItems_<USER_ID>` table to `GrossAmount_items`.
+5.	Rename the `GrossAmount` column originating from the `T_SalesOrderItems` table to `GrossAmount_items`.
 
     ![Rename Column](./images-dsp_modeling_3-create-graphical-view/DS_RenameColumn.png)
 
-6. Then rename the `GrossAmount` column originating from the `T_SalesOrders_<USER_ID>` table to `GrossAmount_orders`.
+6. Then rename the `GrossAmount` column originating from the `T_SalesOrders` table to `GrossAmount_orders`.
 
 ### Modify View Properties
 1. Validate that **Semantic Usage** is set to **Fact**. This indicates that your entity contains numerical measures that can be analyzed.
@@ -99,13 +98,13 @@ Open the business purpose panel under attributes. Here, fill in the description 
 
     ![Associations](./images-dsp_modeling_3-create-graphical-view/DS_CopyFromSourceI.png) 
 
-6. Two source accociations are proposed (`T_BusinessPartners_<USER_ID>` and `Time Dimension - Day`). Select both of them and and click **Create** it. 
+6. Two source accociations are proposed (`T_BusinessPartners` and `Time Dimension - Day`). Select both of them and and click **Create** it. 
 
     ![Associations](./images-dsp_modeling_3-create-graphical-view/DS_CopyFromSource2.png) 
 
 
 ### Save and Deploy
 
-You have successfully created your graphical view. Save and then deploy your view (`V_SalesOrderDetails_<USER_ID>`). When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.
+You have successfully created your graphical view. Save and then deploy your view (`V_SalesOrderDetails`). When you save an object, it is stored in the SAP Datasphere repository, which contains the design-time definitions of all your objects. When you deploy an object, you are creating a run-time version for use in the SAP Datasphere database.
 
 ---

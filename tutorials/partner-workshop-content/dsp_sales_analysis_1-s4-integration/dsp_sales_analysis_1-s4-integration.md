@@ -75,11 +75,11 @@ In this part of the exercise, the Replication Flow extracts transactional data f
 
      ![RF - Select Source Connection](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_2.png)
 
-3. Select container `/CDS`.
+3. Select container `/CDS_EXTRACTION`.
 
      ![RF - Select Container](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_3.png)
 
-4. Select the source object: Go to the folder `SD - Sales and Distribution` and the subfolder `SD-ANA - Sales Analytics`. Select the object `C_SALESDOCUMENTITEMDEX_1`. Click `Next`, in the next screen select `Add Selection`. This starts fetching the source object details from the source.
+4. Select for the object `C_SALESDOCUMENTITEMDEX_1`. Click `Next`, in the next screen select `Add Selection`. This starts fetching the source object details from the source.
 
      ![RF - Select CDS View](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_4.png)
 
@@ -107,9 +107,7 @@ In this part of the exercise, the Replication Flow extracts transactional data f
 
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter.png)
 
-11. Add a second source object to the Replication Flow. Select the CDS View `I_CUSTOMER` (available in folder `LO-MD-BP`).
-
-    ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_RF_Customer.png)
+11. Add a second source object to the Replication Flow. Search for the CDS View `I_CUSTOMER` and select it as source object.
 
 12. As done for the other source object in the steps 5 - 8, set the load type to `Initial and Delta`. Select `SAP_LO_IL_I_CUSTOMER` as target table in your space.
     
