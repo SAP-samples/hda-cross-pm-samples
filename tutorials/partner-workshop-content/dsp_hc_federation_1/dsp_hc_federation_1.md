@@ -95,7 +95,7 @@ If you are thinking about using federated data, use a SQL-based connector, not a
 
     ![AM - Sum of gas types](./images-dsp_hc_federation_1/DSP_AM_Preview_Sum.png)
 
-6. Open the attributes of the dimension linked to the gas prices. Select `city` to be added as rows.
+6. Open the attributes of the dimension `STATION_UUID` linked to the gas prices. Select `city` to be added as rows.
 
     ![AM - Filter on City](./images-dsp_hc_federation_1/DSP_AM_Sum_City_Filter.png)
 

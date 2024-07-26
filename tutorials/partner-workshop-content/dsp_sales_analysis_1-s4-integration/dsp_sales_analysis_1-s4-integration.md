@@ -151,6 +151,6 @@ Let's have a look at the lineage of the Analytic Model you imported as part of t
 
 1. Open the Analytic Model `Sales Quotation Item (RL) (SAP_SD_RL_SalesQuotationItm_V2)` and select the data preview.
 2. Confirm that the variable `Quotation Expiry Period (Days)` is set to 50, `Sales Organization` & `Company Code` to 1710 and 1710.
-3. Select the dimension `Sold-to Party` and the measure `No. of Open Sales Quotation Items`.
+3. Select the dimension `Sold-to Party` and the measure `Open Sales Quotation Items`.
 
     ![Analytic Model - Data Preview](./images-dsp_sales_analysis_1-s4-integration/DSP_AM_DataPreview.png)
