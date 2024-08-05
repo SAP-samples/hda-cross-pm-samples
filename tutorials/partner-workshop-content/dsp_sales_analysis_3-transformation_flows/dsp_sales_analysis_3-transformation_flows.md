@@ -46,15 +46,18 @@ Create a transformation flow to load data from one or more source tables, apply 
 
     ![Transformation Flow - Source Table](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_CC_2.png)
 
-7. Click the Back button to return to the Transformation Flow Editor. 
+7. Add a Filter on the view called ´FilterByProfitCenter´ as shown in the figure below using the condition **ProfitCenter='YB110'**
+    ![Transformation Flow - Filter](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_filter.png)  
+    
+8. Click the Back button to return to the Transformation Flow Editor. 
 
     ![Transformation Flow - Source Table](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_Back.png)
 
-8. Create a new target table and name it `HL_T_SalesQuotationItems_CurrencyConversion`. Delta capture is enabled.
+9. Create a new target table and name it `HL_T_SalesQuotationItems_CurrencyConversion`. Delta capture is enabled.
 
     ![Transformation Flow - Source Table](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_NTT.png)
 
-9. Save the Transformation Flow with the name `HL_TF_SalesQuotationItems_CurrencyConversion` and deploy it.
+10. Save the Transformation Flow with the name `HL_TF_SalesQuotationItems_CurrencyConversion` and deploy it.
 
     ![Transformation Flow - Source Table](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_SaveDeploy.png)
 
