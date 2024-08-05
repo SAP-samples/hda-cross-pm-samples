@@ -22,7 +22,7 @@ It is available as part of the application `Semantic Onboarding`. This exercise 
 Some modifications applied to the content, for example we use an input parameter instead of taking the current date as we are not working with productive, up-to date data in this example.
 Instead of importing this content via the Content Network, each user imports the data model as CSN in their own space.
 
-1. Download the according CSN file for your workshop from [folder](https://github.com/SAP-samples/hda-cross-pm-samples/tree/main/tutorials/partner-workshop-content/dsp_sales_analysis_1-s4-integration/data_model-dsp_sales_analysis_1-s4-integration).
+1. Download the according CSN file (by Location) for your workshop from [folder](https://github.com/SAP-samples/hda-cross-pm-samples/tree/main/tutorials/partner-workshop-content/dsp_sales_analysis_1-s4-integration/data_model-dsp_sales_analysis_1-s4-integration).
 
 2. **Before importing this file**, open the CSN file in a text editor of your choice. This CSN document contains references to the space (including a specific space name) for the currency conversion, please search and replace **all 9 occurrences of `XXSPACEXX`** with your space name. This step is very important so that the currency conversion calculation uses the correct entities.
 
