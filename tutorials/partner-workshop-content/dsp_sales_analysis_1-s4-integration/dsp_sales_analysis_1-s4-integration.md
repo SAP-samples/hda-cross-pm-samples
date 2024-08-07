@@ -103,17 +103,23 @@ In this part of the exercise, the Replication Flow extracts transactional data f
 
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter_1.png)
 
-10. Define a filter to limit the scope of your replication flow to reduce the load for the exercise. Set the following filter for SalesOrganization: `SalesOrganization = 1710` and name the projection `Filter_SalesOrg`.  
+10. Define a filter to limit the scope of your replication flow to reduce the load for the exercise. Set the following filter for SalesOrganization: `SalesOrganization = 1710` and `ProductGroup = 0001 OR ProductGroup = L001` and name the projection `Filter_SalesOrg` as shown in the two pictures below.  
 
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter.png)
+	
+	![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter_2.png)
+	
+11. The projection conditions look as shown in the picture below. Click on 'Save' after checking that the condition is created properly as `( SalesOrganization = 1710 ) AND ( ProductGroup = L001 OR ProductGroup = 0001 )`.
 
-11. Add a second source object to the Replication Flow. Search for the CDS View `I_CUSTOMER` and select it as source object.
+	![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_Create_RF_Filter_3.png)
 
-12. As done for the other source object in the steps 5 - 8, set the load type to `Initial and Delta`. Select `SAP_LO_IL_I_CUSTOMER` as target table in your space.
+12. Add a second source object to the Replication Flow. Search for the CDS View `I_CUSTOMER` and select it as source object.
+
+13. As done for the other source object in the steps 5 - 8, set the load type to `Initial and Delta`. Select `SAP_LO_IL_I_CUSTOMER` as target table in your space.
     
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_RF_Customer_2.png)
 
-13. Set the `Delta Load Interval` to 24 hours. Name the Replication Flow `IL_RF_S4_SALES_ANALYSIS` and save and deploy it.
+14. Set the `Delta Load Interval` to 24 hours. Name the Replication Flow `IL_RF_S4_SALES_ANALYSIS` and save and deploy it.
 
     ![RF - Filter](./images-dsp_sales_analysis_1-s4-integration/DSP_RF_Customer_3.png)
 
