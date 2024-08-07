@@ -56,7 +56,7 @@ As part of the workshop, the currency information has been imported into a centr
 
     ![Select shared Currency Conversion Views](./images-dsp_sales_analysis_1-s4-integration/DSP_CC_Shared.png)
 
-3. Open the view `SAP.CURRENCY.VIEW.TCURR.`. The SQL Script is accessing a table located in a different space, that space shared the currency conversion views with the current space. 
+3. Open the view `SAP.CURRENCY.VIEW.TCURR.`. Note that the SQL Script is accessing a table located in a different space (the one that shared the view with it) and not the same space as itself.
 
     ![SQL View for Currency Conversion](./images-dsp_sales_analysis_1-s4-integration/DSP_TCURR.png)
 
