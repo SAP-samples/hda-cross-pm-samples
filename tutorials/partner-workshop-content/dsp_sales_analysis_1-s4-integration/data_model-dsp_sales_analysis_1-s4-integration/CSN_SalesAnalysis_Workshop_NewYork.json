@@ -3199,11 +3199,11 @@
         }
       }
     },
-    "PA078921U11": {
+    "PA097162U00": {
       "kind": "context",
-      "@EndUserText.label": "PA078921U11",
-      "@DataWarehouse.space.schema": "PA078921U11",
-      "@DataWarehouse.space.name": "PA078921U11"
+      "@EndUserText.label": "PA097162U00",
+      "@DataWarehouse.space.schema": "PA097162U00",
+      "@DataWarehouse.space.name": "PA097162U00"
     },
     "SAP.CURRENCY": {
       "kind": "context",
@@ -3223,7 +3223,7 @@
         }
       }
     },
-    "PA078921U11.SAP.CURRENCY.TABLE.TCURX": {
+    "PA097162U00.SAP.CURRENCY.TABLE.TCURX": {
       "kind": "entity",
       "elements": {
         "CURRKEY": {
@@ -3280,7 +3280,7 @@
         "SELECT": {
           "from": {
             "ref": [
-              "PA078921U11.SAP.CURRENCY.TABLE.TCURX"
+              "PA097162U00.SAP.CURRENCY.TABLE.TCURX"
             ]
           },
           "columns": [
@@ -3307,14 +3307,14 @@
         }
       ],
       "@DataWarehouse.consumption.external": true,
-      "@DataWarehouse.sqlEditor.query": "SELECT \"CURRKEY\",\n\t\"CURRDEC\"\nFROM \"PA078921U11.SAP.CURRENCY.TABLE.TCURX\"",
+      "@DataWarehouse.sqlEditor.query": "SELECT \"CURRKEY\",\n\t\"CURRDEC\"\nFROM \"PA097162U00.SAP.CURRENCY.TABLE.TCURX\"",
       "_meta": {
         "dependencies": {
           "folderAssignment": null
         }
       }
     },
-    "PA078921U11.SAP.CURRENCY.TABLE.TCURF": {
+    "PA097162U00.SAP.CURRENCY.TABLE.TCURF": {
       "kind": "entity",
       "elements": {
         "MANDT": {
@@ -3475,7 +3475,7 @@
         "SELECT": {
           "from": {
             "ref": [
-              "PA078921U11.SAP.CURRENCY.TABLE.TCURF"
+              "PA097162U00.SAP.CURRENCY.TABLE.TCURF"
             ]
           },
           "columns": [
@@ -3585,14 +3585,14 @@
         }
       ],
       "@DataWarehouse.consumption.external": true,
-      "@DataWarehouse.sqlEditor.query": "SELECT \"MANDT\",\n\t\"KURST\",\n\t\"FCURR\",\n\t\"TCURR\",\n\tto_nvarchar(99999999 - TO_BIGINT(TO_DATS(\"GDATU\"))) AS \"GDATU\",\n\t\"FFACT\",\n\t\"TFACT\",\n\t\"ABWCT\",\n\tto_nvarchar(99999999 - TO_BIGINT(TO_DATS(\"ABWGA\"))) AS \"ABWGA\"\nFROM \"PA078921U11.SAP.CURRENCY.TABLE.TCURF\"",
+      "@DataWarehouse.sqlEditor.query": "SELECT \"MANDT\",\n\t\"KURST\",\n\t\"FCURR\",\n\t\"TCURR\",\n\tto_nvarchar(99999999 - TO_BIGINT(TO_DATS(\"GDATU\"))) AS \"GDATU\",\n\t\"FFACT\",\n\t\"TFACT\",\n\t\"ABWCT\",\n\tto_nvarchar(99999999 - TO_BIGINT(TO_DATS(\"ABWGA\"))) AS \"ABWGA\"\nFROM \"PA097162U00.SAP.CURRENCY.TABLE.TCURF\"",
       "_meta": {
         "dependencies": {
           "folderAssignment": null
         }
       }
     },
-    "PA078921U11.SAP.CURRENCY.TABLE.TCURR": {
+    "PA097162U00.SAP.CURRENCY.TABLE.TCURR": {
       "kind": "entity",
       "elements": {
         "MANDT": {
@@ -3747,7 +3747,7 @@
         "SELECT": {
           "from": {
             "ref": [
-              "PA078921U11.SAP.CURRENCY.TABLE.TCURR"
+              "PA097162U00.SAP.CURRENCY.TABLE.TCURR"
             ]
           },
           "columns": [
@@ -3828,14 +3828,14 @@
         }
       ],
       "@DataWarehouse.consumption.external": true,
-      "@DataWarehouse.sqlEditor.query": "SELECT \"MANDT\",\n\t\"KURST\",\n\t\"FCURR\",\n\t\"TCURR\",\n\tto_nvarchar(99999999 - TO_BIGINT(TO_DATS(\"GDATU\"))) AS \"GDATU\",\n\t\"UKURS\",\n\t\"FFACT\",\n\t\"TFACT\"\nFROM \"PA078921U11.SAP.CURRENCY.TABLE.TCURR\"",
+      "@DataWarehouse.sqlEditor.query": "SELECT \"MANDT\",\n\t\"KURST\",\n\t\"FCURR\",\n\t\"TCURR\",\n\tto_nvarchar(99999999 - TO_BIGINT(TO_DATS(\"GDATU\"))) AS \"GDATU\",\n\t\"UKURS\",\n\t\"FFACT\",\n\t\"TFACT\"\nFROM \"PA097162U00.SAP.CURRENCY.TABLE.TCURR\"",
       "_meta": {
         "dependencies": {
           "folderAssignment": null
         }
       }
     },
-    "PA078921U11.SAP.CURRENCY.TABLE.TCURW": {
+    "PA097162U00.SAP.CURRENCY.TABLE.TCURW": {
       "kind": "entity",
       "@ObjectModel.supportedCapabilities": [
         {
@@ -3883,7 +3883,7 @@
       },
       "@cds.persistence.exists": true
     },
-    "PA078921U11.SAP.CURRENCY.TABLE.TCURV": {
+    "PA097162U00.SAP.CURRENCY.TABLE.TCURV": {
       "kind": "entity",
       "elements": {
         "MANDT": {
@@ -3991,7 +3991,7 @@
               ]
             }
           ],
-          "target": "PA078921U11.SAP.CURRENCY.TABLE.TCURW"
+          "target": "PA097162U00.SAP.CURRENCY.TABLE.TCURW"
         }
       },
       "@ObjectModel.supportedCapabilities": [
@@ -4121,14 +4121,14 @@
               ]
             }
           ],
-          "target": "PA078921U11.SAP.CURRENCY.TABLE.TCURW"
+          "target": "PA097162U00.SAP.CURRENCY.TABLE.TCURW"
         }
       },
       "query": {
         "SELECT": {
           "from": {
             "ref": [
-              "PA078921U11.SAP.CURRENCY.TABLE.TCURV"
+              "PA097162U00.SAP.CURRENCY.TABLE.TCURV"
             ]
           },
           "columns": [
@@ -4216,7 +4216,7 @@
                   ]
                 }
               ],
-              "target": "PA078921U11.SAP.CURRENCY.TABLE.TCURW"
+              "target": "PA097162U00.SAP.CURRENCY.TABLE.TCURW"
             }
           }
         }
@@ -4231,14 +4231,14 @@
         }
       ],
       "@DataWarehouse.consumption.external": true,
-      "@DataWarehouse.sqlEditor.query": "SELECT \"MANDT\",\n\t\"KURST\",\n\t\"XINVR\",\n\t\"BWAER\",\n\t\"XBWRL\",\n\t\"GKUZU\",\n\t\"BKUZU\",\n\t\"XFIXD\",\n\t\"XEURO\"\nFROM \"PA078921U11.SAP.CURRENCY.TABLE.TCURV\"",
+      "@DataWarehouse.sqlEditor.query": "SELECT \"MANDT\",\n\t\"KURST\",\n\t\"XINVR\",\n\t\"BWAER\",\n\t\"XBWRL\",\n\t\"GKUZU\",\n\t\"BKUZU\",\n\t\"XFIXD\",\n\t\"XEURO\"\nFROM \"PA097162U00.SAP.CURRENCY.TABLE.TCURV\"",
       "_meta": {
         "dependencies": {
           "folderAssignment": null
         }
       }
     },
-    "PA078921U11.SAP.CURRENCY.TABLE.TCURN": {
+    "PA097162U00.SAP.CURRENCY.TABLE.TCURN": {
       "kind": "entity",
       "elements": {
         "MANDT": {
@@ -4341,7 +4341,7 @@
         "SELECT": {
           "from": {
             "ref": [
-              "PA078921U11.SAP.CURRENCY.TABLE.TCURN"
+              "PA097162U00.SAP.CURRENCY.TABLE.TCURN"
             ]
           },
           "columns": [
@@ -4407,7 +4407,7 @@
         }
       ],
       "@DataWarehouse.consumption.external": true,
-      "@DataWarehouse.sqlEditor.query": "SELECT \"MANDT\",\n\t\"FCURR\",\n\t\"TCURR\",\n\tto_nvarchar(99999999 - TO_BIGINT(TO_DATS(\"GDATU\"))) AS \"GDATU\",\n\t\"NOTATION\"\nFROM \"PA078921U11.SAP.CURRENCY.TABLE.TCURN\"",
+      "@DataWarehouse.sqlEditor.query": "SELECT \"MANDT\",\n\t\"FCURR\",\n\t\"TCURR\",\n\tto_nvarchar(99999999 - TO_BIGINT(TO_DATS(\"GDATU\"))) AS \"GDATU\",\n\t\"NOTATION\"\nFROM \"PA097162U00.SAP.CURRENCY.TABLE.TCURN\"",
       "_meta": {
         "dependencies": {
           "folderAssignment": null
