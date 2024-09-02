@@ -52,7 +52,7 @@ As part of the workshop, the currency information has been imported into a centr
 
     ![Go To Currency Conversion View Creation](./images-dsp_sales_analysis_1-s4-integration/DSP_CC_Views.png)
 
-2. Select the space sharing the currency conversion view with you as source and select create, look at the similar icon as displayed in the screenshot with the space name "PA107291U00". If you're not doing this exercise as part of a workshop, select `Manual`. In this case, you need to upload the according CSV file [which you can find here](https://github.com/SAP-samples/hda-cross-pm-samples/tree/main/tutorials/partner-workshop-content/dsp_sales_analysis_1-s4-integration/data-dsp_sales_analysis_1-s4-integration) to each table generated in your space.  
+2. Select the space sharing the currency conversion view with you as source and select create, look at the similar icon as displayed in the screenshot with the space name "PA111576U00". If you're not doing this exercise as part of a workshop, select `Manual`. In this case, you need to upload the according CSV file [which you can find here](https://github.com/SAP-samples/hda-cross-pm-samples/tree/main/tutorials/partner-workshop-content/dsp_sales_analysis_1-s4-integration/data-dsp_sales_analysis_1-s4-integration) to each table generated in your space.  
 
     ![Select shared Currency Conversion Views](./images-dsp_sales_analysis_1-s4-integration/DSP_CC_Shared.png)
 
