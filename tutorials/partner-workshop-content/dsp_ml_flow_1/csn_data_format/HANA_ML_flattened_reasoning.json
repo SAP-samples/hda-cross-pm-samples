@@ -1,0 +1,92 @@
+{
+  "definitions": {
+    "HANA_ML_flattened_reasoning": {
+      "kind": "entity",
+      "elements": {
+        "Customer_Id": {
+          "@EndUserText.label": "Customer_Id",
+          "type": "cds.Integer"
+        },
+        "SCORE": {
+          "@EndUserText.label": "SCORE",
+          "type": "cds.String",
+          "length": 256
+        },
+        "CONFIDENCE": {
+          "@EndUserText.label": "CONFIDENCE",
+          "type": "cds.Double"
+        },
+        "ATTR": {
+          "@EndUserText.label": "ATTR",
+          "type": "cds.String",
+          "length": 5000,
+          "@Analytics.dimension": true
+        },
+        "VAL": {
+          "@EndUserText.label": "VAL",
+          "type": "cds.Double",
+          "@Analytics.dimension": true
+        },
+        "PCT": {
+          "@EndUserText.label": "PCT",
+          "type": "cds.Double",
+          "@Analytics.dimension": true
+        }
+      },
+      "@EndUserText.label": "HANA ML flattened reasoning",
+      "@ObjectModel.modelingPattern": {
+        "#": "DATA_STRUCTURE"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@Analytics.dbViewType": "TABLE_FUNCTION",
+      "@DataWarehouse.consumption.external": false,
+      "@DataWarehouse.tableFunction.script": "RETURN\n-- Select table and extract from reason code JSON values from the specified keys and cast them to the respective data type if needed\nSELECT\n\t\"JSON_TABLE\".\"Customer_Id\",\n\t\"JSON_TABLE\".\"SCORE\",\n\t\"JSON_TABLE\".\"CONFIDENCE\",\n\tSUBSTR_REGEXPR(\n\t\t'(\"attr\":)(\")(\\w+)(\")' IN \"JSON_TABLE\".\"REASON_CODE\" GROUP 3\n\t) AS \"ATTR\",\n\tCAST(\n\t\tSUBSTR_REGEXPR(\n\t\t\t'(\"val\":)(.*)(,)' IN \"JSON_TABLE\".\"REASON_CODE\" GROUP 2\n\t\t) AS DOUBLE\n\t) AS \"VAL\",\n\tCAST(\n\t\tSUBSTR_REGEXPR(\n\t\t\t'(\"pct\":)(.*)(})' IN \"JSON_TABLE\".\"REASON_CODE\" GROUP 2\n\t\t) AS DOUBLE\n\t) AS \"PCT\"\nFROM\n-- Subquery which splits the list of JSONs dynamically into separate rows, containing in each row one JSON over regular expressions\n\t(\n\t\tSELECT\n\t\t\t\"HANA_ML_Predictions\".\"Customer_Id\",\n\t\t\t\"HANA_ML_Predictions\".\"SCORE\",\n\t\t\t\"HANA_ML_Predictions\".\"CONFIDENCE\",\n\t\t\tSUBSTR_REGEXPR(\n\t\t\t\t'{.*?}' IN \"REASON_CODE\" OCCURRENCE SERIES.\"ELEMENT_NUMBER\"\n\t\t\t) AS \"REASON_CODE\"\n\t\tFROM\n\t\t\t\"HANA_ML_Predictions\"\n\t\t\tCROSS JOIN SERIES_GENERATE_INTEGER(1, 0, 10) SERIES\n\t\tWHERE\n\t\t\tSUBSTR_REGEXPR(\n\t\t\t\t'{.*?}' IN \"REASON_CODE\" OCCURRENCE SERIES.\"ELEMENT_NUMBER\"\n\t\t\t) IS NOT NULL\n\t) AS \"JSON_TABLE\";",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_UJVGBDPO"
+        }
+      }
+    },
+    "HANA_ML_Predictions": {
+      "kind": "entity",
+      "elements": {
+        "Customer_Id": {
+          "type": "cds.Integer",
+          "@EndUserText.label": "Customer_Id"
+        },
+        "SCORE": {
+          "type": "cds.String",
+          "length": 256,
+          "@EndUserText.label": "SCORE"
+        },
+        "CONFIDENCE": {
+          "type": "cds.Double",
+          "@EndUserText.label": "CONFIDENCE"
+        },
+        "REASON_CODE": {
+          "type": "cds.LargeString",
+          "@EndUserText.label": "REASON_CODE"
+        }
+      },
+      "@DataWarehouse.external.schema": "ML_SPACE#DBUSER",
+      "@DataWarehouse.external.entity": "HANA_ML_Prediction",
+      "@EndUserText.label": "HANA_ML_Predictions",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_UJVGBDPO"
+        }
+      }
+    }
+  },
+  "version": {
+    "csn": "1.0"
+  },
+  "meta": {
+    "creator": "CDS Compiler v1.19.2"
+  },
+  "$version": "1.0"
+}

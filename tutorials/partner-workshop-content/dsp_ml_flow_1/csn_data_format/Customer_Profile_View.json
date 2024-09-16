@@ -1,0 +1,376 @@
+{
+  "definitions": {
+    "Customer_Profile_View": {
+      "kind": "entity",
+      "elements": {
+        "Customer_Id": {
+          "@EndUserText.label": "Customer_Id",
+          "type": "cds.Integer64"
+        },
+        "Year_Birth": {
+          "@EndUserText.label": "Year_Birth",
+          "type": "cds.Integer64"
+        },
+        "Annual_Income": {
+          "@EndUserText.label": "Annual_Income",
+          "type": "cds.Integer64"
+        },
+        "Nb_Of_Kids": {
+          "@EndUserText.label": "Nb_Of_Kids",
+          "type": "cds.Integer64"
+        },
+        "Nb_Of_Teenagers": {
+          "@EndUserText.label": "Nb_Of_Teenagers",
+          "type": "cds.Integer64"
+        },
+        "Days_Since_Last_Purchase": {
+          "@EndUserText.label": "Days_Since_Last_Purchase",
+          "type": "cds.Integer64"
+        },
+        "Wines_Spending": {
+          "@EndUserText.label": "Wines_Spending",
+          "type": "cds.Integer64"
+        },
+        "Fruits_Spending": {
+          "@EndUserText.label": "Fruits_Spending",
+          "type": "cds.Integer64"
+        },
+        "Meat_Spending": {
+          "@EndUserText.label": "Meat_Spending",
+          "type": "cds.Integer64"
+        },
+        "Fish_Spending": {
+          "@EndUserText.label": "Fish_Spending",
+          "type": "cds.Integer64"
+        },
+        "Sweet_Spending": {
+          "@EndUserText.label": "Sweet_Spending",
+          "type": "cds.Integer64"
+        },
+        "Gold_Spending": {
+          "@EndUserText.label": "Gold_Spending",
+          "type": "cds.Integer64"
+        },
+        "Deals_Purchases": {
+          "@EndUserText.label": "Deals_Purchases",
+          "type": "cds.Integer64"
+        },
+        "Web_Purchases": {
+          "@EndUserText.label": "Web_Purchases",
+          "type": "cds.Integer64"
+        },
+        "Catalog_Purchases": {
+          "@EndUserText.label": "Catalog_Purchases",
+          "type": "cds.Integer64"
+        },
+        "Store_Purchases": {
+          "@EndUserText.label": "Store_Purchases",
+          "type": "cds.Integer64"
+        },
+        "Monthly_Web_Visits": {
+          "@EndUserText.label": "Monthly_Web_Visits",
+          "type": "cds.Integer64"
+        },
+        "Accepted_Campaign_3": {
+          "@EndUserText.label": "Accepted_Campaign_3",
+          "type": "cds.Integer64"
+        },
+        "Accepted_Campaign_4": {
+          "@EndUserText.label": "Accepted_Campaign_4",
+          "type": "cds.Integer64"
+        },
+        "Accepted_Campaign_5": {
+          "@EndUserText.label": "Accepted_Campaign_5",
+          "type": "cds.Integer64"
+        },
+        "Accepted_Campaign_1": {
+          "@EndUserText.label": "Accepted_Campaign_1",
+          "type": "cds.Integer64"
+        },
+        "Accepted_Campaign_2": {
+          "@EndUserText.label": "Accepted_Campaign_2",
+          "type": "cds.Integer64"
+        },
+        "Has_Complained": {
+          "@EndUserText.label": "Has_Complained",
+          "type": "cds.Integer64"
+        },
+        "Has_Responded": {
+          "@EndUserText.label": "Has_Responded",
+          "type": "cds.Integer64"
+        }
+      },
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "Customer_Profile_Table"
+            ]
+          },
+          "columns": [
+            {
+              "ref": [
+                "Customer_Id"
+              ]
+            },
+            {
+              "ref": [
+                "Year_Birth"
+              ]
+            },
+            {
+              "ref": [
+                "Annual_Income"
+              ]
+            },
+            {
+              "ref": [
+                "Nb_Of_Kids"
+              ]
+            },
+            {
+              "ref": [
+                "Nb_Of_Teenagers"
+              ]
+            },
+            {
+              "ref": [
+                "Days_Since_Last_Purchase"
+              ]
+            },
+            {
+              "ref": [
+                "Wines_Spending"
+              ]
+            },
+            {
+              "ref": [
+                "Fruits_Spending"
+              ]
+            },
+            {
+              "ref": [
+                "Meat_Spending"
+              ]
+            },
+            {
+              "ref": [
+                "Fish_Spending"
+              ]
+            },
+            {
+              "ref": [
+                "Sweet_Spending"
+              ]
+            },
+            {
+              "ref": [
+                "Gold_Spending"
+              ]
+            },
+            {
+              "ref": [
+                "Deals_Purchases"
+              ]
+            },
+            {
+              "ref": [
+                "Web_Purchases"
+              ]
+            },
+            {
+              "ref": [
+                "Catalog_Purchases"
+              ]
+            },
+            {
+              "ref": [
+                "Store_Purchases"
+              ]
+            },
+            {
+              "ref": [
+                "Monthly_Web_Visits"
+              ]
+            },
+            {
+              "ref": [
+                "Accepted_Campaign_3"
+              ]
+            },
+            {
+              "ref": [
+                "Accepted_Campaign_4"
+              ]
+            },
+            {
+              "ref": [
+                "Accepted_Campaign_5"
+              ]
+            },
+            {
+              "ref": [
+                "Accepted_Campaign_1"
+              ]
+            },
+            {
+              "ref": [
+                "Accepted_Campaign_2"
+              ]
+            },
+            {
+              "ref": [
+                "Has_Complained"
+              ]
+            },
+            {
+              "ref": [
+                "Has_Responded"
+              ]
+            }
+          ]
+        }
+      },
+      "@EndUserText.label": "Customer Profile View",
+      "@ObjectModel.modelingPattern": {
+        "#": "DATA_STRUCTURE"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@DataWarehouse.consumption.external": true,
+      "@DataWarehouse.sqlEditor.query": "SELECT \"Customer_Id\",\n\t\"Year_Birth\",\n\t\"Annual_Income\",\n\t\"Nb_Of_Kids\",\n\t\"Nb_Of_Teenagers\",\n\t\"Days_Since_Last_Purchase\",\n\t\"Wines_Spending\",\n\t\"Fruits_Spending\",\n\t\"Meat_Spending\",\n\t\"Fish_Spending\",\n\t\"Sweet_Spending\",\n\t\"Gold_Spending\",\n\t\"Deals_Purchases\",\n\t\"Web_Purchases\",\n\t\"Catalog_Purchases\",\n\t\"Store_Purchases\",\n\t\"Monthly_Web_Visits\",\n\t\"Accepted_Campaign_3\",\n\t\"Accepted_Campaign_4\",\n\t\"Accepted_Campaign_5\",\n\t\"Accepted_Campaign_1\",\n\t\"Accepted_Campaign_2\",\n\t\"Has_Complained\",\n\t\"Has_Responded\"\nFROM \"Customer_Profile_Table\"",
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_UJVGBDPO"
+        }
+      }
+    },
+    "Customer_Profile_Table": {
+      "kind": "entity",
+      "@ObjectModel.modelingPattern": {
+        "#": "DATA_STRUCTURE"
+      },
+      "@ObjectModel.supportedCapabilities": [
+        {
+          "#": "DATA_STRUCTURE"
+        }
+      ],
+      "@DataWarehouse.dataSource.schema": "ML_SPACE#WRG_26FH2M1OP5KQL9CU",
+      "@DataWarehouse.dataSource.entity": "sap.dataset.conf_506e4874-aaa7-43b7-bd9e-532632e114ba_view",
+      "@EndUserText.label": "Customer Profile Table",
+      "elements": {
+        "Customer_Id": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Customer_Id"
+        },
+        "Year_Birth": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Year_Birth"
+        },
+        "Annual_Income": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Annual_Income"
+        },
+        "Nb_Of_Kids": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Nb_Of_Kids"
+        },
+        "Nb_Of_Teenagers": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Nb_Of_Teenagers"
+        },
+        "Days_Since_Last_Purchase": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Days_Since_Last_Purchase"
+        },
+        "Wines_Spending": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Wines_Spending"
+        },
+        "Fruits_Spending": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Fruits_Spending"
+        },
+        "Meat_Spending": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Meat_Spending"
+        },
+        "Fish_Spending": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Fish_Spending"
+        },
+        "Sweet_Spending": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Sweet_Spending"
+        },
+        "Gold_Spending": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Gold_Spending"
+        },
+        "Deals_Purchases": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Deals_Purchases"
+        },
+        "Web_Purchases": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Web_Purchases"
+        },
+        "Catalog_Purchases": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Catalog_Purchases"
+        },
+        "Store_Purchases": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Store_Purchases"
+        },
+        "Monthly_Web_Visits": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Monthly_Web_Visits"
+        },
+        "Accepted_Campaign_3": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Accepted_Campaign_3"
+        },
+        "Accepted_Campaign_4": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Accepted_Campaign_4"
+        },
+        "Accepted_Campaign_5": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Accepted_Campaign_5"
+        },
+        "Accepted_Campaign_1": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Accepted_Campaign_1"
+        },
+        "Accepted_Campaign_2": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Accepted_Campaign_2"
+        },
+        "Has_Complained": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Has_Complained"
+        },
+        "Has_Responded": {
+          "type": "cds.Integer64",
+          "@EndUserText.label": "Has_Responded"
+        }
+      },
+      "_meta": {
+        "dependencies": {
+          "folderAssignment": "Folder_UJVGBDPO"
+        }
+      }
+    }
+  },
+  "version": {
+    "csn": "1.0"
+  },
+  "meta": {
+    "creator": "CDS Compiler v1.19.2"
+  },
+  "$version": "1.0"
+}
