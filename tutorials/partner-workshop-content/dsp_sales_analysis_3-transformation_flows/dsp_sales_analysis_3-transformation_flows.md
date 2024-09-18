@@ -30,7 +30,7 @@ Create a transformation flow to load data from one or more source tables, apply 
 
     ![Transformation Flow - Graphical View Transform](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_GV_Transform.png)
 
-3. Now you are in the **Graphical View Editor**. Search for the local table `Sales Document Item (LT)` (`SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1_Delta`) and drag it into the editor.
+3. Now you are in the **Graphical View Editor**. Search for the local table `Sales Document Item (LT)` (`SAP_SD_IL_C_SALESDOCUMENTITEMDEX_1`) and drag it into the editor.
 
    ![Transformation Flow - Source Table](./images-dsp_sales_analysis_3-transformation_flows/DSP_TF_SourceTable.png)
 
