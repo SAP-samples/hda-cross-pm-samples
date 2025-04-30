@@ -5,7 +5,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 [![REUSE status](https://api.reuse.software/badge/github.com/sap-samples/hda-cross-pm-samples)](https://api.reuse.software/info/github.com/sap-samples/hda-cross-pm-samples)
 
-# SAP HANA Database & Analytics Cross Product Management Samples
+# SAP Business Data Cloud Cross Product Management Samples
 
 ## Description
 Samples, tutorials, and use cases for SAP HANA database and analytics products, including  SAP Datasphere, SAP Analytics Cloud, and more. This is an ongoing project. This is what is currently available:
@@ -23,6 +23,16 @@ Samples, tutorials, and use cases for SAP HANA database and analytics products, 
     - Importing data from Data Marketplace
     - Building and Improving the Data Model
     - Creating an SAP Analytics Cloud Story on Extended Model
+	
+2. SAP Business Data Cloud end-to-end scenarios
+	- Basic Configuration of SAP Business Data Cloud
+	- Installation of Insight Apps
+	- Consumption of Insight Apps
+	- Activating Data Packages in SAP Business Data Cloud Cockpit & Installing Data Products in SAP Datasphere
+	- Enrich Data Products with ML Capabilities leveraging SAP Databricks
+	- Enhance an Analytic Model in an Insight App
+	- Enhance the stories in an Insight App
+	
 
 ## Requirements
 There are no overall requirements. Refer to each of the exercises or use cases for their individual pre-requisites.

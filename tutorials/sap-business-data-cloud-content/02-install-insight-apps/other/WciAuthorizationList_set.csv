@@ -1,0 +1,14 @@
+﻿Permissions_ID;User_ID;Restriction;Criterion;Operator;First_Value;Second_Value;Valid_From;Valid_To
+1;a.b@company.com;Group1;Country;ALL;;;19000101;29991231
+2;a.b@company.com;Group2;CompanyCode;ALL;;;19000101;29991231
+3;a.b@company.com;Group3;Ledger;ALL;;;19000101;29991231
+4;a.b@company.com;Group4;ProfitCenter;ALL;;;19000101;29991231
+5;a.b@company.com;Group4;ControllingArea;ALL;;;19000101;29991231
+6;a.b@company.com;Group5;ControllingArea;ALL;;;19000101;29991231
+7;a.b@company.com;Group6;Customer;ALL;;;19000101;29991231
+8;a.b@company.com;Group7;Supplier;ALL;;;19000101;29991231
+9;a.b@company.com;Group8;Bank;ALL;;;19000101;29991231
+10;a.b@company.com;Group9;FinancialAccountType;ALL;;;19000101;29991231
+11;a.b@company.com;Group10;GLAccount;ALL;;;19000101;29991231
+12;a.b@company.com;Group10;ChartOfAccounts;ALL;;;19000101;29991231
+13;a.b@company.com;Group11;Segment;ALL;;;19000101;29991231
