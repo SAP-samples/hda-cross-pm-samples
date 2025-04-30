@@ -34,7 +34,7 @@ This exercise consists of the following sections:
     - DW Modeler to modify entities in the Data Builder - Persona ***Data Modeler***
 	
 ## Disclaimer
-> his is one method of enhancing SAP-Managed content, though other approaches can also be used. Future releases can include new features designed to simplify enhancements further.
+> This is one of the methods of enhancing SAP-Managed content, though other approaches can also be used. Future releases can include new features designed to simplify enhancements further.
 
 ## Steps
 
