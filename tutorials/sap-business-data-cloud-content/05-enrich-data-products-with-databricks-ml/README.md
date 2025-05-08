@@ -5,11 +5,11 @@
 
 ## Persona 
 
-<img src="../../resources/images/data_engineer.png" alt="Data Engineer" width="100"/>
+<img src="../resources/images/data_engineer.png" alt="Data Engineer" width="100"/>
 
-<img src="../../resources/images/data_scientist.png" alt="Data Scientist" width="100"/>
+<img src="../resources/images/data_scientist.png" alt="Data Scientist" width="100"/>
 
-<img src="../../resources/images/databricks_admin.png" alt="Databricks Admin" width="100"/>
+<img src="../resources/images/databricks_admin.png" alt="Databricks Admin" width="100"/>
 
 ## Use Case
 - Hyperparameter Tuning of Time Series algorithms to predict future cash liquidity
