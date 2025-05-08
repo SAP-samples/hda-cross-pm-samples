@@ -23,7 +23,7 @@ In this use case, you will enhance a cash flow related view with Databricks clus
 ## Overview
 This exercise consists of the following sections:
 - [Copy SAP-Managed Space](#copy-sap-managed-space)
-- [Run Replication Flows](#run-replication-flows)
+- [Prepare the Space for Enhancement](#prepare-the-space-for-enhancement)
 - [Prepare Mock Data](#prepare-mock-data)
 - [Enhance Fact View](#enhance-fact-view) 
 - [Enhance Analytic Model](#enhance-analytic-model) 
@@ -59,6 +59,8 @@ The following is the setup envisioned for this use case:
 * In the next use case, in SAP Analytics Cloud, we will add the new model and a new chart to visualize in the customer-managed insight app story.
 
 ### Copy SAP-Managed Space
+
+> :books: If you are participating in a SAP BDC training, the space copy was already done for you (space name PA01XXXXXXX). Read the following chapter and continue with [Prepare the space for Enhancement](#prepare-the-space-for-enhancement). <br>
 
 > <img src="../resources/images/bdc_admin.png" alt="BDC Admin" width="100"/>
 
@@ -103,7 +105,7 @@ The following is the setup envisioned for this use case:
 ### Prepare the Space for Enhancement
 
 > :books: If you are participating in a SAP BDC training, your enhancement space will have a prefix **AC_** or **PA_**
-In the **Data Builder** tab, in your enhancement space **S4H_EXT**, create a new folder called **00_Enhancement_Scenario**. We will use this folder for all enhancements.
+In the **Data Builder** tab, in your enhancement space **S4H_EXT** or **PXXXXXXXXXX**, create a new folder called **00_Enhancement_Scenario**. We will use this folder for all enhancements.
 <img src="./images/new_extension_folder.png"  width="1000"/>
 
 ### Prepare Mock Data
@@ -160,10 +162,19 @@ The local table ***Mock Data for Company Clusters*** was onboarded as part of th
 3. Enhance the above mentioned Fact view with the SAP Databricks dataset by joining the tables in the SQL view on the column ´CompanyCode´. Add the two attributes or co-ordinates 	´TSNE_X´ and ´TSNE_Y´ to the list of projected attributes as shown in the following image. Then 'Save' the view. This would ensure that the attributes appear in the projected attributes in the **Details** tab.
 <img src="./images/enhanceFactView.png"  width="1000"/>
 
-4. In the **Details** tab, convert the two attributes from the SAP Databricks dataset to **Measures** by selecting the [...] button and selecting **Change to Measure**. Perform this step for both the attributes ´TSNE_X´ and ´TSNE_Y´
+>[!Note]
+> The next two steps describe deletion of the Data Access Controls since it is not relevant for this enhancement scenario. In this scenario, the Data Access Controls from the SAP-managed space are still being referenced in the stories in SAP Analytics Cloud. However, in the real-world scenario, the Data access controls must be updated with relevant rows secure the data. The process has been described in the step 11 [here](/02-install-insight-apps/README.md#steps).
+
+4. In the **Details** tab, remove both the Data Access Controls (DAC) to view the data. Select the DAC by clicking anywhere on the added DAC and then select the delete button. Repeat this step for the second DAC.
+<img src="./images/deleteDAC.png"  width="1000"/>
+
+5. The Data Access Control section must be now empty as shown in the following image.
+<img src="./images/deletedDAC.png"  width="1000"/>
+
+6. In the **Details** tab, convert the two attributes from the SAP Databricks dataset to **Measures** by selecting the [...] button and selecting **Change to Measure**. Perform this step for both the attributes ´TSNE_X´ and ´TSNE_Y´
 <img src="./images/changeToMeasure.png"  width="1000"/>
 
-5. Deploy the view once both attributes have been changed to **Measures**.
+7. Deploy the view once both attributes have been changed to **Measures**.
 <img src="./images/deployView.png"  width="1000"/>
 
 ### Create a new Analytic Model

@@ -51,6 +51,10 @@ In this next section, we learn how to install the insight app. But before that, 
     * SAP_WCI - This space contains all the analytic models that form the foundation of the SAC stories.
     * SAP_S4H - This space contains all the modelling artifacts required to build the analytic models, such as views, data access controls etc.
     * SAP_S4H_ING - This space contains all the local tables and their corresponding replication flows. The data from the data products reside in these local tables.  <br/>
+    
+> [!NOTE]
+> The new version of the insight app does not require its own ingestion space. It reuses the ingestion space that is used for all data product installation. The SAP_S4H_ING space is obsolete as of Wave 9. If the tenant has updated to the new version of the insight app, you will not see this space.
+
 ![content](images/dspSacContent.png) 
 
 

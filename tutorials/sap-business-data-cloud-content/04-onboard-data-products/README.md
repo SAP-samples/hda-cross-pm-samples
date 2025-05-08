@@ -40,6 +40,9 @@ A Data package contains sets of related data products for use in modelling proje
 ### Main components of the Data Package
 
 #### Overview
+
+> :books: If you are participating in a SAP BDC training, this section is just for observations, please feel free through read, click and learn. However, your setup might look different due to different roles. To continue to the steps that can be performed, skip to [here](#install-active-data-products-via-the-sap-datasphere-catalog)<br/>
+
 The Overview section provides the following information about the package:
 <img src="./images/BDCDatapackage.png"  width="1000"/>
 
@@ -73,7 +76,7 @@ Installing a Data product for the first time in the corresponding SAP Datasphere
 ## Observations
 
 ### Explore Data Products in the Catalog
-> :books: If you are participating in a SAP BDC training, the creation of your SAP BDC Cockpit user has already been done. This next section is just for observations, feel free to click through and learn. <br/>
+> :books: If you are participating in a SAP BDC training, the creation of your SAP BDC Cockpit user has already been done. This next section is just for observations, please feel free through read, click and learn. However, your setup might look different due to different roles. To continue to the steps that can be performed, skip to [here](#install-active-data-products-via-the-sap-datasphere-catalog)<br/>
 
 The catalog in BDC Cockpit provides a structured inventory of business data, while the SAP Datasphere Catalog offers powerful tools for discovering, evaluating, and installing data products, with features that enhance data lineage and integration across various SAP and non-SAP sources.
 
@@ -104,10 +107,14 @@ The catalog in BDC Cockpit provides a structured inventory of business data, whi
 > [!NOTE]
 > If a data product is not available for consumption yet, its definition is derived from the standard ORD definition. The ORD specification provides a structured way to describe data products. Please find more information about ORD [here](https://open-resource-discovery.github.io/specification/) .
 
-
+## Steps
 ### Activate Data Packages in BDC Cockpit
 
-> :books: If you are participating in a SAP BDC training, you are going to install the Data Product ***House Bank*** in SAP Datasphere. The corresponding Data Package **SAP S/4HANA Financial Operations Data Products** needs to be installed before by the trainers of the workshop (one-time activity). You can read through the following chapter to see the steps required.<br/>
+> :books: If you are participating in a SAP BDC training, the activation of Data package was already done for you. Read the following chapter and continue [Install Active Data Products via the SAP Datasphere Catalog](#install-active-data-products-via-the-sap-datasphere-catalog).
+
+
+> [!Note]
+If you are participating in a SAP BDC training, you are going to install the Data Product ***House Bank*** in SAP Datasphere. The corresponding Data Package **SAP S/4HANA Financial Operations Data Products** needs to be installed before by the trainers of the workshop (one-time activity). You can read through the following chapter to see the steps required.<br/>
 
 > <img src="../resources/images/bdc_admin.png" alt="BDC Admin" width="100"/>
 
@@ -137,7 +144,7 @@ When activating a data package, make sure the source system is correctly identif
 7. After installation of the data package **SAP S/4HANA Financial Operations Data Products**, you will find under the **Installed** tab in Insight Apps and Data Packages.
 <img src = "./images/Insightappandpackage_active.png" width= "1000"/>
 
-## Steps
+
 ### Install Active Data Products via the SAP Datasphere Catalog 
 
 > [!Note]
@@ -145,7 +152,9 @@ When activating a data package, make sure the source system is correctly identif
 
 
 1. To install the Data Product in SAP Datasphere, switch to SAP Datasphere through  **System Landscape** Tab by navigating from the relavant formation.
-<img src ="./images/SwitchDatasphere.png"  width="1000"/>.
+<img src ="./images/SwitchDatasphere.png"  width="1000"/>. <br/>
+
+> :books: If you are participating in a SAP BDC training, this next step does not need to be performed. The space assigned to you was already enabled for data product installation.  <br/>
 
 2. Before installing the Data Product, we need to add the custom space where we want to install our required Data product to the System > Business Data Products tab and select the correct source system.  Follow these steps for your custom space(consumption space) where the data product will be installed:
 
@@ -154,35 +163,32 @@ When activating a data package, make sure the source system is correctly identif
 - Add the custom space where you intend to install the Data Product.
 - Ensure that you select the correct source system for accurate integration.
 
-<img src="./images/AddCustomspace.png"  width="1000"/>
+<img src="./images/AddCustomspace.png"  width="1000"/>  <br/>
 
-> :books: If you are participating in a SAP BDC training, select the **space that was assigned to you**.
+> :books: If you are participating in a SAP BDC training, select the space that was assigned to you as your participant space **PAXXXXXXX**.  <br/>
 
-3.In the Catalog & Marketplace **SAP Business Data Cloud Data Products** tab search for the Data Product ***House Bank*** which was already activated in the BDC Cockpit. <br/>
-<img src="./images/DatasphereCatalog.png"  width="1000"/>
+3. In the Catalog & Marketplace **SAP Business Data Cloud Data Products** tab search for the Data Product ***House Bank*** which was already activated in the SAP BDC Cockpit. <br/>
+<img src="./images/DatasphereCatalog.png"  width="1000"/> <br/>
 
+4. Open the Data Product ***House Bank***.
+<img src="./images/HouseBank.png"  width="1000"/> <br/>
 
-4.Open the Data Product ***House Bank***.
-<img src="./images/HouseBank.png"  width="1000"/>
+5. This data product is active as displayed in the header. 
+<img src="./images/InstallDataProduct.png"  width="1000"/> <br/>
 
-5.This data product is active as displayed in the header. 
-<img src="./images/InstallDataProduct.png"  width="1000"/>
+6. Choose the 'Install' button to start the installation. 
+<img src="./images/InstallScreen.png"  width="1000"/><br/>
 
-6.Choose the 'Install' button to start the installation. 
-<img src="./images/InstallScreen.png"  width="1000"/>
+7. Select target space **Custom Space**, and click on ***Next Steps***.
+<img src="./images/Selecttarget.png"  width="1000"/> <br/>
 
-7.Select target space **Custom Space**, and click on ***Next Steps***.
-<img src="./images/Selecttarget.png"  width="1000"/>
+8. Review the entities (replication flow and local table) and run the import selecting ***Start Import and Deploy***. <br/>
+<img src="./images/ImportEntities.png"  width="1000"/> <br/>
 
-8.Review the entities (replication flow and local table) and run the import selecting ***Start Import and Deploy***. <br>
-<img src="./images/ImportEntities.png"  width="1000"/> 
-
-9.You see the message ***Importing entities. Check the notifications for the status of the import.***.
-
-10.Notifications display that the import started and also that the import completed successfully.
+9. You see the message ***Importing entities. Check the notifications for the status of the import.***. <br/>
+10.Notifications display that the import has started and then completed successfully. <br/>
 
 <img src="./images/import_completed.png"  width="1000"/>
-
 
 
 >[!Note]
@@ -190,16 +196,22 @@ When activating a data package, make sure the source system is correctly identif
 ><img src="./images/SAPManagedSpace.png"  width="1000"/>
 
 
-11. Select the local table "Master data for House Bank" and open the data preview. This will direct you to the table in the SAP-managed space, as the data is shared from there. The table is automatically populated by the Replication Flow, so you don't need to manually start a run. 
+11. To view the data of the installed data product, create a new **Graphical view** in your assigned space.
 
-<img src="./images/Datapreview_custom space.png"  width="1000"/>
+<img src="./images/GraphicalView.png"  width="1000"/> <br/>
 
+>[Note]
+Since, you do not have access to the SAP-Managed space, querying shared entities is not possible. Creating a view on top of the entity is the only way to view the data. Only with a global admin role, the SAP-managed space can be viewed and the entities can be previewed directly.
+12. Drag the table ***Master Data For House Bank*** into the view and save it as ***HouseBank_DataPreview*** and then deploy.
 
+<img src="./images/HouseBank_DataPreview_view.png"  width="1000"/><br/>
 
+13. Preview the data in the ***HouseBank_DataPreview*** view.
 
+<img src="./images/Datapreview_View.png"  width="1000"/><br/>
 
-<img src="./images/housebank_datapreview.png"  width="1000"/>
-
+>[Note]
+On installation of the data product ***House Bank***, the entity is shared from the SAP-managed space. For all further installations in other spaces, the same entity will be shared from the SAP-managed space. The data is not replicated multiple times. 
 
 You can now enhance the business use case by building on top of the installed data product.
 

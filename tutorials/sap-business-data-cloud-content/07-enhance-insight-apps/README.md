@@ -20,13 +20,8 @@ This exercise is separated into three sections:
 ## Prerequisites
 - SAP Analytics Cloud User Permissions: 
     - BI Admin role or another Admin role is required to view the tab **Insight Apps** under the **Files**. Hence, one of the admin roles is required to view and copy the Insight App.
-> :books: If you are participating in a SAP BDC training, you have not been assigned the admin role. The Insight App story has been shared with you and will be visible under the **Shared with Me** tab.
 
 ## Steps
-
-> :books: If you are participating in a SAP BDC training, skip the **Story Copy** chapter as your user does not have the BI Admin role assigned. Follow the instructions listed [here](/07-enhance-insight-apps/workshop_README.md) instead.
-<br>A copied story has been shared with you.</br>
-Please **skip** copying the story and go the section [Modify and Enhance Copied Story](#modify-and-enhance-copied-story) and use the story shared in your space for this exercise!
 
 ### Story Copy
 1. Open the SAP Analytics Cloud tenant.
