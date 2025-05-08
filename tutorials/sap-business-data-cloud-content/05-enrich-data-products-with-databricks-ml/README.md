@@ -1,7 +1,7 @@
 # Enrich Data Products with ML Capabilities coming through Databricks
 
 > [!CAUTION]
-> All versions of the Databricks Notebooks are based on pre-beta data products. The final data products might look different. The created notebooks do not represent official documents of SAP showcasing the best possible way to perform Machine Learning on Data Products. All notebooks represent sample files showcasing the end to end workflow between SAP and Databricks
+> The created notebooks do not represent official documents of SAP showcasing the best possible way to perform Machine Learning on Data Products. All notebooks represent sample files showcasing the end to end workflow between SAP and Databricks
 
 ## Persona 
 
