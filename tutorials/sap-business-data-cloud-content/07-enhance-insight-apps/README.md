@@ -88,5 +88,4 @@ This exercise is separated into three sections:
 You have successfully copied the story and re-pointed to the Analytic Model within the copied space.
 
 ## Next Steps
-As you are using mock data, skip the [additional use case](./additional_use_case-cashflow_prediction.md) for now which explains how to add the new Analytic Model ([previous description](../06-enhance-analytic-model/additional_use_case-cashflow_prediction.md)) in the SAP Analytics Cloud story.
 Continue with the [use case about native data integration capabilities](../09-native-data-integration/README.md).

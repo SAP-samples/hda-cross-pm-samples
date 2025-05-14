@@ -52,4 +52,4 @@ We learn how to enhance these models and corresponding content in the upcoming e
 
 
 ## Next Steps
-In the next [exercise](04-onboard-data-products/README.md), you learn how a data product can be onboarded without a corresponding Insight App. In subsequent exercises, you also learn how to integrate Databricks to enhance the data products and Insight Apps.
+In the next [exercise](../04-onboard-data-products/README.md), you learn how a data product can be onboarded without a corresponding Insight App. In subsequent exercises, you also learn how to integrate Databricks to enhance the data products and Insight Apps.

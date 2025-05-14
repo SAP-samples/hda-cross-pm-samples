@@ -153,4 +153,4 @@ In this next section, we learn how to install the insight app. But before that, 
 **Working Capital Insights** Insight App is now available for consumption.
 
 ## Next Steps
-In the next [exercise](/03-consuming-insight-apps/README.md), you learn how a business user can start consuming the Insight App to draw meaningful insights from the underlying data products data.
+In the next [exercise](../03-consuming-insight-apps/README.md), you learn how a business user can start consuming the Insight App to draw meaningful insights from the underlying data products data.

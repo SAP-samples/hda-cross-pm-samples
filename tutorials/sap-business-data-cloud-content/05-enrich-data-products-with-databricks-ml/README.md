@@ -20,8 +20,8 @@
 > Priviliges needed might change during the development process between Beta and GA release
 * Knowledge about Databricks and Python required
 * Knowledge about ML and ML metrics desirable
-* [Basic Configuration of the SAP BDC Cockpit](01-basic-config-bdc-cockpit/README.md) 
-* [Onboard Data Products](04-onboard-data-products/README.md) / [Install Insight Apps](02-install-insight-apps/README.md) / [Expose Dataset to Databricks]()
+* [Basic Configuration of the SAP BDC Cockpit](../01-basic-config-bdc/README.md) 
+* [Onboard Data Products](../04-onboard-data-products/README.md) / [Install Insight Apps](../02-install-insight-apps/README.md) / [Expose Dataset to Databricks]()
 * Assign the following privileges to the Databricks user:
   * CREATE_CATALOG
   * CREATE_SHARE
@@ -97,4 +97,4 @@ In the following sections we will outline on the individual flow of each noteboo
 
 
 ### Sharing from Databricks Delta Table to SAP BDC
-In order to be able to enhance your datasets, please follow the steps outlined in section [Install Derived Data Product Shared by Databricks](share_bdc_databricks.md#install-derived-data-product-shared-by-databricks). In the [next exercise](/beta-pipeline/06-enhance-analytic-model/README.md) the process of dataset enhancement within SAP BDC is outlined using an analytical model.
+In order to be able to enhance your datasets, please follow the steps outlined in section [Install Derived Data Product Shared by Databricks](share_bdc_databricks.md#install-derived-data-product-shared-by-databricks). In the [next exercise](../06-enhance-analytic-model/README.md) the process of dataset enhancement within SAP BDC is outlined using an analytical model.
