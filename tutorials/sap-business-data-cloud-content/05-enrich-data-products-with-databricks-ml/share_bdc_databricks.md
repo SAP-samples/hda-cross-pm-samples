@@ -9,9 +9,9 @@
 ## Persona
 Actors:
 
-<img src="../../resources/images/databricks_admin.png" alt="Databricks Admin" width="100"/>
+<img src="/../resources/images/databricks_admin.png" alt="Databricks Admin" width="100"/>
 
-<img src="../../resources/images/bdc_admin.png" alt="BDC Admin" width="100"/>
+<img src="/../resources/images/bdc_admin.png" alt="BDC Admin" width="100"/>
 
 You will see their images in this exercise every time the leading persona switches. 
 
