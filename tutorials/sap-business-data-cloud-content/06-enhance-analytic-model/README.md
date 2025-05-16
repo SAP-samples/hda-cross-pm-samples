@@ -125,7 +125,7 @@ SELECT CompanyCode,
 	FLOOR(Rand() * 20) + 1 AS label
 FROM (
 		SELECT DISTINCT CompanyCode
-		FROM "SAP_S4H_ING.Remote.S4H.CompanyCode:v1.CompanyCode"
+		FROM "sap_s4h_CompanyCode"
 	)
 ```
 4. Validate the script and check that no issue is identified.
