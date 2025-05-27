@@ -12,7 +12,7 @@ Stakeholders: <br/>
 <img src="../resources/images/business_user.png" alt="Business User" width="100"/>
 
 ## Prerequisites
-You have completed the configuration of the SAP BDC Cockpit which can be found [here](../01-basic-config-bdc-cockpit/README.md).
+You have completed the configuration of the SAP BDC Cockpit which can be found [here](../01-basic-config-bdc/README.md).
 
 ## Use Case
 This exercise describes the installation of the Intelligent Application called Working Capital Insights. This exercise also describes how the content authorisation is configured.
