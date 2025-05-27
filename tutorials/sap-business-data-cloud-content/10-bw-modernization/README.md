@@ -103,4 +103,4 @@ BW Data Products will be availabe in the catalog of SAP Datasphere for further u
 </table>
 
 ## Next Steps
-You can now continue with the reading material that is provided about [accessing Data products from customized S/4HANA CDS views](/13-customized-cdsviews-s4hana/README.md).
+You can now continue with the reading material that is provided about [accessing Data products from customized S/4HANA CDS views](../13-customized-cdsviews-s4hana/README.md).

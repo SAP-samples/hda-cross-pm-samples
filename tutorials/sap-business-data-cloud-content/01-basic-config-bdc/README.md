@@ -76,7 +76,7 @@ In this chapter, we navigate the task of configuring the SAP Business Data Cloud
 
 ### Provisioning of SAP Analytics Cloud/SAP Datasphere
 In a SAP Business Data Cloud Landscape, other than the data source systems (currently S/4HANA Private Cloud Edition), other products can be provisioned to leverage the different capabilities that are provided.
-SAP Analytics Cloud serves as the consumption layer where the insight apps reside which are powered by the underlying data products.
+SAP Analytics Cloud serves as the consumption layer where the intelligent applications reside which are powered by the underlying data products.
 SAP Datasphere is the runtime where the data products can be installed and then enhanced.
 SAP Databricks is the workbench which powers the machine learning scenarios.
 
@@ -177,4 +177,4 @@ Formations allow you to combine SAP solution systems to simplify the connectivit
 
 
 ## Next Steps
-All the configurations are now in place. In the next [exercise](/02-install-insight-apps/README.md), you learn how an SAP BDC Admin can install an Insight App and start deriving insights from all the valulable business data. In the subsequent exercises, we also learn how to  install data products.
+All the configurations are now in place. In the next [exercise](../02-install-intelligent-applications/README.md), you learn how an SAP BDC Admin can install an Intelligent Application and start deriving insights from all the valulable business data. In the subsequent exercises, we also learn how to  install data products.

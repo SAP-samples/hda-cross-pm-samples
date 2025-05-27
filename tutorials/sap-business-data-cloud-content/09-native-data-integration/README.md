@@ -9,7 +9,7 @@ Actor:
 
 
 ## Motivation
-SAP Datasphere offers extensive default connections to access data from different sources, independent of the deployment (on-premise or cloud) or its origin (SAP or non-SAP). This exercise guides customers on how to integrate data into the Business Data Cloud that isn't readily available as a data product, part of an Insight App or resides in a third party solution.
+SAP Datasphere offers extensive default connections to access data from different sources, independent of the deployment (on-premise or cloud) or its origin (SAP or non-SAP). This exercise guides customers on how to integrate data into the Business Data Cloud that isn't readily available as a data product, part of an Intelligent Application or resides in a third party solution.
 
 You can use a wide range of data from both SAP and non-SAP sources to build your analytic use case through the help of native integration and built-in connectors. This allows you to easily integrate and consolidate data, making the most of your data to ensure that business insights are reliably conveyed. You can find the list of [supported connection types here](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/bffbd58c15784a62af0520f171018ded.html).
 
@@ -178,7 +178,7 @@ In this part of the exercise, the replication flow extracts transactional data f
 This was a simple use case showing the basic integration and modelling capabilities. This use case can be extended to bring in data from other CDS views to extend the business use case or even integrate any relevant data from other systems. The results can be used for reporting, using the visualization capabilities of SAP Analytics Cloud.
 
 ## Next Steps
-You can now continue with the reading material that has been provided for [BW-Modernization](/10-bw-modernization/README.md).
+You can now continue with the reading material that has been provided for [BW-Modernization](../10-bw-modernization/README.md).
 
 
 

@@ -16,7 +16,7 @@ When analyzing the Cash Flow, our business users want to better understand the c
 
 We want to add the coordinates as visual representation to our report, therefore we need to add these as measures to our model.
 
-To customize the delivered content through SAP Business Data Cloud as part of the Insight App, the space content onboarded via SAP Business Data Cloud needs to be transformed from SAP managed content into editable content using the space copy option. The Data Builder entities are originally protected by the "sap." namespace, where the namespace of the copied entities will be removed and they will become editable. In copied spaces, the "sap." will be renamed to "sap_" which indicates that it is now a customer-managed copied of the artifacts.
+To customize the delivered content through SAP Business Data Cloud as part of the Intelligent Application, the space content onboarded via SAP Business Data Cloud needs to be transformed from SAP managed content into editable content using the space copy option. The Data Builder entities are originally protected by the "sap." namespace, where the namespace of the copied entities will be removed and they will become editable. In copied spaces, the "sap." will be renamed to "sap_" which indicates that it is now a customer-managed copied of the artifacts.
 
 In this use case, you will enhance a cash flow related view with Databricks clustering data and as a result, the anayltic model will also be enhanced. The motivation for this exercise is to view the clustering results in SAP Analytics Cloud which will be done in the next exercise.
 
@@ -56,7 +56,7 @@ The following is the setup envisioned for this use case:
 * Databricks dataset must be shared into this space inside the enhancement folder.
 * Identify the fact source with which the Databricks dataset could be joined. In this use, we will use Cashflow related Fact view.
 * In the enhancement folder, we will create a new analytic model with the above mentioned Fact view as basis.
-* In the next use case, in SAP Analytics Cloud, we will add the new model and a new chart to visualize in the customer-managed insight app story.
+* In the next use case, in SAP Analytics Cloud, we will add the new model and a new chart to visualize in the customer-managed intelligent application story.
 
 ### Copy SAP-Managed Space
 
@@ -64,7 +64,7 @@ The following is the setup envisioned for this use case:
 
 > <img src="../resources/images/bdc_admin.png" alt="BDC Admin" width="100"/>
 
-1. Open the space created as part of the Insight App. We will be copying the prep space or the relational modelling space (named ***SAP_S4H***). If you are not sure of the space name, you can find it in the SAP Business Data Cloud Cockpit and jump directly to the space via the link.
+1. Open the space created as part of the Intelligent Application. We will be copying the prep space or the relational modelling space (named ***SAP_S4H***). If you are not sure of the space name, you can find it in the SAP Business Data Cloud Cockpit and jump directly to the space via the link.
 <img src="./images/bdc_cockpit_space_name.png"  width="1000"/>
 
 2. Select the ***...*** button in the menu of the space in order to duplicate a space.
@@ -119,6 +119,7 @@ An SQL View is used to generate the mock data. Later, the Databricks result will
 2. Paste the following SQL Code:
 
 ```sql
+
 SELECT CompanyCode,
 	ROUND(Rand() * 100, 2) AS TSNE_X,
 	ROUND(Rand() * 100, 2) AS TSNE_Y,
@@ -127,8 +128,9 @@ FROM (
 		SELECT DISTINCT CompanyCode
 		FROM "sap_s4h_CompanyCode"
 	)
+
 ```
-4. Validate the script and check that no issue is identified.
+3. Validate the script and check that no issue is identified.
 
 5. Run a data preview. <br/>
 <img src="./images/sql_view_data_preview.png"  width="1000"/>
@@ -163,7 +165,7 @@ The local table ***Mock Data for Company Clusters*** was onboarded as part of th
 <img src="./images/enhanceFactView.png"  width="1000"/>
 
 >[!Note]
-> The next two steps describe deletion of the Data Access Controls since it is not relevant for this enhancement scenario. In this scenario, the Data Access Controls from the SAP-managed space are still being referenced in the stories in SAP Analytics Cloud. However, in the real-world scenario, the Data access controls must be updated with relevant rows secure the data. The process has been described in the step 11 [here](../02-install-insight-apps/README.md#steps).
+> The next two steps describe deletion of the Data Access Controls since it is not relevant for this enhancement scenario. In this scenario, the Data Access Controls from the SAP-managed space are still being referenced in the stories in SAP Analytics Cloud. However, in the real-world scenario, the Data access controls must be updated with relevant rows secure the data. The process has been described in the step 11 [here](../02-install-intelligent-applications/README.md#steps).
 
 4. In the **Details** tab, remove both the Data Access Controls (DAC) to view the data. Select the DAC by clicking anywhere on the added DAC and then select the delete button. Repeat this step for the second DAC.
 <img src="./images/deleteDAC.png"  width="1000"/>
@@ -199,8 +201,8 @@ The local table ***Mock Data for Company Clusters*** was onboarded as part of th
 You have successfully enhanced the existing content to enhance it with a new dataset.
 
 ## Next Steps
-You created a new Analytic Model in the copied space based on the content delivered as part of the Insight App. Now, the model is now available for the Business Analyst to be used in the report ([next exercise](../07-enhance-insight-apps/README.md)). 
+You created a new Analytic Model in the copied space based on the content delivered as part of the Intelligent Application. Now, the model is now available for the Business Analyst to be used in the report ([next exercise](../07-enhance-intelligent-applications/README.md)). 
 
 This exercise focused on Company Clusters using mock data, you could redo the exercise in the future with the Data Product shared by Databricks. 
 
-Fow now, continue with the ([next exercise](../07-enhance-insight-apps/README.md)) to customize and enhance the dashboard.
+Fow now, continue with the ([next exercise](../07-enhance-intelligent-applications/README.md)) to customize and enhance the dashboard.

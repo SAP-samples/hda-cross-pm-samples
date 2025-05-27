@@ -40,9 +40,6 @@ A Data package contains sets of related data products for use in modelling proje
 ### Main components of the Data Package
 
 #### Overview
-
-> :books: If you are participating in a SAP BDC training, this section is just for observations, please feel free through read, click and learn. However, your setup might look different due to different roles. To continue to the steps that can be performed, skip to [here](#install-active-data-products-via-the-sap-datasphere-catalog)<br/>
-
 The Overview section provides the following information about the package:
 <img src="./images/BDCDatapackage.png"  width="1000"/>
 
@@ -76,13 +73,13 @@ Installing a Data product for the first time in the corresponding SAP Datasphere
 ## Observations
 
 ### Explore Data Products in the Catalog
-> :books: If you are participating in a SAP BDC training, the creation of your SAP BDC Cockpit user has already been done. This next section is just for observations, please feel free through read, click and learn. However, your setup might look different due to different roles. To continue to the steps that can be performed, skip to [here](#install-active-data-products-via-the-sap-datasphere-catalog)<br/>
+> :books: If you are participating in a SAP BDC training, the creation of your SAP BDC Cockpit user has already been done. This next section is just for observations, feel free to click through and learn. <br/>
 
 The catalog in BDC Cockpit provides a structured inventory of business data, while the SAP Datasphere Catalog offers powerful tools for discovering, evaluating, and installing data products, with features that enhance data lineage and integration across various SAP and non-SAP sources.
 
 1. In SAP Business Data Cloud Cockpit, you can create the users in the Security> Users tab and assign them the following roles.
     - BD Viewer: This role is required to view the Cockpit
-    - BD Administrator: This role is required to install data packages and insight apps
+    - BD Administrator: This role is required to install data packages and intelligent applications
     - Catalog User: This role is required to view the **Catalog & Marketplace** tab inside SAP BDC Cockpit i.e One Data Catalog concept of SAP Business Data Cloud
     - Catalog Administrator: This role is required to install data products.
 > <img src="./images/IA_BDC_CockpitRoles.png"  width="1000"/>
@@ -114,14 +111,14 @@ The catalog in BDC Cockpit provides a structured inventory of business data, whi
 
 
 > [!Note]
-If you are participating in a SAP BDC training, you are going to install the Data Product ***House Bank*** in SAP Datasphere. The corresponding Data Package **SAP S/4HANA Financial Operations Data Products** needs to be installed before by the trainers of the workshop (one-time activity). You can read through the following chapter to see the steps required.<br/>
+As part of your SAP BDC training, you will install the Data Product ***House Bank*** in SAP Datasphere. The trainers of the workshop have already performed the necessary one-time activation of the corresponding Data Package, ***SAP S/4HANA Financial Operations Data Products***. To familiarize yourself with the steps involved, you can read through the following chapter.<br/>
 
 > <img src="../resources/images/bdc_admin.png" alt="BDC Admin" width="100"/>
 
 1. Log into the SAP Business Data Cloud Cockpit.
 <img src="./images/BDCCockpit_login.png"  width="1000"/>
 
-2. In the cockpit, open the tab **Insight Applications and Data Packages**. This tab shows all the Insight Apps and Data Packages that are available for installation. <br/>
+2. In the cockpit, open the tab **Insight Applications and Data Packages**. This tab shows all the Intelligent Applications and Data Packages that are available for installation. <br/>
 <img src="./images/insight_apps_data_packages.png"  width="1000"/>
 
 3. Search for the Data Package that you want to activate. In this exercise, we will activate the **SAP S/4HANA Financial Operations Data Products**. This data package is available for activation and includes two data products. 
@@ -141,7 +138,7 @@ When activating a data package, make sure the source system is correctly identif
 6. The Data package and the Data Product comprised in it is now **Active**,if there are updates available, they will also be shown at the data package level, and you could trigger an update. 
 <img src = "./images/DataPackage_active.png" width= "1000"/>
 
-7. After installation of the data package **SAP S/4HANA Financial Operations Data Products**, you will find under the **Installed** tab in Insight Apps and Data Packages.
+7. After installation of the data package **SAP S/4HANA Financial Operations Data Products**, you will find under the **Installed** tab in Intelligent Applications and Data Packages.
 <img src = "./images/Insightappandpackage_active.png" width= "1000"/>
 
 
@@ -152,9 +149,11 @@ When activating a data package, make sure the source system is correctly identif
 
 
 1. To install the Data Product in SAP Datasphere, switch to SAP Datasphere through  **System Landscape** Tab by navigating from the relavant formation.
-<img src ="./images/SwitchDatasphere.png"  width="1000"/>. <br/>
+<img src ="./images/SwitchDatasphere.png"  width="1000"/>.
 
-> :books: If you are participating in a SAP BDC training, this next step does not need to be performed. The space assigned to you was already enabled for data product installation.  <br/>
+
+
+> :books: If you are participating in a SAP BDC training, the step 2 has already been completed by the trainers, as it requires admin roles. Please continue with step 3.
 
 2. Before installing the Data Product, we need to add the custom space where we want to install our required Data product to the System > Business Data Products tab and select the correct source system.  Follow these steps for your custom space(consumption space) where the data product will be installed:
 
@@ -163,59 +162,59 @@ When activating a data package, make sure the source system is correctly identif
 - Add the custom space where you intend to install the Data Product.
 - Ensure that you select the correct source system for accurate integration.
 
-<img src="./images/AddCustomspace.png"  width="1000"/>  <br/>
+<img src="./images/AddCustomspace.png"  width="1000"/>
 
-> :books: If you are participating in a SAP BDC training, select the space that was assigned to you as your participant space **PAXXXXXXX**.  <br/>
 
-3. In the Catalog & Marketplace **SAP Business Data Cloud Data Products** tab search for the Data Product ***House Bank*** which was already activated in the SAP BDC Cockpit. <br/>
-<img src="./images/DatasphereCatalog.png"  width="1000"/> <br/>
+3.In the Catalog & Marketplace **SAP Business Data Cloud Data Products** tab search for the Data Product ***House Bank*** which was already activated in the BDC Cockpit. <br/>
+<img src="./images/DatasphereCatalog.png"  width="1000"/>
 
-4. Open the Data Product ***House Bank***.
-<img src="./images/HouseBank.png"  width="1000"/> <br/>
 
-5. This data product is active as displayed in the header. 
-<img src="./images/InstallDataProduct.png"  width="1000"/> <br/>
+4.Open the Data Product ***House Bank***.
+<img src="./images/HouseBank.png"  width="1000"/>
 
-6. Choose the 'Install' button to start the installation. 
-<img src="./images/InstallScreen.png"  width="1000"/><br/>
+5.This data product is active as displayed in the header. 
+<img src="./images/InstallDataProduct.png"  width="1000"/>
 
-7. Select target space **Custom Space**, and click on ***Next Steps***.
-<img src="./images/Selecttarget.png"  width="1000"/> <br/>
+6.Choose the 'Install' button to start the installation. 
+<img src="./images/InstallScreen.png"  width="1000"/>
 
-8. Review the entities (replication flow and local table) and run the import selecting ***Start Import and Deploy***. <br/>
-<img src="./images/ImportEntities.png"  width="1000"/> <br/>
+7.Select target space **Custom Space**, and click on ***Next Steps***.
+<img src="./images/Selecttarget.png"  width="1000"/>
 
-9. You see the message ***Importing entities. Check the notifications for the status of the import.***. <br/>
-10.Notifications display that the import has started and then completed successfully. <br/>
+8.Review the entities (replication flow and local table) and run the import selecting ***Start Import and Deploy***. <br>
+<img src="./images/ImportEntities.png"  width="1000"/> 
+
+9.You see the message ***Importing entities. Check the notifications for the status of the import.***.
+
+10.Notifications display that the import started and also that the import completed successfully.
 
 <img src="./images/import_completed.png"  width="1000"/>
 
 
+
 >[!Note]
->When you install a Data Product in SAP Datasphere, it sets up and deploys entities in an ingestion space or an SAP-managed space. Importantly, this does not create a second copy of the data. Instead, it shares the data from the ingestion space. This space is created when the first data product for the application instance is installed into DSP, either by a customer installing the data product in DSP or through the successful installation of an Insight App. This approach ensures efficient resource use and keeps the data accurate and centralized.
+>When you install a Data Product in SAP Datasphere, it sets up and deploys entities in an ingestion space or an SAP-managed space. Importantly, this does not create a second copy of the data. Instead, it shares the data from the ingestion space. This space is created when the first data product for the application instance is installed into DSP, either by a customer installing the data product in DSP or through the successful installation of an Intelligent Application. This approach ensures efficient resource use and keeps the data accurate and centralized.
 ><img src="./images/SAPManagedSpace.png"  width="1000"/>
 
 
-11. To view the data of the installed data product, create a new **Graphical view** in your assigned space.
+11.In your assigned space, create a new **Graphical view** for Datapreview.
 
-<img src="./images/GraphicalView.png"  width="1000"/> <br/>
+><img src="./images/GraphicalView.png"  width="1000"/>
 
->[Note]
-Since, you do not have access to the SAP-Managed space, querying shared entities is not possible. Creating a view on top of the entity is the only way to view the data. Only with a global admin role, the SAP-managed space can be viewed and the entities can be previewed directly.
-12. Drag the table ***Master Data For House Bank*** into the view and save it as ***HouseBank_DataPreview*** and then deploy.
+12.Drag the table ***Master Data For House Bank*** into the view and save it as ***HouseBank_DataPreview***
 
-<img src="./images/HouseBank_DataPreview_view.png"  width="1000"/><br/>
+><img src="./images/HouseBank_DataPreview_view.png"  width="1000"/>
 
-13. Preview the data in the ***HouseBank_DataPreview*** view.
+13.Preview the data in the ***HouseBank_DataPreview*** view.
 
-<img src="./images/Datapreview_View.png"  width="1000"/><br/>
+><img src="./images/Datapreview_View.png"  width="1000"/>
 
->[Note]
-On installation of the data product ***House Bank***, the entity is shared from the SAP-managed space. For all further installations in other spaces, the same entity will be shared from the SAP-managed space. The data is not replicated multiple times. 
+>`[Note]
+As the table Master Data For ***House Bank*** is shared from the SAP-managed space. The table is automatically populated by the Replication Flow, so you don't need to manually start a run. 
 
 You can now enhance the business use case by building on top of the installed data product.
 
 ## Next Steps
  If the integration with Databricks is available, you will learn how a data analyst can enhance the out-of-the-box data products with machine learning capabilities that the BDC integration with Databricks has to offer. You can have a look at the [exercise here](../05-enrich-data-products-with-databricks-ml/README.md).
 
- Until the integration is available, continue with the exercise about customizing a model delivered as part of an Insight App [here](../06-enhance-analytic-model/README.md).
+ Until the integration is available, continue with the exercise about customizing a model delivered as part of an Intelligent Application [here](../06-enhance-analytic-model/README.md).

@@ -20,8 +20,8 @@
 > Priviliges needed might change during the development process between Beta and GA release
 * Knowledge about Databricks and Python required
 * Knowledge about ML and ML metrics desirable
-* [Basic Configuration of the SAP BDC Cockpit](../01-basic-config-bdc/README.md) 
-* [Onboard Data Products](../04-onboard-data-products/README.md) / [Install Insight Apps](../02-install-insight-apps/README.md) / [Expose Dataset to Databricks]()
+* [Basic Configuration of the SAP BDC Cockpit](../01-basic-config-bdc-cockpit/README.md) 
+* [Onboard Data Products](../04-onboard-data-products/README.md) / [Install Intelligent Applications](../02-install-intelligent-applications/README.md) / [Expose Dataset to Databricks]()
 * Assign the following privileges to the Databricks user:
   * CREATE_CATALOG
   * CREATE_SHARE
