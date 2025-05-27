@@ -23,7 +23,7 @@ An Intelligent Application called **Working Capital Insights** has been installe
 2. By filtering for 'Active', we are shown the list of data products that are available to explore and enhance in a familiar SAP environment.<br/>
 <img src="./images/FilteredCatalog.png"  width="1000"/>
 
-3. In the 'Insight Applications and Data Packages' Option under the 'Installed' tab, you can view all the installed intelligent applications and data packages. Take, for example, this data package which has already been activated as a result of the intelligent application installation. Let us take a closer look at the different key pieces of information shown in this page:
+3. In the 'Intelligent Applications and Data Packages' Option under the 'Installed' tab, you can view all the installed intelligent applications and data packages. Take, for example, this data package which has already been activated as a result of the intelligent application installation. Let us take a closer look at the different key pieces of information shown in this page:
 - Active: This tag signifies that the data package has been activated and the comprising data products can be installed.
 - Update Available: A newer version of the data package is available.
 - Update: This button can be used to get the latest version of the data package.

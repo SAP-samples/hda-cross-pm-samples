@@ -1,7 +1,7 @@
 # Install Intelligent Applications
 
-Insight apps are a premium offering exposed through SAP Business Data Cloud. They are innovative applications designed to streamline data analytics processes from observation to action. 
-Insight apps are intended to provide comprehensive dashboards, facilitate data analysis, and suggest viable actions based on the analysis; using artificial intelligence when applicable. The market entry version of BDC offers one SAP-managed intelligent application. In this exercise, let us look at how we can install one of these intelligent applications called the **Working Capital Insights** so that we can start using the insights and the underlying data products to their full potential.
+Intelligent Applications are a premium offering exposed through SAP Business Data Cloud. They are innovative applications designed to streamline data analytics processes from observation to action. 
+Intelligent Applications are intended to provide comprehensive dashboards, facilitate data analysis, and suggest viable actions based on the analysis; using artificial intelligence when applicable. The market entry version of BDC offers one SAP-managed intelligent application. In this exercise, let us look at how we can install one of these intelligent applications called the **Working Capital Insights** so that we can start using the insights and the underlying data products to their full potential.
 
 
 ## Persona 

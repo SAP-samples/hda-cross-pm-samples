@@ -118,7 +118,7 @@ As part of your SAP BDC training, you will install the Data Product ***House Ban
 1. Log into the SAP Business Data Cloud Cockpit.
 <img src="./images/BDCCockpit_login.png"  width="1000"/>
 
-2. In the cockpit, open the tab **Insight Applications and Data Packages**. This tab shows all the Intelligent Applications and Data Packages that are available for installation. <br/>
+2. In the cockpit, open the tab **Intelligent Applications and Data Packages**. This tab shows all the Intelligent Applications and Data Packages that are available for installation. <br/>
 <img src="./images/insight_apps_data_packages.png"  width="1000"/>
 
 3. Search for the Data Package that you want to activate. In this exercise, we will activate the **SAP S/4HANA Financial Operations Data Products**. This data package is available for activation and includes two data products. 

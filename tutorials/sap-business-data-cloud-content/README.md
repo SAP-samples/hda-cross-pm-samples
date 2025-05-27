@@ -27,21 +27,21 @@ This repository contains the enablement material for SAP Business Data Cloud. Th
 ​ </td>
 </tr>
 <tr>
-<td>2. Installation of Insight Apps</td>
+<td>2. Installation of Intelligent Applications</td>
 <td>
   <ul>
-  <li>Insight Apps are one of the cornerstones of SAP BDC</li>
-  <li>Onboard Insight Apps easily via the SAP BDC Cockpit</li>
+  <li>Intelligent Applications are one of the cornerstones of SAP BDC</li>
+  <li>Onboard Intelligent Applications easily via the SAP BDC Cockpit</li>
   <li>Assign users to the deployed content</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>3. Consumption of Insight Apps</td>
+<td>3. Consumption of Intelligent Applications</td>
 <td>
 
 <ul>
-  <li>Work with out-of-the-box SAP managed Insight Apps & have a detailed look into the delivered dashboard </li>
+  <li>Work with out-of-the-box SAP managed Intelligent Applications & have a detailed look into the delivered dashboard </li>
   <li>Learn how you can reduced time to value due to reduction of time to gather required datasets, building data models and stories to derive data insights.​</li>
 </ul>
 
@@ -52,7 +52,7 @@ This repository contains the enablement material for SAP Business Data Cloud. Th
 <td>
 
 <ul>
-  <li>Many customers will use data products to build their own Analytic Model or a Customer Managed Insight App on top. </li>
+  <li>Many customers will use data products to build their own Analytic Model or a Customer Managed Intelligent Application on top. </li>
   <li>By onboarding a data package, all assigned data products can be easily deployed in SAP Datasphere to build a strong data foundation.​</li>
 </ul>
 ​ </td>
@@ -79,7 +79,7 @@ This repository contains the enablement material for SAP Business Data Cloud. Th
  ​</td>
 </tr>
 <tr>
-<td>7. Enhance an Insight App Story</td>
+<td>7. Enhance an Intelligent Application Story</td>
 <td>
 <ul>
   <li>After the enhancement of the Analytic Model in SAP Datasphere, it’s necessary to enhance the visualization for a Business User to gain insights. </li>

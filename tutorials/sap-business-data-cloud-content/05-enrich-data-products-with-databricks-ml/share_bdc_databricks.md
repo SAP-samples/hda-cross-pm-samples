@@ -31,7 +31,7 @@ You will see their images in this exercise every time the leading persona switch
 
 1. As a data scientist, my goal is to discover the right data which I want to use for my ML flows. I am using Databricks to access data in Business Data Cloud from withing my notebook to build, train, experiment and fine tune models.
 
-2. In the Catalog, I can see the Data Products which are provided by the applications S/4HANA PCE and Databricks. The Data Products were either installed as part of an Insight Application or as a Data Package in the Business Data Cloud Cockpit.
+2. In the Catalog, I can see the Data Products which are provided by the applications S/4HANA PCE and Databricks. The Data Products were either installed as part of an Intelligent Application or as a Data Package in the Business Data Cloud Cockpit.
 
 3. Access a Data Product which is ***Active***. This Data Product should be made available in the Databricks environment. :wrench:
 <img src="./img/sharing/select_data_product_cost_center.png"  width="1000"/>
