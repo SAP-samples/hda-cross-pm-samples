@@ -95,6 +95,12 @@ OU is the Global Account ID of BDC(FOS) and is different per landscape:
 * cf-eu10 (Live): `3c869ade-ce89-4ee1-a2ff-a6e617e56fdf`
 * cf-us10 (Live): `7ebe6a33-3f74-47a7-998b-e16fa688d739`
 * cf-jp10 (Live) (not yet operational): `7f8747f0-f87e-4283-8aa4-34bdac27a895`
+* cf-ap11: `84af37ca-5a46-4b55-a0c7-f85364c77de9`
+* cf-ca10: `9942127d-83d8-4f13-98d9-4192fcf9f221`
+* cf-ap10: `c8406ba2-8d6f-4ebb-9280-fb61bb8e103c`
+* cf-in30: `d118d586-8eb0-429f-b4b6-c2b994bc8c95`
+* cf-eu30: `a0a17369-4c4f-4b8c-90aa-e222d917a158`
+* cf-us30: `c9eb0f6c-6f66-4773-be1e-899dc9cb3fdb`
 
 For example, if EU-10 and US-10 have different provider subaccounts, you would need to refer to documentation matrix broken down per region + hyperscaler.
 The only tenant specific information would be in L.
@@ -274,20 +280,31 @@ Use a user-created RFC connection to create a virtual connection that allows Bus
 
 ```
 {"backends": [{
-    "sid": "BDC",
-    "authMode": "NONE_CERTIFICATE_LOCAL",
-	"protocol": "TCP",
-	"cloudhost": "kymaxxxxx",
-	"localhost": "xxxxxx.devsys.net.sap",
-	"localPort": "xxxx",
-	"resources": [],
-	"backendType": "abapSys",
-	"description": "DESCRIPTION",
-	"creationDate": 1730796401642,
-	"hostInHeader": "virtual",
-	"allowedClients": [],
-    "blacklistedUser": []
-    }
+		
+		"sid": "BDF", 
+		"authMode": "NONE_CERTIFICATE_LOCAL", 
+		"protocol": "RFC", 
+		"cloudHost": "xxxxxx.devsys.net.sap", 
+		"cloudPort": "xxxx", 
+		"localHost": "xxxxxx.devsys.net.sap", 
+		"localPort": "xxxx", 
+		"resources": [ 
+			{
+				"path": "DHAFR_", 
+				"enabled": true, 
+				"description": "", 
+				"exactMatchOnly": false, 
+				"fromScenarioOnly": false, 
+				"websocketUpgradeAllowed": false 
+			} 
+		], 
+		"backendType": "abapSys", 
+		"description": "BDC Consumer Destination for RFC connectivity", 
+		"creationDate": 1746599166325, 
+		"hostInHeader": "virtual", 
+		"allowedClients": [], 
+		"blacklistedUser": [] 
+	} 
 ]}
 
 ```
