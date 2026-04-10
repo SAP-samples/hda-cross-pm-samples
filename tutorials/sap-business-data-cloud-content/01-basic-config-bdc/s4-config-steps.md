@@ -88,7 +88,7 @@ For cf-eu10-canary, an additional key value pair needs to be included as shown h
 CN=staging, L=<tenantId>, OU=3c869ade-ce89-4ee1-a2ff-a6e617e56fdf, OU=Canary, OU=SAP Cloud Platform Clients, O=SAP SE, C=DE
 ```
 
-C, O, OU will be static. Only the OU will change per regional deployment of BDC/FOS- you must be aware in which region (EU/US) the formation is being created. 
+C, O, OU will be static.
 
 OU is the Global Account ID of BDC(FOS). It is a fixed value: `3c869ade-ce89-4ee1-a2ff-a6e617e56fdf`
 
