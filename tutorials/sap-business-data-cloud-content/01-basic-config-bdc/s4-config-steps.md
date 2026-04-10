@@ -71,12 +71,13 @@ Here are some additional useful documents for the steps involved:
 * Enter the component of the Distinguished Name (DN) of the system in the corresponding fields and choose Enter. There are various attributes with fixed and variable values. 
 
 
+
 #### Sample subject patterns which need to be defined in the CSR
 
 Here is a sample subject pattern:
 
 ```
-CN=staging, L=<tenantId>, OU=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX, OU=SAP Cloud Platform Clients, O=SAP SE, C=DE
+CN=staging, L=<tenantId>, OU=3c869ade-ce89-4ee1-a2ff-a6e617e56fdf, OU=SAP Cloud Platform Clients, O=SAP SE, C=DE
 ```
 
 **Additional Consideration:**
@@ -84,23 +85,16 @@ CN=staging, L=<tenantId>, OU=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX, OU=SAP Cloud
 For cf-eu10-canary, an additional key value pair needs to be included as shown here:
 
 ```
-CN=staging, L=<tenantId>, OU=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX, OU=Canary, OU=SAP Cloud Platform Clients, O=SAP SE, C=DE
+CN=staging, L=<tenantId>, OU=3c869ade-ce89-4ee1-a2ff-a6e617e56fdf, OU=Canary, OU=SAP Cloud Platform Clients, O=SAP SE, C=DE
 ```
 
 C, O, OU will be static. Only the OU will change per regional deployment of BDC/FOS- you must be aware in which region (EU/US) the formation is being created. 
 
-OU is the Global Account ID of BDC(FOS) and is different per landscape:
+OU is the Global Account ID of BDC(FOS). It is a fixed value: `3c869ade-ce89-4ee1-a2ff-a6e617e56fdf`
 
-* cf-eu10-canary: `e48c7cf9-a4e0-4dcc-bc62-4a3d88f58bb0`
-* cf-eu10 (Live): `3c869ade-ce89-4ee1-a2ff-a6e617e56fdf`
-* cf-us10 (Live): `7ebe6a33-3f74-47a7-998b-e16fa688d739`
-* cf-jp10 (Live) (not yet operational): `7f8747f0-f87e-4283-8aa4-34bdac27a895`
-* cf-ap11: `84af37ca-5a46-4b55-a0c7-f85364c77de9`
-* cf-ca10: `9942127d-83d8-4f13-98d9-4192fcf9f221`
-* cf-ap10: `c8406ba2-8d6f-4ebb-9280-fb61bb8e103c`
-* cf-in30: `d118d586-8eb0-429f-b4b6-c2b994bc8c95`
-* cf-eu30: `a0a17369-4c4f-4b8c-90aa-e222d917a158`
-* cf-us30: `c9eb0f6c-6f66-4773-be1e-899dc9cb3fdb`
+> [!NOTE]
+> With the introduction of the Global Certificate Service, the OU GUID is now a single fixed value 3c869ade-ce89-4ee1-a2ff-a6e617e56fdf  that applies to all regions and hyperscalers. The region-specific GUID lookup table is no longer required. Please refer to the SAP Note [here](https://me.sap.com/notes/3732253)
+
 
 For example, if EU-10 and US-10 have different provider subaccounts, you would need to refer to documentation matrix broken down per region + hyperscaler.
 The only tenant specific information would be in L.
@@ -115,7 +109,7 @@ CN=staging, L=850432635, OU=3c869ade-ce89-4ee1-a2ff-a6e617e56fdf, OU=SAP Cloud P
 For cf-eu10-canary, an additional key value pair needs to be included as shown in the following image. Hence, a sample subject would be as follows.
 
 ```
-CN=staging, L=<tenantId>, OU=e48c7cf9-a4e0-4dcc-bc62-4a3d88f58bb0, OU=Canary, OU=SAP Cloud Platform Clients, O=SAP SE, C=DE
+CN=staging, L=<tenantId>, OU=3c869ade-ce89-4ee1-a2ff-a6e617e56fdf, OU=Canary, OU=SAP Cloud Platform Clients, O=SAP SE, C=DE
 ```
 
 Note that in certain cases, S/4 System ID might have a “$” in the beginning, for example, "$0204398045”. We need to remove “$” from the beginning and use the remaining part only.
