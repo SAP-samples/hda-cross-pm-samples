@@ -91,26 +91,10 @@ CN=staging, L=<tenantId>, OU=3c869ade-ce89-4ee1-a2ff-a6e617e56fdf, OU=Canary, OU
 C, O, OU will be static.
 
 
-OU is the Global Account ID of BDC(FOS) and is different per landscape:
+OU is the Global Account ID of BDC(FOS). 
 
-* cf-eu10-canary: `e48c7cf9-a4e0-4dcc-bc62-4a3d88f58bb0`
-* cf-eu10 (Live): `3c869ade-ce89-4ee1-a2ff-a6e617e56fdf`
-* cf-us10 (Live): `7ebe6a33-3f74-47a7-998b-e16fa688d739`
-* cf-jp10 (Live): `7f8747f0-f87e-4283-8aa4-34bdac27a895`
-* cf-ap11: `84af37ca-5a46-4b55-a0c7-f85364c77de9`
-* cf-ca10: `9942127d-83d8-4f13-98d9-4192fcf9f221`
-* cf-ap10: `c8406ba2-8d6f-4ebb-9280-fb61bb8e103c`
-* cf-in30: `d118d586-8eb0-429f-b4b6-c2b994bc8c95`
-* cf-eu30: `a0a17369-4c4f-4b8c-90aa-e222d917a158`
-* cf-us30: `c9eb0f6c-6f66-4773-be1e-899dc9cb3fdb`
-* prod-eu20: `fbb32032-6ec8-4bb5-9e4a-dca887bbaffc`
-* prod-us21: `bdc95a87-6ca8-4809-ab55-a9a17bbdc961`
-* prod-br10: `f41f26c5-2a4d-4ac8-9a23-33ba53dcccaa`
-* prod-br20:` f41f26c5-2a4d-4ac8-9a23-33ba53dcccaa`
-* prod-us20: `c26a7623-d3ec-4660-b00f-ca57c378892d`
-* prod-br10: `29177ab2-bcf1-4b7b-bc23-43caee9eccde`
-* prod-br20: `f41f26c5-2a4d-4ac8-9a23-33ba53dcccaa`
-* prod-ap12: `d0241cf2-69f9-4fa9-91c9-4be0a3e81028`
+> [!NOTE]
+> With the introduction of the Global Certificate Service, the OU GUID is now a single fixed value 3c869ade-ce89-4ee1-a2ff-a6e617e56fdf  that applies to all regions and hyperscalers. The region-specific GUID lookup table is no longer required. Please refer to the SAP Note [here](https://me.sap.com/notes/3732253)
 
 
 For example, if EU-10 and US-10 have different provider subaccounts, you would need to refer to documentation matrix broken down per region + hyperscaler.
