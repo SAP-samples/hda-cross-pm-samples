@@ -33,7 +33,11 @@ Before installing the Data Product, we need to add the custom space where we wan
 4.Select target space **Custom Space**, and click on ***Next Steps***.<br/> If you are in a SAP BDC Training, your custom space will be **AC327XXXXXXX** for example.
 <img src="./images/SelectDemoTarget.png"  width="1000"/><br/>
 
-5.Review the entities (replication flow and local table) and run the import selecting ***Start Import and Deploy***. <br>
+5.Review the entities (replication flow and local table) and run the import selecting ***Start Import and Deploy***. <br/>
+
+>[!Note]
+>Please ensure that the Data Access is set to **Replication Flow to Local Tables** only. <br/>
+
 <img src="./images/ImportEntitiesSupplier.png"  width="1000"/> <br/>
 
 6.You see the message ***Importing entities. Check the notifications for the status of the import.***.<br/>
