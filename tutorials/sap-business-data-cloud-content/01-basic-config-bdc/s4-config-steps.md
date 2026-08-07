@@ -42,6 +42,12 @@ Here are some additional useful documents for the steps involved:
 > [!Note]
 > You can also refer to the SAP Note [3539174](https://me.sap.com/notes/3539174), as some of this content is based on the contents of the Note. Alternatively, you may choose to follow the instructions in this document.
 
+> [!Note]
+> ABAP Data Integration Administration - Security Settings require the following notes to be applied
+> - [3636728](https://me.sap.com/notes/3636728)
+> - [3499606](https://me.sap.com/notes/3499606)
+> - [3572314](https://me.sap.com/notes/3572314)
+
 ### **2. Generation of a signed client certificate (CSR) and PSE**
 * Call the transaction **strust** in the system as shown in the following image.<br/>
 <img src="images/s4-config-images/strust.png" alt="strust" width="1500"/>
