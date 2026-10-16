@@ -1,3 +1,7 @@
+> **IMPORTANT:**
+> This setup guide might be obsolete. We will update the content shortly.
+<hr/>
+
 # Configuration of the S/4HANA system and SAP BDC Configuration for Integration
 This section offers resources for configuring the S/4 system in preparation for inclusion in the BDC Formation. It also describes some back and forth with S/4 and the parameters/ configuration from the BDC components.
 
