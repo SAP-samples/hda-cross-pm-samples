@@ -76,5 +76,12 @@ Actors: System Admin
 > [!NOTE]
 > Check [KBA 2441124](https://me.sap.com/notes/2441124) for more details on user and role administration. 
 
+## Create remaining Technical Users
+### Monitoring and Support User
+Create and maintain a role based on the template role SAP_APRS_ADMINISTRATOR, and assign it to any user to monitor the replication and to perform expert functions. You can find more details about this role in note [3572314](https://me.sap.com/notes/3572314)
+
+### Step User for Technical Job Repository
+You use the Technical Job Repository for scheduling technical jobs. For this, it is obligatory to create and assign a default step user in all clients. This user will be used for scheduling ALL jobs in the Technical Job Repository. Refer to note 2731999. If you are using a custom step user for technical job repository, refer to note [3636728](https://me.sap.com/notes/3636728).
+
 ## Next Steps
 Now that the S/4 Technical User has been created with all the necessary roles and authorizations, you can continue with rest of configuration steps mentioned [here](s4-config-steps.md#4-import-certificate-response-from-the-bdc-formation-in-the-s4-system).
