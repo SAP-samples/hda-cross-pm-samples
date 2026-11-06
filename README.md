@@ -3,7 +3,7 @@ SPDX-FileCopyrightText: 2017 Free Software Foundation Europe e.V. <https://fsfe.
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
-[![REUSE status](https://api.reuse.software/badge/github.com/sap-samples/hda-cross-pm-samples)](https://api.reuse.software/info/github.com/sap-samples/hda-cross-pm-samples)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/hda-cross-pm-samples)](https://api.reuse.software/info/github.com/SAP-samples/hda-cross-pm-samples)
 
 # SAP Business Data Cloud Cross Product Management Samples
 
@@ -48,3 +48,5 @@ This is an internal repository. You can only contribute by creating 'Issues', we
 
 ## License
 Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/hda-cross-pm-samples)](https://api.reuse.software/info/github.com/SAP-samples/hda-cross-pm-samples)
