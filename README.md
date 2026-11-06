@@ -25,13 +25,6 @@ Samples, tutorials, and use cases for SAP HANA database and analytics products, 
     - Creating an SAP Analytics Cloud Story on Extended Model
 	
 2. SAP Business Data Cloud end-to-end scenarios
-	- Basic Configuration of SAP Business Data Cloud
-	- Installation of Intelligent Applications
-	- Consumption of Intelligent Applications
-	- Activating Data Packages in SAP Business Data Cloud Cockpit & Installing Data Products in SAP Datasphere
-	- Enrich Data Products with ML Capabilities leveraging SAP Databricks
-	- Enhance an Analytic Model in an Intelligent Application
-	- Enhance the stories in an Intelligent Application
 	
 
 ## Requirements
