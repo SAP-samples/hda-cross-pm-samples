@@ -3,7 +3,7 @@ SPDX-FileCopyrightText: 2017 Free Software Foundation Europe e.V. <https://fsfe.
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
-[![REUSE status](https://api.reuse.software/badge/github.com/sap-samples/hda-cross-pm-samples)](https://api.reuse.software/info/github.com/sap-samples/hda-cross-pm-samples)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/hda-cross-pm-samples)](https://api.reuse.software/info/github.com/SAP-samples/hda-cross-pm-samples)
 
 # SAP Business Data Cloud Cross Product Management Samples
 
@@ -25,13 +25,6 @@ Samples, tutorials, and use cases for SAP HANA database and analytics products, 
     - Creating an SAP Analytics Cloud Story on Extended Model
 	
 2. SAP Business Data Cloud end-to-end scenarios
-	- Basic Configuration of SAP Business Data Cloud
-	- Installation of Intelligent Applications
-	- Consumption of Intelligent Applications
-	- Activating Data Packages in SAP Business Data Cloud Cockpit & Installing Data Products in SAP Datasphere
-	- Enrich Data Products with ML Capabilities leveraging SAP Databricks
-	- Enhance an Analytic Model in an Intelligent Application
-	- Enhance the stories in an Intelligent Application
 	
 
 ## Requirements
@@ -47,4 +40,6 @@ No known issues
 This is an internal repository. You can only contribute by creating 'Issues', we will process them and add necessary changes. If you wish to offer improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 
 ## License
-Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/hda-cross-pm-samples)](https://api.reuse.software/info/github.com/SAP-samples/hda-cross-pm-samples)
